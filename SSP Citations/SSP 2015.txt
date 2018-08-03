@@ -1,0 +1,2868 @@
+﻿FN Thomson Reuters Web of Science™
+VR 1.0
+PT J
+AU Xing, R
+   Hanaoka, T
+   Kanamori, Y
+   Dai, HC
+   Masui, T
+AF Xing, Rui
+   Hanaoka, Tatsuya
+   Kanamori, Yuko
+   Dai, Hancheng
+   Masui, Toshihiko
+TI An impact assessment of sustainable technologies for the Chinese urban
+   residential sector at provincial level
+SO ENVIRONMENTAL RESEARCH LETTERS
+LA English
+DT Article
+DE Chinese province; GHG emission; co-benefit; urban household
+ID BUILDING ENERGY EFFICIENCY; CARBON EMISSIONS; RURAL HOUSEHOLDS; CO2
+   EMISSIONS; DEMAND; EXPENDITURE; CONSUMPTION; POLICIES
+AB Recently, energy use in the urban residential sector of China has drastically increased due to higher incomes and urbanization. The fossil fuels dominant energy supply has since worsened the air quality, especially in urban areas. In this study we estimate the future energy service demands in Chinese urban residential areas, and then use an AIM/Enduse model to evaluate the emission reduction potential of CO2, SO2, NOx and PM. Considering the climate diversity and its impact on household energy service demands, our analysis is down-scaled to the provincial-level. The results show that in most of the regions, penetration of efficient technologies will bring CO2 emission reductions of over 20% compared to the baseline by the year 2030. Deployment of energy efficient technologies also co-benefits GHG emission reduction. However, efficient technology selection appears to differ across provinces due to climatic variation and economic disparity. For instance, geothermal heating technology is effective for the cold Northern areas while biomass technology contributes to emission reduction the most in the warm Southern areas.
+C1 [Xing, Rui; Hanaoka, Tatsuya; Kanamori, Yuko; Dai, Hancheng; Masui, Toshihiko] Natl Inst Environm Studies, Tsukuba, Ibaraki, Japan.
+RP Xing, R (reprint author), Natl Inst Environm Studies, Tsukuba, Ibaraki, Japan.
+EM xing.rui@nies.go.jp
+FU Environment Research and Technology Development Fund of the Ministry of
+   the Environment, Japan [S-12-2]
+FX This research was supported by the Environment Research and Technology
+   Development Fund (S-12-2) of the Ministry of the Environment, Japan.
+CR ANDERSON JG, 1987, J CONSUM AFF, V21, P1, DOI 10.1111/j.1745-6606.1987.tb00185.x
+   [Anonymous], 2014, ECONOMIST
+   Brockett D., 2002, ACEEE SUMMER STUDY B
+   Buchs M, 2013, ECOL ECON, V90, P114, DOI 10.1016/j.ecolecon.2013.03.007
+   Chang Y, 2013, ENERG POLICY, V62, P656, DOI 10.1016/j.enpol.2013.07.053
+   Chitnis M, 2012, APPL ENERG, V94, P202, DOI 10.1016/j.apenergy.2012.01.005
+   Dai HC, 2012, ENERG POLICY, V50, P736, DOI 10.1016/j.enpol.2012.08.023
+   Eom J, 2012, ENERGY, V46, P405, DOI 10.1016/j.energy.2012.08.009
+   Feng ZH, 2011, ENERGY, V36, P656, DOI 10.1016/j.energy.2010.09.049
+   Hanaoka T., 2015, AIM ENDUSE MODEL MAN
+   Henley A, 1997, OXFORD B ECON STAT, V59, P149, DOI 10.1111/1468-0084.00054
+   IEA, 2010, EN TECHN PERSP 2010
+   IIASA, 2012, SSP DAT VERS 0 93
+   Jiang KJ, 2006, ENVIRON ECON POLICY, V7, P233, DOI 10.1007/s10018-00S-01OS-z
+   Kainuma M, 2003, CLIMATE POLICY ASSES
+   Kong XF, 2012, ENERG POLICY, V41, P624, DOI 10.1016/j.enpol.2011.11.024
+   Li J, 2015, J CLEAN PROD, V90, P326, DOI 10.1016/j.jclepro.2014.11.061
+   Liu LC, 2011, J CLEAN PROD, V19, P1754, DOI 10.1016/j.jclepro.2011.06.011
+   National Bureau of Statistics of China (NBSC), 2010, CHIN STAT YB 2010
+   NESC (National Bureau of Statistics of China), 2011, CHIN EN STAT YB 2011
+   Ning Y, 2008, P C EN EC ENV, P301
+   Rosas-Flores JA, 2011, ENERG BUILDINGS, V43, P10, DOI 10.1016/j.enbuild.2010.08.020
+   THUBERC, 2011, ANN REP CHIN BUILD E
+   Van Vuuren D.P., 2012, GLOBL ENV CHANG, V22, P31
+   Xing R., 2013, INT J SUSTAINABLE BU, V4, P229
+   Yoshino H, 2009, INVESTIGATION ACTUAL
+   Yu S, 2014, ENERGY, V67, P284, DOI 10.1016/j.energy.2013.12.072
+   Zhang YR, 2013, ENERG POLICY, V62, P768, DOI 10.1016/j.enpol.2013.06.128
+NR 28
+TC 7
+Z9 7
+U1 3
+U2 17
+PU IOP PUBLISHING LTD
+PI BRISTOL
+PA TEMPLE CIRCUS, TEMPLE WAY, BRISTOL BS1 6BE, ENGLAND
+SN 1748-9326
+J9 ENVIRON RES LETT
+JI Environ. Res. Lett.
+PD JUN
+PY 2015
+VL 10
+IS 6
+AR 065001
+DI 10.1088/1748-9326/10/6/065001
+PG 14
+WC Environmental Sciences; Meteorology & Atmospheric Sciences
+SC Environmental Sciences & Ecology; Meteorology & Atmospheric Sciences
+GA CL3FK
+UT WOS:000356835600020
+OA gold
+DA 2018-06-21
+ER
+
+PT J
+AU Absar, SM
+   Preston, BL
+AF Absar, Syeda Mariya
+   Preston, Benjamin L.
+TI Extending the Shared Socioeconomic Pathways for sub-national impacts,
+   adaptation, and vulnerability studies
+SO GLOBAL ENVIRONMENTAL CHANGE-HUMAN AND POLICY DIMENSIONS
+LA English
+DT Article
+DE Socioeconomic scenarios; Shared Socioeconomic Pathways; Climate change;
+   Vulnerability; Adaptive capacity
+ID CLIMATE-CHANGE RESEARCH; GLOBAL ENVIRONMENTAL-CHANGE; SCENARIO
+   FRAMEWORK; MULTISCALE NARRATIVES; INTEGRATED ASSESSMENT;
+   FUTURE-DIRECTIONS; IA PERSPECTIVE; EUROPE; WATER; ASSESSMENTS
+AB The exploration of alternative socioeconomic futures is an important aspect of understanding the potential consequences of climate change. While socioeconomic scenarios are common and, at times essential, tools for the impacts, adaptation and vulnerability and integrated assessment modeling research communities, their approaches to scenario development have historically been quite distinct. However, increasing convergence of impacts, adaptation and vulnerability and integrated assessment modeling research in terms of scales of analysis suggests there may be value in the development of a common framework for socioeconomic scenarios. The Shared Socioeconomic Pathways represents an opportunity for the development of such a common framework. However, the scales at which these global storylines have been developed are largely incommensurate with the sub-national scales at which impacts, adaptation and vulnerability and, increasingly, integrated assessment modeling studies are conducted. The objective of this study was to develop sub-national and sectoral extensions of the global SSP storylines in order to identify future socioeconomic challenges for adaptation for the U.S. Southeast. A set of nested qualitative socioeconomic storyline elements, integrated storylines, and accompanying quantitative indicators were developed through an application of the Factor-Actor-Sector framework. In addition to revealing challenges and opportunities associated with the use of the SSPs as a basis for more refined scenario development, this study generated sub-national storyline elements and storylines that can subsequently be used to explore the implications of alternative sub-national socioeconomic futures for the assessment of climate change impacts and adaptation. (C) 2015 Elsevier Ltd. All rights reserved.
+C1 [Absar, Syeda Mariya] Oak Ridge Natl Lab, Climate Change Sci Inst, Oak Ridge, TN 37831 USA.
+   Oak Ridge Natl Lab, Div Environm Sci, Oak Ridge, TN 37831 USA.
+RP Absar, SM (reprint author), Oak Ridge Natl Lab, Climate Change Sci Inst, Oak Ridge, TN 37831 USA.
+EM absarsm@ornl.gov
+OI Preston, Benjamin/0000-0002-7966-2386
+FU U.S. Department of Energy, Office of Science, Biological and Environment
+   Research, Integrated Assessment Program [ERKP719]; U.S. Department of
+   Energy [DE-ACO5-000R22725]; DOE Public Access Plan
+FX This research was sponsored by the U.S. Department of Energy, Office of
+   Science, Biological and Environment Research, Integrated Assessment
+   Program under project ERKP719. This manuscript has been authored by
+   UT-Battelle, LLC under Contract No. DE-ACO5-000R22725 with the U.S.
+   Department of Energy. The United States Government retains and the
+   publisher, by accepting the article for publication, acknowledges that
+   the United States Government retains a non-exclusive, paid-up,
+   irrevocable, world-wide license to publish or reproduce the published
+   form of this manuscript, or allow others to do so, for United States
+   Government purposes. The Department of Energy will provide public access
+   to these results of federally sponsored research in accordance with the
+   DOE Public Access Plan
+   (http://energy.gov/downloads/doe-public-access-plan). The authors
+   acknowledge the constructive comments of Kristie L. Ebi and Kasper Kok
+   on prior drafts of this manuscript.
+CR Adger W. N., 2007, CLIMATE CHANGE 2007, V2007, P717
+   Adger WN, 2009, CLIMATIC CHANGE, V93, P335, DOI 10.1007/s10584-008-9520-z
+   Amer M, 2013, FUTURES, V46, P23, DOI 10.1016/j.futures.2012.10.003
+   Anderson J. Q., 2012, FUTURE IMPACT INTERN, P43
+   BEA, 2013, GROSS DOM PROD STAT
+   Berkhout F, 2014, REG ENVIRON CHANGE, V14, P879, DOI 10.1007/s10113-013-0519-2
+   Bierwagen BG, 2010, P NATL ACAD SCI USA, V107, P20887, DOI 10.1073/pnas.1002096107
+   Biggs R., 2007, ECOL SOC, V12
+   Birkmann J., 2013, CLIMATIC CHANGE, P1
+   Brand FS, 2013, ECOL SOC, V18, DOI 10.5751/ES-04972-180243
+   Carlsen H, 2013, MITIG ADAPT STRAT GL, V18, P1239, DOI 10.1007/s11027-012-9419-x
+   Carpenter S. R., 2005, ECOSYSTEMS HUMAN WEL
+   Cash DW, 2000, GLOBAL ENVIRON CHANG, V10, P109, DOI 10.1016/S0959-3780(00)00017-0
+   CBO, 2014, BUDG EC OUTL 2014 20, P175
+   Chambwera M, 2014, CLIMATE CHANGE 2014: IMPACTS, ADAPTATION, AND VULNERABILITY, PT A: GLOBAL AND SECTORAL ASPECTS, P945
+   CMMS, 2012, PROJ MED EXP ILL SCE, P21
+   Coakley C. E., 2009, GROSS DOMESTIC PRODU
+   Cohen M. R., 2008, NATL HLTH STAT REPOR
+   de Bremond A, 2014, ENVIRON SCI POLICY, V42, P45, DOI 10.1016/j.envsci.2014.05.004
+   Denton F., 2014, CLIMATE CHANGE 201 A
+   Ebi KL, 2014, INT J ENV RES PUB HE, V11, P30, DOI 10.3390/ijerph110100030
+   Ebi KL, 2014, CLIMATIC CHANGE, V122, P363, DOI 10.1007/s10584-013-0912-3
+   Ebi KL, 2013, CURR OPIN ENV SUST, V5, P373, DOI 10.1016/j.cosust.2013.06.004
+   Edmonds James A., 2012, CLIMATE CHANGE MODEL, P169
+   EIA, 2012, EIA 2012 ANN EN OUTL
+   EIA, 2012, ANN EN OUTL PROJ 203
+   Eom J, 2015, TECHNOL FORECAST SOC, V90, P73, DOI 10.1016/j.techfore.2013.09.017
+   ERS, 2011, PUBL AGR RES SPEND F
+   Facer K, 2010, J COMPUT ASSIST LEAR, V26, P74, DOI 10.1111/j.1365-2729.2009.00337.x
+   Field C.B., 2012, SPECIAL REPORT WORKI, P582
+   Harrison PA, 2013, REG ENVIRON CHANGE, V13, P761, DOI 10.1007/s10113-012-0361-y
+   Holman IP, 2005, CLIMATIC CHANGE, V71, P9, DOI 10.1007/s10584-005-5927-y
+   Huber V, 2014, EARTH SYST DYNAM, V5, P399, DOI 10.5194/esd-5-399-2014
+   IAF, 2008, HLTH EQ 2028 DRA PRO, P16
+   IAF, 2011, VULN 2030 SCEN VULN, P47
+   IFTF, 2011, 4 FUT OF FOOD
+   IFTF, 2008, HEALTHC 2020
+   IGF, 2012, TEL FUT
+   IIASA, 2012, NOT SSP DAT SETS S
+   IIASA, 2012, SSP DAT VERS 0 93 PR
+   Keddy PA, 2009, SOUTHEAST NAT, V8, P213, DOI 10.1656/058.008.0202
+   Klein RJT, 2014, CLIMATE CHANGE 2014: IMPACTS, ADAPTATION, AND VULNERABILITY, PT A: GLOBAL AND SECTORAL ASPECTS, P899
+   Kok K, 2006, FUTURES, V38, P261, DOI 10.1016/j.futures.2005.07.001
+   Kok K, 2006, FUTURES, V38, P285, DOI 10.1016/j.futures.2005.07.006
+   Kok K, 2007, ECOL SOC, V12
+   Kraucunas I., 2014, CLIMATIC CHANGE, P1, DOI DOI 10.1007/S10584-014-1064-9
+   Kriegler E, 2012, GLOBAL ENVIRON CHANG, V22, P807, DOI 10.1016/j.gloenvcha.2012.05.005
+   lEA, 2012, EN TECHN PERSP
+   Leadley P., 2010, TECHNICAL SERIES, V50, P132
+   Lebel L., 2005, ECOSYSTEMS HUMAN WEL, P227
+   Li H, 2011, ENVIRON SCI TECHNOL, V45, P4195, DOI 10.1021/es1040305
+   Lopez M., 2012, MOBILE SOCIAL CLOUD
+   Mackun P., 2011, POPULATION DISTRIBUT
+   Malcolm S., 2012, AGR ADAPTION CHANGIN
+   MGCSCI, 2013, LAND US ASS PLAN OPP
+   MGI, 2011, MAN FUT NEXT ERA GRO
+   Mintzer I., 2003, US ENERGY SCENARIOS
+   Moss R. H., 2013, GLOB ENV CHANGE
+   Moss RH, 2010, NATURE, V463, P747, DOI 10.1038/nature08823
+   Nakieenovie N., 2000, SPECIAL REPORT EMISS
+   NIC, 2012, GLOB TRENDS 2030 ALT, P140
+   NWF SELC, 2013, FOR BIOEN SE US IMPL
+   O'Neill B. C., 2014, GLOB ENV CH IN PRESS
+   O'Neill BC, 2012, WORKSH NAT US NEW SO
+   O'Neill BC, 2014, CLIMATIC CHANGE, V122, P387, DOI 10.1007/s10584-013-0905-2
+   OECD, 2008, HIGH ED 2030, V1, P355
+   OECD, 2009, HIGH ED 2030, V2, P355
+   Ortman J. M., 2009, US POPULATION PROJEC
+   Oxfam, 2009, EXP SOC VULN CLIM CH, P20
+   Preston BL, 2013, GLOBAL ENVIRON CHANG, V23, P719, DOI 10.1016/j.gloenvcha.2013.02.009
+   Preston BL, 2011, SUSTAIN SCI, V6, P177, DOI 10.1007/s11625-011-0129-1
+   PWC, 2012, HOM US MAN WHY RES U
+   RF GBN, 2010, SCEN FUT TECHN INT D, P53
+   Riahi K, 2015, TECHNOL FORECAST SOC, V90, P8, DOI 10.1016/j.techfore.2013.09.016
+   Rosenzweig C, 2014, P NATL ACAD SCI USA, V111, P3268, DOI 10.1073/pnas.1222463110
+   Rotmans J, 2000, FUTURES, V32, P809, DOI 10.1016/S0016-3287(00)00033-1
+   Roy S. B., 2011, 1023676 EL POW RES I, P94
+   Roy S. B., 2010, J CONT WATER RES ED, V127, P12
+   Roy SB, 2005, J AM WATER RESOUR AS, V41, P1091, DOI 10.1111/j.1752-1688.2005.tb03787.x
+   Roy SB, 2012, ENVIRON SCI TECHNOL, V46, P2545, DOI 10.1021/es2030774
+   Sleeter BM, 2012, GLOBAL ENVIRON CHANG, V22, P896, DOI 10.1016/j.gloenvcha.2012.03.008
+   Thomson AM, 2014, GLOBAL ENVIRON CHANG, V24, P143, DOI 10.1016/j.gloenvcha.2013.11.019
+   UN, 2012, N AM FOR SECT OUTL S
+   UNEP, 2011, MAN INV EN RES EFF U
+   UNEP, 2002, GLOB ENV OUTL 3 PRES
+   UNEP, 2007, GLOB ENV OUTL 4 ENV
+   United States Census Bureau (USCB), 2012, NAT POP PROJ
+   USBEA, 2013, GROSS DOM PROD STAT
+   USBLS, 2012, EMPL PROJ 2010 2020
+   USBLS, 2013, EMPL PROJ 2012 2022
+   USCB, 2012, NEXT 4 DEC OLD POP U
+   USDOD, 2014, QUADR DEF REV
+   USDOD, 2010, QUADR DEF REV
+   USDOS, 2010, US CLIM ACT REP 2010
+   Valverde Jr L. J., 2004, COMP RISK ASSESSMENT, P195
+   van Ruijven BJ, 2014, CLIMATIC CHANGE, V122, P481, DOI 10.1007/s10584-013-0931-0
+   van Vuuren DP, 2007, GLOBAL ENVIRON CHANG, V17, P114, DOI 10.1016/j.gloenvcha.2006.04.004
+   van Vuuren DP, 2014, CLIMATIC CHANGE, V122, P373, DOI 10.1007/s10584-013-0906-1
+   van Vuuren DP, 2012, GLOBAL ENVIRON CHANG, V22, P21, DOI 10.1016/j.gloenvcha.2011.08.002
+   van Vuuren DP, 2010, WIRES CLIM CHANGE, V1, P393, DOI 10.1002/wcc.50
+   Varum CA, 2010, FUTURES, V42, P355, DOI 10.1016/j.futures.2009.11.021
+   Vervoort JM, 2014, GLOBAL ENVIRON CHANG, V28, P383, DOI 10.1016/j.gloenvcha.2014.03.001
+   WEF, 2010, WORLD SCAN SER
+   Zurek MB, 2007, TECHNOL FORECAST SOC, V74, P1282, DOI 10.1016/j.techfore.2006.11.005
+NR 104
+TC 11
+Z9 13
+U1 1
+U2 25
+PU ELSEVIER SCI LTD
+PI OXFORD
+PA THE BOULEVARD, LANGFORD LANE, KIDLINGTON, OXFORD OX5 1GB, OXON, ENGLAND
+SN 0959-3780
+EI 1872-9495
+J9 GLOBAL ENVIRON CHANG
+JI Glob. Environ. Change-Human Policy Dimens.
+PD JUL
+PY 2015
+VL 33
+BP 83
+EP 96
+DI 10.1016/j.gloenvcha.2015.04.004
+PG 14
+WC Environmental Sciences; Environmental Studies; Geography
+SC Environmental Sciences & Ecology; Geography
+GA CM7UV
+UT WOS:000357902900008
+OA gold_or_bronze
+DA 2018-06-21
+ER
+
+PT J
+AU Lutz, W
+   Striessnig, E
+AF Lutz, Wolfgang
+   Striessnig, Erich
+TI Demographic aspects of climate change mitigation and adaptation
+SO POPULATION STUDIES-A JOURNAL OF DEMOGRAPHY
+LA English
+DT Article
+DE adaptation; mitigation; climate change; education; behavioural change;
+   demographic change
+ID EDUCATIONAL-ATTAINMENT; POPULATION; VULNERABILITY; HOUSEHOLDS;
+   EMISSIONS; GROWTH
+AB This paper addresses the contribution of changes in population size and structures to greenhouse gas emissions and to the capacity to adapt to climate change. The paper goes beyond the conventional focus on the changing composition by age and sex. It does so by addressing explicitly the changing composition of the population by level of educational attainment, taking into account new evidence about the effect of educational attainment in reducing significantly the vulnerability of populations to climatic challenges. This evidence, which has inspired a new generation of socio-economic climate change scenarios, is summarized. While the earlier IPCC-SRES (Intergovernmental Panel on Climate Change-Special Report on Emissions Scenarios) scenarios only included alternative trajectories for total population size (treating population essentially as a scaling parameter), the Shared Socio-economic Pathways (SSPs) in the new scenarios were designed to capture the socio-economic challenges to climate change mitigation and adaptation, and include full age, sex, and education details for all countries.
+C1 [Lutz, Wolfgang; Striessnig, Erich] Wittgenstein Ctr Demog & Global Human Capital IIA, A-2361 Laxenburg, Austria.
+RP Lutz, W (reprint author), Wittgenstein Ctr Demog & Global Human Capital IIA, Schlosspl 1, A-2361 Laxenburg, Austria.
+EM striess@iiasa.ac.at
+CR Adger Neil, 2013, WORLD SOCIAL SCI REP, P261
+   Cohen Joel, 1995, MANY PEOPLE CAN EART
+   Crespo Cuaresma Jesus, 2013, DEMOGRAPHY, V51, P299, DOI [10.1007/s13524-013-0245-x, DOI 10.1007/S13524-013-0245-X]
+   EHRLICH PR, 1971, SCIENCE, V171, P1212, DOI 10.1126/science.171.3977.1212
+   Farsi M, 2007, ENVIRON DEV ECON, V12, P757, DOI 10.1017/S1355770X07003932
+   Frankenberg E, 2013, ECOL SOC, V18, DOI 10.5751/ES-05377-180216
+   Garbero A, 2013, ECOL SOC, V18, DOI 10.5751/ES-05871-180427
+   Lutz W, 2008, SCIENCE, V319, P1047, DOI 10.1126/science.1151753
+   Lutz W, 2013, POPUL DEV REV, V38, P283, DOI 10.1111/j.1728-4457.2013.00564.x
+   Lutz W, 2012, SCIENCE, V335, P918, DOI 10.1126/science.335.6071.918-a
+   Lutz W, 2011, SCIENCE, V333, P587, DOI 10.1126/science.1206964
+   Lutz W, 2009, J R STAT SOC A STAT, V172, P701, DOI 10.1111/j.1467-985X.2009.00612.x
+   Lutz Wolfgang, 2009, POPNET POPULATION NE, V41, P1
+   Lutz Wolfgang, 2012, THEMA, V11, P3
+   Lutz Wolfgang, 2014, WORLD POPULATION HUM, P628
+   Lutz Wolfgang, 2014, WORLD POPULATION HUM, P519
+   MacKellar FL, 1995, POPUL DEV REV, V21, P849, DOI 10.2307/2137777
+   Muttarak R, 2013, ECOL SOC, V18, DOI 10.5751/ES-06101-180451
+   O'Neill B. C., 2001, POPULATION CLIMATE C
+   O'Neill B.C., GLOBAL ENV IN PRESS
+   O'Neill BC, 2010, P NATL ACAD SCI USA, V107, P17521, DOI 10.1073/pnas.1004581107
+   Pichler A, 2013, ECOL SOC, V18, DOI 10.5751/ES-05774-180331
+   Pothisiri Wiraporn, 2012, AS POP ASS C BANGK
+   Pronello C, 2011, J TRANSP GEOGR, V19, P1294, DOI 10.1016/j.jtrangeo.2011.06.009
+   RYDER NB, 1965, AM SOCIOL REV, V30, P843, DOI 10.2307/2090964
+   Samir K., 2014, GLOBAL ENVIRON CHANG, P1, DOI [10.1016/j.gloenvcha.2014.06.004, DOI 10.1016/J.GLOENVCHA.2014.06.004]
+   Samir KC, 2014, POPUL ENVIRON, V35, P243, DOI 10.1007/s11111-014-0205-4
+   Sendzimir Jan, 2014, ECOLOGY SOC
+   Sharygin E., 2013, CARBON COST ED FUTUR
+   Striessnig E, 2013, ECOL SOC, V18, DOI 10.5751/ES-05252-180116
+   van der Land V, 2013, ECOL SOC, V18, DOI 10.5751/ES-05830-180414
+   Wamsler C, 2012, ECOL SOC, V17, DOI 10.5751/ES-04645-170202
+NR 32
+TC 5
+Z9 6
+U1 0
+U2 22
+PU ROUTLEDGE JOURNALS, TAYLOR & FRANCIS LTD
+PI ABINGDON
+PA 4 PARK SQUARE, MILTON PARK, ABINGDON OX14 4RN, OXFORDSHIRE, ENGLAND
+SN 0032-4728
+EI 1477-4747
+J9 POP STUD-J DEMOG
+JI Popul. Stud.-J. Demogr.
+PD APR 30
+PY 2015
+VL 69
+SU 1
+SI SI
+BP S69
+EP S76
+DI 10.1080/00324728.2014.969929
+PG 8
+WC Demography
+SC Demography
+GA CG8QJ
+UT WOS:000353574400002
+PM 25912918
+DA 2018-06-21
+ER
+
+PT J
+AU Wiebe, K
+   Lotze-Campen, H
+   Sands, R
+   Tabeau, A
+   van der Mensbrugghe, D
+   Biewald, A
+   Bodirsky, B
+   Islam, S
+   Kavallari, A
+   Mason-D'Croz, D
+   Muller, C
+   Popp, A
+   Robertson, R
+   Robinson, S
+   van Meijl, H
+   Willenbockel, D
+AF Wiebe, Keith
+   Lotze-Campen, Hermann
+   Sands, Ronald
+   Tabeau, Andrzej
+   van der Mensbrugghe, Dominique
+   Biewald, Anne
+   Bodirsky, Benjamin
+   Islam, Shahnila
+   Kavallari, Aikaterini
+   Mason-D'Croz, Daniel
+   Mueller, Christoph
+   Popp, Alexander
+   Robertson, Richard
+   Robinson, Sherman
+   van Meijl, Hans
+   Willenbockel, Dirk
+TI Climate change impacts on agriculture in 2050 under a range of plausible
+   socioeconomic and emissions scenarios
+SO ENVIRONMENTAL RESEARCH LETTERS
+LA English
+DT Article
+DE climate; agriculture; economics; yields; prices; trade
+ID CROP PRODUCTIVITY; FOOD SYSTEM; LAND-USE; MODEL; RESPONSES; DEMAND;
+   FUTURE; GROWTH; TRADE; CMIP5
+AB Previous studies have combined climate, crop and economic models to examine the impact of climate change on agricultural production and food security, but results have varied widely due to differences in models, scenarios and input data. Recent work has examined (and narrowed) these differences through systematic model intercomparison using a high-emissions pathway to highlight the differences. This paper extends that analysis to explore a range of plausible socioeconomic scenarios and emission pathways. Results from multiple climate and economic models are combined to examine the global and regional impacts of climate change on agricultural yields, area, production, consumption, prices and trade for coarse grains, rice, wheat, oilseeds and sugar crops to 2050. Wefind that climate impacts on global average yields, area, production and consumption are similar across shared socioeconomic pathways (SSP 1, 2 and 3, as we implement them based on population, income and productivity drivers), except when changes in trade policies are included. Impacts on trade and prices are higher for SSP 3 than SSP 2, and higher for SSP 2 than for SSP 1. Climate impacts for all variables are similar across low to moderate emissions pathways (RCP 4.5 and RCP 6.0), but increase for a higher emissions pathway (RCP 8.5). It is important to note that these global averages may hide regional variations. Projected reductions in agricultural yields due to climate change by 2050 are larger for some crops than those estimated for the past half century, but smaller than projected increases to 2050 due to rising demand and intrinsic productivity growth. Results illustrate the sensitivity of climate change impacts to differences in socioeconomic and emissions pathways. Yield impacts increase at high emissions levels and vary with changes in population, income and technology, but are reduced in all cases by endogenous changes in prices and other variables.
+C1 [Wiebe, Keith; Islam, Shahnila; Mason-D'Croz, Daniel; Robertson, Richard; Robinson, Sherman] Int Food Policy Res Inst, Washington, DC 20006 USA.
+   [Lotze-Campen, Hermann; Biewald, Anne; Bodirsky, Benjamin; Mueller, Christoph; Popp, Alexander] Potsdam Inst Climate Impact Res, D-14473 Potsdam, Germany.
+   [Lotze-Campen, Hermann] Humboldt Univ, D-10099 Berlin, Germany.
+   [Sands, Ronald] USDA, Econ Res Serv, Washington, DC 20250 USA.
+   [Tabeau, Andrzej] LEI Wageningen UR, NL-6708 PB Wageningen, Netherlands.
+   [van der Mensbrugghe, Dominique] Purdue Univ, Global Trade Anal Project, W Lafayette, IN 47907 USA.
+   [Kavallari, Aikaterini] Food & Agr Org United Nations, I-00153 Rome, Italy.
+   [Willenbockel, Dirk] Univ Sussex, Inst Dev Studies, Brighton BN1 9RE, E Sussex, England.
+RP Wiebe, K (reprint author), Int Food Policy Res Inst, 2033 K St NW, Washington, DC 20006 USA.
+RI Mueller, Christoph/E-4812-2016; Mason-D'Croz, Daniel/M-4254-2016
+OI Mueller, Christoph/0000-0002-9491-3550; Mason-D'Croz,
+   Daniel/0000-0003-0673-2301; Willenbockel, Dirk/0000-0002-6840-0954;
+   Wiebe, Keith/0000-0001-6035-620X
+FU United States Department of Agriculture via the University Corporation
+   for Atmospheric Research (UCAR) [Z14-13614]; Agricultural Model
+   Intercomparison and Improvement Project (AgMIP)
+FX This study was made possible by a grant from the United States
+   Department of Agriculture via the University Corporation for Atmospheric
+   Research (UCAR Subaward No. Z14-13614). Support by and to the
+   institutions where the authors are based, the Agricultural Model
+   Intercomparison and Improvement Project (AgMIP), and comments from
+   Ignacio Perez-Dominguez and three anonymous reviewers are also
+   gratefully acknowledged. The views expressed are those of the authors
+   and may not be attributed to the US Department of Agriculture, the
+   Economic Research Service, or the supporting or other affiliated
+   institutions.
+CR Alexandratos N., 2012, 1203 ESA FAO UN
+   Beintema N., 2012, ASTI GLOBAL ASSESSME
+   Bondeau A, 2007, GLOBAL CHANGE BIOL, V13, P679, DOI 10.1111/j.1365-2486.2006.01305.x
+   Boote KJ, 2013, PLANT CELL ENVIRON, V36, P1658, DOI 10.1111/pce.12119
+   Burnett K, 2014, J PEASANT STUD, V41, P1065, DOI 10.1080/03066150.2013.876995
+   Dufresne JL, 2013, CLIM DYNAM, V40, P2123, DOI 10.1007/s00382-012-1636-1
+   Eickhout B., 2009, EC ANAL LAND USE GLO
+   Gourdji SM, 2013, ENVIRON RES LETT, V8, DOI 10.1088/1748-9326/8/2/024041
+   Heft-Neal S, 2015, BUILDING RE IN PRESS
+   Hempel S, 2013, EARTH SYST DYNAM, V4, P219, DOI 10.5194/esd-4-219-2013
+   Huang H, 2011, FOOD POLICY, V36, pS9, DOI 10.1016/j.foodpol.2010.10.008
+   IIASA, 2013, SSP DAT VERS 0 93
+   IIASA, SUPPL NOT SSP DAT SE
+   IPCC, 2014, CLIMATE CHANGE 201 A
+   Jones CD, 2011, GEOSCI MODEL DEV, V4, P543, DOI 10.5194/gmd-4-543-2011
+   KC S, 2012, SSP POPULATION PROJE
+   Kriegler E, 2012, GLOBAL ENVIRON CHANG, V22, P807, DOI 10.1016/j.gloenvcha.2012.05.005
+   Lobell DB, 2012, PLANT PHYSIOL, V160, P1686, DOI 10.1104/pp.112.208298
+   Lobell DB, 2011, SCIENCE, V333, P616, DOI [10.1126/science.1204531, 10.1126/science.1206376]
+   Long SP, 2006, SCIENCE, V312, P1918, DOI 10.1126/science.1114722
+   Lotze-Campen H, 2008, AGR ECON-BLACKWELL, V39, P325, DOI 10.1111/j.1574-0862.2008.00336.x
+   MEIJL HV, 2006, AGR ECOSYST ENVIRON, V114, P21
+   Moss RH, 2010, NATURE, V463, P747, DOI 10.1038/nature08823
+   Muller C, 2014, AGR ECON-BLACKWELL, V45, P37, DOI 10.1111/agec.12088
+   Nelson G. C., 2010, FOOD SECURITY FARMIN
+   Nelson GC, 2014, P NATL ACAD SCI USA, V111, P3274, DOI 10.1073/pnas.1222465110
+   Nelson GC, 2014, AGR ECON-BLACKWELL, V45, P85, DOI 10.1111/agec.12091
+   O'Neill BC, 2017, GLOBAL ENVIRON CHANG, V42, P169, DOI 10.1016/j.gloenvcha.2015.01.004
+   O'Neill BC, 2014, CLIMATIC CHANGE, V122, P387, DOI 10.1007/s10584-013-0905-2
+   Parry ML, 2004, GLOBAL ENVIRON CHANG, V14, P53, DOI 10.1016/j.gloenvcha.2003.10.008
+   Popp A, 2010, GLOBAL ENVIRON CHANG, V20, P451, DOI 10.1016/j.gloenvcha.2010.02.001
+   Robinson S, 2014, AGR ECON-BLACKWELL, V45, P21, DOI 10.1111/agec.12087
+   ROSENZWEIG C, 1994, NATURE, V367, P133, DOI 10.1038/367133a0
+   Rosenzweig C, 2014, P NATL ACAD SCI USA, V111, P3268, DOI 10.1073/pnas.1222463110
+   Sands R D, 2014, ERR174 USDA
+   Schmidhuber J, 2007, P NATL ACAD SCI USA, V104, P19703, DOI 10.1073/pnas.0701976104
+   Schmitz C, 2015, REG ENVIRON CHANGE, V15, P1757, DOI 10.1007/s10113-014-0700-2
+   Schmitz C, 2014, AGR ECON-BLACKWELL, V45, P69, DOI 10.1111/agec.12090
+   Schmitz C, 2012, GLOBAL ENVIRON CHANG, V22, P189, DOI 10.1016/j.gloenvcha.2011.09.013
+   Smith LC, 1998, FOOD POLICY, V23, P425, DOI 10.1016/S0306-9192(98)00049-9
+   Stocker T. F., 2013, CLIMATE CHANGE 2013
+   Tubiello F N, 2006, EUR J AGRON, V26, P215
+   Tubiello FN, 2007, SCIENCE, V312, P1918
+   Valdivia RO, 2015, HDB CLIMATE CHANGE 1
+   Valin H, 2014, AGR ECON-BLACKWELL, V45, P51, DOI 10.1111/agec.12089
+   van der Mensbrugghe D, 2013, ENV IMPACT SUS UNPUB
+   van Vuuren DP, 2011, CLIMATIC CHANGE, V109, P5, DOI 10.1007/s10584-011-0148-z
+   von Lampe M, 2014, AGR ECON-BLACKWELL, V45, P3, DOI 10.1111/agec.12086
+   Wang D, 2012, OECOLOGIA, V169, P1, DOI 10.1007/s00442-011-2172-0
+   Warszawski L, 2014, P NATL ACAD SCI USA, V111, P3228, DOI 10.1073/pnas.1312330110
+   Watanabe S, 2011, GEOSCI MODEL DEV, V4, P845, DOI 10.5194/gmd-4-845-2011
+   Woltjer G, 2014, MAGNET MODE IN PRESS
+NR 52
+TC 40
+Z9 41
+U1 4
+U2 40
+PU IOP PUBLISHING LTD
+PI BRISTOL
+PA TEMPLE CIRCUS, TEMPLE WAY, BRISTOL BS1 6BE, ENGLAND
+SN 1748-9326
+J9 ENVIRON RES LETT
+JI Environ. Res. Lett.
+PD AUG
+PY 2015
+VL 10
+IS 8
+AR 085010
+DI 10.1088/1748-9326/10/8/085010
+PG 15
+WC Environmental Sciences; Meteorology & Atmospheric Sciences
+SC Environmental Sciences & Ecology; Meteorology & Atmospheric Sciences
+GA CZ3JD
+UT WOS:000366999400037
+OA gold
+DA 2018-06-22
+ER
+
+PT J
+AU Hejazi, MI
+   Voisin, N
+   Liu, L
+   Bramer, LM
+   Fortin, DC
+   Hathaway, JE
+   Huang, M
+   Kyle, P
+   Leung, LR
+   Li, HY
+   Liu, Y
+   Patel, PL
+   Pulsipher, TC
+   Rice, JS
+   Tesfa, TK
+   Vernon, CR
+   Zhou, YY
+AF Hejazi, Mohamad I.
+   Voisin, Nathalie
+   Liu, Lu
+   Bramer, Lisa M.
+   Fortin, Daniel C.
+   Hathaway, John E.
+   Huang, Maoyi
+   Kyle, Page
+   Leung, L. Ruby
+   Li, Hong-Yi
+   Liu, Ying
+   Patel, Pralit L.
+   Pulsipher, Trenton C.
+   Rice, Jennie S.
+   Tesfa, Teklu K.
+   Vernon, Chris R.
+   Zhou, Yuyu
+TI 21st century United States emissions mitigation could increase water
+   stress more than the climate change it is mitigating
+SO PROCEEDINGS OF THE NATIONAL ACADEMY OF SCIENCES OF THE UNITED STATES OF
+   AMERICA
+LA English
+DT Article
+DE climate change; mitigation; water deficit; Earth system model;
+   integrated assessment
+ID EARTH SYSTEM MODELS; INTEGRATED ASSESSMENT; HIGH-RESOLUTION;
+   LAND-SURFACE; RESOURCES; STABILIZATION; PATHWAYS; AVAILABILITY;
+   MANAGEMENT; BIOENERGY
+AB There is evidence that warming leads to greater evapotranspiration and surface drying, thus contributing to increasing intensity and duration of drought and implying that mitigation would reduce water stresses. However, understanding the overall impact of climate change mitigation on water resources requires accounting for the second part of the equation, i.e., the impact of mitigation-induced changes in water demands from human activities. By using integrated, high-resolution models of human and natural system processes to understand potential synergies and/or constraints within the climate-energy-water nexus, we show that in the United States, over the course of the 21st century and under one set of consistent socioeconomics, the reductions in water stress from slower rates of climate change resulting from emission mitigation are overwhelmed by the increased water stress from the emissions mitigation itself. The finding that the human dimension outpaces the benefits from mitigating climate change is contradictory to the general perception that climate change mitigation improves water conditions. This research shows the potential for unintended and negative consequences of climate change mitigation.
+C1 [Hejazi, Mohamad I.; Liu, Lu; Kyle, Page; Patel, Pralit L.; Zhou, Yuyu] Univ Maryland, Pacific NW Natl Lab, Joint Global Change Res Inst, College Pk, MD 20740 USA.
+   [Voisin, Nathalie; Bramer, Lisa M.; Fortin, Daniel C.; Hathaway, John E.; Huang, Maoyi; Leung, L. Ruby; Li, Hong-Yi; Liu, Ying; Pulsipher, Trenton C.; Rice, Jennie S.; Tesfa, Teklu K.; Vernon, Chris R.] Pacific NW Natl Lab, Richland, WA 99352 USA.
+RP Hejazi, MI (reprint author), Univ Maryland, Pacific NW Natl Lab, Joint Global Change Res Inst, College Pk, MD 20740 USA.
+EM mohamad.hejazi@pnnl.gov
+RI Huang, Maoyi/I-8599-2012; Bramer, Lisa/L-9184-2016; Li,
+   Hong-Yi/C-9143-2014
+OI Huang, Maoyi/0000-0001-9154-9485; Bramer, Lisa/0000-0002-8384-1926; Li,
+   Hong-Yi/0000-0002-9807-3851; Voisin, Nathalie/0000-0002-6848-449X; Liu,
+   Lu/0000-0002-4939-5432
+FU US Department of Energy [DE-AC05-76RL01830]; US Department of Energy,
+   Office of Science, Biological and Environmental Research as part of the
+   Integrated Assessment Research and Earth System Modeling programs
+FX This research is part of the Platform for Regional Integrated Modeling
+   and Analysis (PRIMA) Initiative at Pacific Northwest National Laboratory
+   (PNNL). It was conducted under the Laboratory Directed Research and
+   Development Program at PNNL, a multiprogram national laboratory operated
+   by Battelle for the US Department of Energy under Contract
+   DE-AC05-76RL01830. This research also leveraged capabilities that were
+   funded by the US Department of Energy, Office of Science, Biological and
+   Environmental Research as part of the Integrated Assessment Research and
+   Earth System Modeling programs.
+CR Akimoto K, 2012, NAT RESOUR FORUM, V36, P231, DOI 10.1111/j.1477-8947.2012.01460.x
+   Arnell NW, 2011, GLOBAL ENVIRON CHANG, V21, P592, DOI 10.1016/j.gloenvcha.2011.01.015
+   Averyt K., 2011, FRESHWATER USE US PO
+   Bentsen M, 2013, GEOSCI MODEL DEV, V6, P687, DOI 10.5194/gmd-6-687-2013
+   Blanc E, 2014, EARTHS FUTURE, V2, P197, DOI 10.1002/2013EF000214
+   Bruinsma J., 2009, RESOURCE OUTLOOK 205
+   EDMONDS J, 1983, ENERG ECON, V5, P74, DOI 10.1016/0140-9883(83)90014-2
+   Gao Y, 2014, GEOPHYS RES LETT, V41, P1745, DOI 10.1002/2014GL059562
+   Gerbens-Leenes PW, 2012, GLOBAL ENVIRON CHANG, V22, P764, DOI 10.1016/j.gloenvcha.2012.04.001
+   Hanasaki N, 2013, HYDROL EARTH SYST SC, V17, P2393, DOI 10.5194/hess-17-2393-2013
+   Hejazi MI, 2014, HYDROL EARTH SYST SC, V18, P2859, DOI 10.5194/hess-18-2859-2014
+   Hejazi M, 2014, TECHNOL FORECAST SOC, V81, P205, DOI 10.1016/j.techfore.2013.05.006
+   Hibbard KA, 2013, CLIMATIC CHANGE, V118, P565, DOI 10.1007/s10584-012-0674-3
+   Huntington TG, 2006, J HYDROL, V319, P83, DOI 10.1016/j.jhydrol.2005.07.003
+   Jacobson MZ, 2009, ENERG ENVIRON SCI, V2, P148, DOI 10.1039/b809990c
+   Ke Y, 2012, GEOSCI MODEL DEV, V5, P1341, DOI 10.5194/gmd-5-1341-2012
+   King CW, 2010, ENERG POLICY, V38, P1157, DOI 10.1016/j.enpol.2009.11.004
+   Kraucunas IP, 2014, CLIMATIC CHANGE, V129, P573, DOI DOI 10.1007/S10584-014-1064-9
+   Kyle P, 2014, EARTHS FUTURE, V2, P83, DOI 10.1002/2013EF000199
+   Leung LR, 2006, B AM METEOROL SOC, V87, P1747, DOI 10.1175/BAMS-87-12-1747
+   Li, 2014, J HYDROMETEOROL, V16, P948
+   Li HY, 2013, J HYDROMETEOROL, V14, P808, DOI 10.1175/JHM-D-12-015.1
+   Liu JG, 2007, AGR SYST, V94, P478, DOI 10.1016/j.agsy.2006.11.019
+   Liu L, 2015, TECHNOL FORECAST SOC, V94, P318, DOI 10.1016/j.techfore.2014.11.004
+   Milly PCD, 2005, NATURE, V438, P347, DOI 10.1038/nature04312
+   Milly PCD, 2002, NATURE, V415, P514, DOI 10.1038/415514a
+   O'Neill BC, 2014, CLIMATIC CHANGE, V122, P387, DOI 10.1007/s10584-013-0905-2
+   Oki T, 2006, SCIENCE, V313, P1068, DOI 10.1126/science.1128845
+   Oleson KW, 2010, NCARTN478STR
+   Popp A, 2014, CLIMATIC CHANGE, V123, P495, DOI 10.1007/s10584-013-0926-x
+   Riahi K, 2011, CLIMATIC CHANGE, V109, P33, DOI 10.1007/s10584-011-0149-y
+   Rose SK, 2014, CLIMATIC CHANGE, V123, P477, DOI 10.1007/s10584-013-0965-3
+   Sherwood S, 2014, SCIENCE, V343, P737, DOI 10.1126/science.1247620
+   Thomson AM, 2011, CLIMATIC CHANGE, V109, P77, DOI 10.1007/s10584-011-0151-4
+   van Vuuren DP, 2011, CLIMATIC CHANGE, V109, P5, DOI 10.1007/s10584-011-0148-z
+   Voisin N, 2013, HYDROL EARTH SYST SC, V17, P4555, DOI 10.5194/hess-17-4555-2013
+   Voisin N, 2013, HYDROL EARTH SYST SC, V17, P3605, DOI 10.5194/hess-17-3605-2013
+   Vorosmarty CJ, 2000, SCIENCE, V289, P284, DOI 10.1126/science.289.5477.284
+   Wentz FJ, 2007, SCIENCE, V317, P233, DOI 10.1126/science.1140746
+   Wood AW, 2004, CLIMATIC CHANGE, V62, P189, DOI 10.1023/B:CLIM.0000013685.99609.9e
+   Zhou YY, 2014, APPL ENERG, V113, P1077, DOI 10.1016/j.apenergy.2013.08.034
+NR 41
+TC 32
+Z9 32
+U1 3
+U2 35
+PU NATL ACAD SCIENCES
+PI WASHINGTON
+PA 2101 CONSTITUTION AVE NW, WASHINGTON, DC 20418 USA
+SN 0027-8424
+J9 P NATL ACAD SCI USA
+JI Proc. Natl. Acad. Sci. U. S. A.
+PD AUG 25
+PY 2015
+VL 112
+IS 34
+BP 10635
+EP 10640
+DI 10.1073/pnas.1421675112
+PG 6
+WC Multidisciplinary Sciences
+SC Science & Technology - Other Topics
+GA CP6NZ
+UT WOS:000360005600042
+PM 26240363
+OA gold_or_bronze
+DA 2018-06-21
+ER
+
+PT J
+AU Jongman, B
+   Winsemius, HC
+   Aerts, JCJH
+   de Perez, EC
+   van Aalst, MK
+   Kron, W
+   Ward, PJ
+AF Jongman, Brenden
+   Winsemius, Hessel C.
+   Aerts, Jeroen C. J. H.
+   de Perez, Erin Coughlan
+   van Aalst, Maarten K.
+   Kron, Wolfgang
+   Ward, Philip J.
+TI Declining vulnerability to river floods and the global benefits of
+   adaptation
+SO PROCEEDINGS OF THE NATIONAL ACADEMY OF SCIENCES OF THE UNITED STATES OF
+   AMERICA
+LA English
+DT Article
+DE flooding; vulnerability; adaptation; climate change; development
+ID NINO-SOUTHERN-OSCILLATION; NATURAL DISASTERS; CLIMATE-CHANGE; DEATH
+   TOLL; RISK; MODEL; LOSSES; IMPACT; INCOME; HAZARD
+AB The global impacts of river floods are substantial and rising. Effective adaptation to the increasing risks requires an in-depth understanding of the physical and socioeconomic drivers of risk. Whereas the modeling of flood hazard and exposure has improved greatly, compelling evidence on spatiotemporal patterns in vulnerability of societies around the world is still lacking. Due to this knowledge gap, the effects of vulnerability on global flood risk are not fully understood, and future projections of fatalities and losses available today are based on simplistic assumptions or do not include vulnerability. We show for the first time (to our knowledge) that trends and fluctuations in vulnerability to river floods around the world can be estimated by dynamic high-resolution modeling of flood hazard and exposure. We find that rising per-capita income coincided with a global decline in vulnerability between 1980 and 2010, which is reflected in decreasing mortality and losses as a share of the people and gross domestic product exposed to inundation. The results also demonstrate that vulnerability levels in low-and high-income countries have been converging, due to a relatively strong trend of vulnerability reduction in developing countries. Finally, we present projections of flood losses and fatalities under 100 individual scenario and model combinations, and three possible global vulnerability scenarios. The projections emphasize that materialized flood risk largely results from human behavior and that future risk increases can be largely contained using effective disaster risk reduction strategies.
+C1 [Jongman, Brenden; Aerts, Jeroen C. J. H.; de Perez, Erin Coughlan; Ward, Philip J.] Vrije Univ Amsterdam, Inst Environm Studies, NL-1081 HV Amsterdam, Netherlands.
+   [Winsemius, Hessel C.] Deltares, NL-2628 HV Delft, Netherlands.
+   [de Perez, Erin Coughlan; van Aalst, Maarten K.] Red Cross Red Crescent Climate Ctr, NL-2521 CV The Hague, Netherlands.
+   [de Perez, Erin Coughlan; van Aalst, Maarten K.] Columbia Univ, Earth Inst, Int Res Inst Climate & Soc, Palisades, NY 10964 USA.
+   [Kron, Wolfgang] Munich Reinsurance Co, D-80802 Munich, Germany.
+RP Jongman, B (reprint author), Vrije Univ Amsterdam, Inst Environm Studies, NL-1081 HV Amsterdam, Netherlands.
+EM brenden.jongman@vu.nl
+RI Ward, Philip/E-6208-2010; Jongman, Brenden/G-4822-2015; Aerts,
+   Jeroen/M-8431-2013
+OI Jongman, Brenden/0000-0002-3361-2498; van Aalst,
+   Maarten/0000-0003-0319-5627; Coughlan de Perez, Erin/0000-0001-7645-5720
+FU Climate Proof Flood Risk Management theme within Knowledge for Climate
+   Program; VENI grant from Netherlands Organisation for Scientific
+   Research (NWO); European Commission through ENHANCE Project [308438];
+   NWO-VICI [45314006]
+FX We thank Munich Re for providing loss and mortality data from the
+   NatCatSERVICE database. B.J. was funded by the Climate Proof Flood Risk
+   Management theme within the Knowledge for Climate Program. P.J.W.
+   received financial support from a VENI grant from the Netherlands
+   Organisation for Scientific Research (NWO). The research was further
+   supported by the European Commission through the ENHANCE Project (Grant
+   Agreement 308438), and the NWO-VICI Grant on Global Flood Risk (Grant
+   Agreement 45314006).
+CR Aerts JCJH, 2014, SCIENCE, V344, P472, DOI 10.1126/science.1248222
+   Allen M, 2003, NATURE, V421, P891, DOI 10.1038/421891c
+   Arnell NW, 2013, CLIMATIC CHANGE, V122, P127
+   Balsamo G, 2010, EVALUATION ERA INTER
+   Bouwer LM, 2007, SCIENCE, V318, P753, DOI 10.1126/science.1149628
+   Bouwer LM, 2011, B AM METEOROL SOC, V92, P39, DOI 10.1175/2010BAMS3092.1
+   Brown C, 2013, PHILOS T R SOC A, V371, DOI 10.1098/rsta.2012.0416
+   Bubeck P, 2012, RISK ANAL, V32, P1481, DOI 10.1111/j.1539-6924.2011.01783.x
+   Cutter SL, 2008, GLOBAL ENVIRON CHANG, V18, P598, DOI 10.1016/j.gloenvcha.2008.07.013
+   Dankers R, 2014, P NATL ACAD SCI USA, V111, P3257, DOI 10.1073/pnas.1302078110
+   Das S, 2009, P NATL ACAD SCI USA, V106, P7357, DOI 10.1073/pnas.0810440106
+   de Perez EC, 2014, NAT GEOSCI, V7, P78, DOI 10.1038/ngeo2081
+   Dee DP, 2011, Q J ROY METEOR SOC, V137, P553, DOI 10.1002/qj.828
+   Ferreira S, 2011, POLICY RES WORKING P
+   Hallegatte S, 2012, POLICY RES WORKING P
+   Hallegatte S, 2013, NAT CLIM CHANGE, V3, P802, DOI [10.1038/nclimate1979, 10.1038/NCLIMATE1979]
+   Harriman L, 2014, THEMATIC FOCUS ENV G
+   Hempel S., 2013, EARTH SYST DYN DISCU, V4, P49, DOI DOI 10.5194/ESDD-4-49-2013
+   Heston A., 2012, PENN WORLD TABLE VER
+   Hinkel J, 2014, P NATL ACAD SCI USA, V111, P3292, DOI 10.1073/pnas.1222469111
+   Hirabayashi Y., 2013, NAT CLIM CHANGE, V3, P1
+   Huang G, 2013, NAT HAZARDS, V71, P2029
+   Intergovernmental Panel on Climate Change (IPCC), 2012, MAN RISKS EXTR EV DI
+   IPCC, 2014, CLIM CHANG 2014 IMP
+   IPCC, 2013, CLIM CHANG 2013 PHYS
+   Jha AK, 2012, CITIES AND FLOODING: A GUIDE TO INTEGRATED URBAN FLOOD RISK MANAGEMENT FOR THE 21ST CENTURY, P1, DOI 10.1596/978-0-8213-8866-2
+   Jongman B, 2014, NAT CLIM CHANGE, V4, P264, DOI [10.1038/nclimate2124, 10.1038/NCLIMATE2124]
+   Jongman B, 2012, GLOBAL ENVIRON CHANG, V22, P823, DOI 10.1016/j.gloenvcha.2012.07.004
+   Jonkman SN, 2008, J FLOOD RISK MANAG, V1, P43, DOI 10.1111/j.1753-318X.2008.00006.x
+   Jonkman SN, 2005, NAT HAZARDS, V34, P151, DOI 10.1007/s11069-004-8891-3
+   Kahn ME, 2005, REV ECON STAT, V87, P271, DOI 10.1162/0034653053970339
+   Kellenberg DK, 2008, J URBAN ECON, V63, P788, DOI 10.1016/j.jue.2007.05.003
+   Kellett J., 2013, FINANCING DISASTER R
+   Koks EE, 2014, ENVIRON SCI POLICY, V47, P42
+   Kron W, 2005, WATER INT, V30, P58, DOI 10.1080/02508060508691837
+   Kron W, 2012, NAT HAZARD EARTH SYS, V12, P535, DOI 10.5194/nhess-12-535-2012
+   Kundzewicz Z. W., 2013, HYDROLOG SCI J, V59, P1, DOI DOI 10.1080/02626667.2013.857411
+   Mechler R, 2014, NAT CLIM CHANGE, V4, P235, DOI 10.1038/nclimate2137
+   Merz B, 2010, NAT HAZARD EARTH SYS, V10, P1697, DOI 10.5194/nhess-10-1697-2010
+   Mills E, 2005, SCIENCE, V309, P1040, DOI 10.1126/science.1112121
+   Milly PCD, 2002, NATURE, V415, P514, DOI 10.1038/415514a
+   Mohleji S, 2014, NAT HAZARDS REV, V15, DOI 10.1061/(ASCE)NH.1527-6996.0000141
+   Munich Re, 2014, NATCATSERVICE DAT
+   Neumayer E, 2011, GLOBAL ENVIRON CHANG, V21, P13, DOI 10.1016/j.gloenvcha.2010.10.004
+   Pappenberger F, 2012, HYDROL EARTH SYST SC, V16, P4143, DOI 10.5194/hess-16-4143-2012
+   PBL Netherlands Environmental Assessment Agency, 2008, GLOB INT SUST MOD GI
+   Peduzzi P, 2012, NAT CLIM CHANGE, V2, P289, DOI 10.1038/NCLIMATE1410
+   Piontek F, 2014, P NATL ACAD SCI USA, V111, P3233, DOI 10.1073/pnas.1222471110
+   Rojas R, 2013, GLOBAL ENVIRON CHANG, V23, P1737, DOI 10.1016/j.gloenvcha.2013.08.006
+   Toya H, 2007, ECON LETT, V94, P20, DOI 10.1016/j.econlet.2006.06.020
+   UNISDR, 2013, GLOB ASS REP DIS RIS
+   Van Beek L., 2009, GLOBAL HYDROLOGICAL
+   van Beek LPH, 2011, WATER RESOUR RES, V47, DOI 10.1029/2010WR009791
+   van Renssen S, 2013, NAT CLIM CHANGE, V3, P614, DOI 10.1038/nclimate1943
+   van Vuuren DP, 2011, CLIMATIC CHANGE, V109, P5, DOI 10.1007/s10584-011-0148-z
+   Visser H, 2014, CLIMATIC CHANGE, V125, P461, DOI 10.1007/s10584-014-1179-z
+   Ward PJ, 2014, HYDROL EARTH SYST SC, V18, P47, DOI 10.5194/hess-18-47-2014
+   Ward PJ, 2014, P NATL ACAD SCI USA, V111, P15659, DOI 10.1073/pnas.1409822111
+   Ward PJ, 2013, ENVIRON RES LETT, V8, DOI 10.1088/1748-9326/8/4/044019
+   Warszawski L, 2014, P NATL ACAD SCI USA, V111, P3228, DOI 10.1073/pnas.1312330110
+   Winsemius HC, 2013, HYDROL EARTH SYST SC, V17, P1871, DOI 10.5194/hess-17-1871-2013
+   Yamamura E, 2010, REG STUD, V44, P1019, DOI 10.1080/00343400903365144
+   Zhou Y, 2014, NAT HAZARDS, V74, P541, DOI 10.1007/s11069-014-1198-0
+NR 63
+TC 48
+Z9 48
+U1 3
+U2 48
+PU NATL ACAD SCIENCES
+PI WASHINGTON
+PA 2101 CONSTITUTION AVE NW, WASHINGTON, DC 20418 USA
+SN 0027-8424
+J9 P NATL ACAD SCI USA
+JI Proc. Natl. Acad. Sci. U. S. A.
+PD MAY 5
+PY 2015
+VL 112
+IS 18
+BP E2271
+EP E2280
+DI 10.1073/pnas.1414439112
+PG 10
+WC Multidisciplinary Sciences
+SC Science & Technology - Other Topics
+GA CH3TS
+UT WOS:000353953800006
+PM 25902499
+OA gold_or_bronze
+DA 2018-06-21
+ER
+
+PT J
+AU van Puijenbroek, PJTM
+   Bouwman, AF
+   Beusen, AHW
+   Lucas, PL
+AF van Puijenbroek, P. J. T. M.
+   Bouwman, A. F.
+   Beusen, A. H. W.
+   Lucas, P. L.
+TI Global implementation of two shared socioeconomic pathways for future
+   sanitation and wastewater flows
+SO WATER SCIENCE AND TECHNOLOGY
+LA English
+DT Article
+DE eutrophication; nutrients; sanitation; sewage system; SSP; wastewater
+   treatment
+ID NITROGEN
+AB Households are an important source of nutrient loading to surface water. Sewage systems without or with only primary wastewater treatment are major polluters of surface water. Future emission levels will depend on population growth, urbanisation, increases in income and investments in sanitation, sewage systems and wastewater treatment plants. This study presents the results for two possible shared socioeconomic pathways (SSPs). SSP1 is a scenario that includes improvement of wastewater treatment and SSP3 does not include such improvement, with fewer investments and a higher population growth. The main drivers for the nutrient emission model are population growth, income growth and urbanisation. Under the SSP1 scenario, 5.7 billion people will be connected to a sewage system and for SSP3 this is 5 billion. Nitrogen and phosphorus emissions increase by about 70% under both SSP scenarios, with the largest increase in SSP1. South Asia and Africa have the largest emission increases, in the developed countries decrease the nutrient emissions. The higher emission level poses a risk to ecosystem services.
+C1 [van Puijenbroek, P. J. T. M.; Bouwman, A. F.; Beusen, A. H. W.; Lucas, P. L.] PBL Netherlands Environm Assessment Agcy, NL-3720 AH Bilthoven, Netherlands.
+   [Bouwman, A. F.; Beusen, A. H. W.] Univ Utrecht, Fac Geosci, Dept Earth Sci, NL-3508 TA Utrecht, Netherlands.
+RP van Puijenbroek, PJTM (reprint author), PBL Netherlands Environm Assessment Agcy, POB 303, NL-3720 AH Bilthoven, Netherlands.
+EM peter.vanpuijenbroek@pbl.nl
+RI Bouwman, Lex/F-1444-2015
+OI Bouwman, Lex/0000-0002-2045-1859
+CR [Anonymous], 2012, SYNTH
+   Bouwman A. F., 2005, GLOBAL BIOGEOCHEMICA, V19, P761
+   BUTCHER RW, 1947, J ECOL, V35, P186, DOI 10.2307/2256507
+   de Kreuk M, 2005, BIOTECHNOL BIOENG, V90, P761, DOI 10.1002/bit.20470
+   Diaz RJ, 2008, SCIENCE, V321, P926, DOI 10.1126/science.1156401
+   FAO, 2012, FOOD SUPPL
+   Hilderink HBM, 2008, GLOBAL INTEGRATED SU
+   Li J, 2009, MAR ECOL PROG SER, V383, P11, DOI 10.3354/meps07975
+   Ligtvoet W., 2014, WORLD CITIES 2050 OU
+   Miller M., 2013, SANITATION STATUS AF
+   Moree A, 2013, GLOBAL BIOGEOCHEM CY, V27, P1, DOI DOI 10.1002/GBC.20072
+   O'Neill B., 2012, M WORKSH NAT US NEW
+   O'Neill BC, 2014, CLIMATIC CHANGE, V122, P387, DOI 10.1007/s10584-013-0905-2
+   OECD, 2012, ENV OUTL 2050 CONS I
+   Seitzinger SP, 2010, GLOBAL BIOGEOCHEM CY, V24, DOI 10.1029/2009GB003587
+   Stehfest E., 2014, PROGR SAN DRINK WAT, P209
+   van Drecht G., 2009, GLOBAL BIOCH CYCLES, V23, P1
+   WHO, 2013, PROGR SAN DRINK WAT
+   World Bank, 2014, WORLD BANK COUNTR CL
+   Zhang XJ, 2010, J HAZARD MATER, V182, P130, DOI 10.1016/j.jhazmat.2010.06.006
+NR 20
+TC 5
+Z9 5
+U1 0
+U2 16
+PU IWA PUBLISHING
+PI LONDON
+PA ALLIANCE HOUSE, 12 CAXTON ST, LONDON SW1H0QS, ENGLAND
+SN 0273-1223
+EI 1996-9732
+J9 WATER SCI TECHNOL
+JI Water Sci. Technol.
+PY 2015
+VL 71
+IS 2
+BP 227
+EP 233
+DI 10.2166/wst.2014.498
+PG 7
+WC Engineering, Environmental; Environmental Sciences; Water Resources
+SC Engineering; Environmental Sciences & Ecology; Water Resources
+GA CC8VL
+UT WOS:000350646600010
+PM 25633946
+DA 2018-06-21
+ER
+
+PT J
+AU Xing, R
+   Hanaoka, T
+   Kanamori, Y
+   Dai, HC
+   Masui, T
+AF Xing, Rui
+   Hanaoka, Tatsuya
+   Kanamori, Yuko
+   Dai, Hancheng
+   Masui, Toshihiko
+TI Energy Service Demand Projections and CO2 Reduction Potentials in Rural
+   Households in 31 Chinese Provinces
+SO SUSTAINABILITY
+LA English
+DT Article
+DE China; rural household; Shared Socioeconomic Pathways; CO2 emission;
+   efficient technology
+ID CARBON EMISSIONS; CONSUMPTION; URBAN; EXPENDITURE; ENVIRONMENT;
+   EFFICIENCY; CITY
+AB Until 2012, most of China's population lived in rural areas with markedly different patterns of household energy consumption from those in Chinese cities. The studies so far done on residential energy use in rural Chinese households have been limited to questionnaire surveys and panel data analyses. Hardly any studies on energy demand in rural areas have considered both the climatic and economic disparities across Chinese regions. In this study we conduct a systematic analysis of the rural Chinese residential sector on a regional basis. We begin by developing a macro-model to estimate energy service demands up to 2050. Next, we apply the AIM(Asia-Pasific Integrated Model)/Enduse model, a bottom-up cost-minimization model with a detailed mitigation technology database, to estimate the mitigation potential of low-carbon technologies in rural China. Our results show that energy service demand in the rural household sector will continue to increase in regions with growing population or income conditions. However, after 2030, the rural residential energy service demand will start to decline in most Chinese regions. The impacts of efficient technologies will vary from one region to the next due to regional climatic and economic disparities. Throughout all of China, the penetration of efficient technologies can reduce CO2 emissions by 20% to 50%. Of the technologies available, efficient lighting, biomass water heaters, and efficient electronics bring the most benefit when implemented in rural households.
+C1 [Xing, Rui; Hanaoka, Tatsuya; Kanamori, Yuko; Dai, Hancheng; Masui, Toshihiko] Natl Inst Environm Studies, Ctr Social & Environm Syst Res, Tsukuba, Ibaraki 3058506, Japan.
+RP Xing, R (reprint author), Natl Inst Environm Studies, Ctr Social & Environm Syst Res, 16-2 Onogawa, Tsukuba, Ibaraki 3058506, Japan.
+EM xing.rui@nies.go.jp; hanaoka@nies.go.jp; kanamori@nies.go.jp;
+   dai.hancheng@nies.go.jp; masui@nies.go.jp
+FU Environment Research and Technology Development Fund of Ministry of
+   Environment, Japan [S-12-2]
+FX This research was supported by the Environment Research and Technology
+   Development Fund (S-12-2) of the Ministry of the Environment, Japan. The
+   authors are grateful to Toshiharu. Ikaga and Shivika. Mittal for
+   providing valuable research suggestions. The authors also thank
+   anonymous referees who reviewed and gave important comments to this
+   paper.
+CR Akashi O, 2012, SUSTAIN SCI, V7, P139, DOI 10.1007/s11625-012-0166-4
+   ANDERSON JG, 1987, J CONSUM AFF, V21, P1, DOI 10.1111/j.1745-6606.1987.tb00185.x
+   [Anonymous], 2014, ECONOMIST
+   Buchs M, 2013, ECOL ECON, V90, P114, DOI 10.1016/j.ecolecon.2013.03.007
+   Chitnis M, 2012, APPL ENERG, V94, P202, DOI 10.1016/j.apenergy.2012.01.005
+   Dai HC, 2012, ENERG POLICY, V50, P736, DOI 10.1016/j.enpol.2012.08.023
+   Eom J, 2012, ENERGY, V46, P405, DOI 10.1016/j.energy.2012.08.009
+   Evans M, 2014, ENERG POLICY, V64, P243, DOI 10.1016/j.enpol.2013.06.040
+   Fan JL, 2015, ENERG BUILDINGS, V96, P201, DOI 10.1016/j.enbuild.2015.03.026
+   GEI, 2010, SIT TRENDS CHIN RUR
+   [韩昀 Han Yun], 2013, [中国农学通报, Chinese Agricultural Science Bulletin], V29, P182
+   Hanaoka T., 2015, AIM ENDUSE MODEL MAN
+   Henley A, 1997, OXFORD B ECON STAT, V59, P149, DOI 10.1111/1468-0084.00054
+   IIASA, 2012, SSP DAT VERS 0 93
+   International Energy Agency, 2014, IEA WORLD EN OUTL
+   Kainuma M, 2003, CLIMATE POLICY ASSES
+   Krey V, 2012, ENERG ECON, V34, pS272, DOI 10.1016/j.eneco.2012.04.013
+   Liu WL, 2013, ENERG POLICY, V55, P128, DOI 10.1016/j.enpol.2012.11.031
+   Luo G, 2008, CHIN AGR SCI B, V24, P535
+   MOHURD, 1993, THERM DES COD CIV BU
+   National Bureau of Statistical of China (NBSC), 2012, INT PROV DIV URB RUR
+   National Bureau of Statistical of China (NBSC), 2012, CHIN STAT YB 2010
+   National Bureau of Statistical of China (NBSC), 2015, PUBL DAT
+   Ning Y., 2012, SUSTAIN ENERGY, V2, P76
+   O'Neill B.C., 2015, GLOBL ENV CHANG
+   Rosas-Flores JA, 2011, ENERG BUILDINGS, V43, P10, DOI 10.1016/j.enbuild.2010.08.020
+   SHASE, 2000, SCHEDULE VER 2 0
+   Tonooka Y, 2006, ENERG BUILDINGS, V38, P1335, DOI 10.1016/j.enbuild.2006.04.011
+   Van Vuuren D.P., 2012, GLOBL ENV CHANG, V22, P31
+   Wang X., 1996, ENERGY, V22, P1159
+   Wang XH, 2001, ENERG POLICY, V29, P1391
+   Wang XiaoHua, 2001, Transactions of the Chinese Society of Agricultural Engineering, V17, P88
+   Xing R., 2013, INT J SUSTAINABLE BU, V4, P229
+   Xing R., 2015, ENV RES LETT, V10
+   Yu S, 2014, ENERGY, V67, P284, DOI 10.1016/j.energy.2013.12.072
+   Yu XY, 2014, J ENVIRON PSYCHOL, V38, P39, DOI 10.1016/j.jenvp.2013.12.009
+   Zhang Q., 2001, J ARCHIT PLAN ENV EN, V548, P69
+   Zhao CS, 2012, ENRGY PROCED, V14, P805
+   [周曙东 ZHOU Shudong], 2009, [资源科学, Resources Science], V31, P696
+NR 39
+TC 2
+Z9 2
+U1 1
+U2 19
+PU MDPI AG
+PI BASEL
+PA POSTFACH, CH-4005 BASEL, SWITZERLAND
+SN 2071-1050
+J9 SUSTAINABILITY-BASEL
+JI Sustainability
+PD DEC
+PY 2015
+VL 7
+IS 12
+BP 15833
+EP 15846
+DI 10.3390/su71215789
+PG 14
+WC GREEN & SUSTAINABLE SCIENCE & TECHNOLOGY; Environmental Sciences;
+   Environmental Studies
+SC Science & Technology - Other Topics; Environmental Sciences & Ecology
+GA DA1JA
+UT WOS:000367550900004
+OA gold
+DA 2018-06-21
+ER
+
+PT J
+AU Scasny, M
+   Massetti, E
+   Melichar, J
+   Carrara, S
+AF Scasny, Milan
+   Massetti, Emanuele
+   Melichar, Jan
+   Carrara, Samuel
+TI Quantifying the Ancillary Benefits of the Representative Concentration
+   Pathways on Air Quality in Europe
+SO ENVIRONMENTAL & RESOURCE ECONOMICS
+LA English
+DT Article
+DE Ancillary benefits; Climate change mitigation; External costs; ExternE;
+   Impact pathway analysis; Integrated assessment models
+ID GREENHOUSE-GAS EMISSIONS; TECHNICAL CHANGE; DOUBLE DIVIDEND; EXTERNAL
+   COSTS; UNITED-STATES; HUMAN HEALTH; CO-BENEFITS; POLLUTION; ECONOMY;
+   ELECTRICITY
+AB This paper presents economic benefit estimates of air quality improvements in Europe that occur as a side effect of GHG emission reductions. We consider two climate policy scenarios from two representative concentration pathways (RCPs), in which radiative forcing levels are reached in 2100. The policy tool is a global uniform tax on all GHG emissions in the integrated assessment model WITCH. The resulting consumption patterns of fossil fuels are used to estimate the physical impacts and the economic benefits of pollution reductions on human health and on key assets by implementing the most advanced version of the ExternE methodology with its impact pathway analysis. The mitigation scenario compatible with + 2 degrees C (RCP 2.6) reduces total pollution costs in Europe by 84%. Discounted cumulative ancillary benefits are equal to about (sic)1.7 trillion between 2015 and 2100, or (sic)17 per abated tonne of CO2 in Europe. The less strict climate policy scenario (RCP 4.5) generates benefits equal to (sic)15.5 per abated tonne of CO2. Without discounting, the ancillary benefits are equal to (sic)46 (RCP 2.6) and (sic)51 (RCP 4.5) per tonne of CO2 abated. For both scenarios, the local benefits per tonne of CO2 decline over time and vary significantly across countries.
+C1 [Scasny, Milan; Melichar, Jan] Charles Univ Prague, Ctr Environm, Prague 16200 6, Czech Republic.
+   [Massetti, Emanuele] Georgia Inst Technol, Atlanta, GA 30332 USA.
+   [Massetti, Emanuele; Carrara, Samuel] Fdn Eni Enrico Mattei, Milan, Italy.
+RP Scasny, M (reprint author), Charles Univ Prague, Ctr Environm, Jose Martiho 2, Prague 16200 6, Czech Republic.
+EM milan.scasny@czp.cuni.cz
+RI Melichar, Jan/I-8494-2012; Scasny, Milan/F-7394-2012
+OI Melichar, Jan/0000-0003-1688-3752; Scasny, Milan/0000-0001-5040-1281
+FU European Union [266992]; project ECOCEP (Economic Modelling for
+   Climate-Energy Policy) - People Programme (Marie Curie Actions) of the
+   European Union's Seventh Framework Programme FP7-PEOPLE-IRSES [609642]
+FX This research received funding from the European Union's Seventh
+   Framework Programme (FP7/2007-2013) under the grant agreement no 266992
+   GLOBAL-IQ "Impacts Quantification of Global changes". The preparation
+   for the manuscript received support from project ECOCEP (Economic
+   Modelling for Climate-Energy Policy) funded by the People Programme
+   (Marie Curie Actions) of the European Union's Seventh Framework
+   Programme FP7-PEOPLE-2013-IRSES, Grant Agreement No. 609642. This
+   support is gratefully acknowledged. The authors are grateful to Thomas
+   Sterner and to an anonymous referee for providing valuable comments and
+   suggestions during the preparation of this paper. We would also like to
+   thank Laura Henderson Machackova and Alicia Berrios for proofreading
+   this article. Responsibility for any errors remains with the authors.
+CR Aaheim HA, 1997, SOCIAL BENEFITS ENER
+   Abt Associates and Pechan-Avanti Group, 1999, 68W40029 US EPA ABT
+   Acemoglu D, 2012, AM ECON REV, V102, P131, DOI 10.1257/aer.102.1.131
+   Alcamo J., 2002, ENVIRON SCI POLICY, V5, P257, DOI DOI 10.1016/S1462-9011(02)00037-0
+   Aunan K, 2000, REDUCED DAMAGE HLTH, P397
+   Barker T, 2000, OECD ANCILLARY BENEF, P413
+   Barrett S, 2003, INT ENV AGREEM, V3, P349, DOI [10.1023/B:INEA.0000005767.67689.28, DOI 10.1023/B:INEA.0000005767.67689.28]
+   Bauer N, 2009, G20 LOND SUMM UNPUB
+   Bell ML, 2008, ENVIRON HEALTH-GLOB, V7, DOI 10.1186/1476-069X-7-41
+   Bollen J, 2009, RESOUR ENERGY ECON, V31, P161, DOI 10.1016/j.reseneeco.2009.03.001
+   Bosetti V., 2009, 2008 WITCH MODEL NEW
+   Bosetti V, 2007, 102007 FEEM
+   Bosetti V, 2006, ENERG J, P13
+   Bosetti V, 2013, ENERG POLICY, V55, P44, DOI 10.1016/j.enpol.2012.12.035
+   Bovenberg AL, 1999, INT TAX PUBLIC FINAN, V6, P421, DOI 10.1023/A:1008715920337
+   BOYD R, 1995, J ENVIRON ECON MANAG, V29, P1, DOI 10.1006/jeem.1995.1028
+   BRENDEMOEN A, 1994, ENERGY J, V15, P77
+   Burtraw D, 2003, J ENVIRON ECON MANAG, V45, P650, DOI 10.1016/S0095-0696(02)00022-0
+   Burtraw D, 1999, 9951 RES FUT
+   Burtraw D, 2014, AM ECON REV, V104, P557, DOI 10.1257/aer.104.5.557
+   Carraro C, 1996, J PUBLIC ECON, V62, P141, DOI 10.1016/0047-2727(96)01577-0
+   Cifuentes LA, 2000, OECD ANCILLARY BENEF, P237
+   Czajkowski M, 2010, ECOL ECON, V69, P2409, DOI 10.1016/j.ecolecon.2010.07.008
+   Davis DL, 2000, OECD ANCILLARY BENEF, P9
+   Desaigues B, 2011, ECOL INDIC, V11, P902, DOI 10.1016/j.ecolind.2010.12.006
+   Dessus S, 1999, CLIMATE POLICY TEARS
+   Dudek D, 2003, WORLD DEV, V31, P1759, DOI 10.1016/S0305-750X(03)00139-6
+   Ebi KL, 2014, CLIMATIC CHANGE, V122, P363, DOI 10.1007/s10584-013-0912-3
+   EMEP/EEA, 2013, 1 A 1 COMB EN TRANSF
+   European Commission, 2005, METHODOLOGY
+   Fantke P, 2008, 5 U STUTTG I EN RAT
+   Garbaccio RF, 2000, OECD ANCILLARY BENEF, P343
+   GLOMSROD S, 1992, SCAND J ECON, V94, P53, DOI 10.2307/3440468
+   Goulder L., 1995, INT TAX PUBLIC FINAN, V2, P157, DOI DOI 10.1007/BF00877495
+   Groosman B, 2011, ENVIRON RESOUR ECON, V50, P585, DOI 10.1007/s10640-011-9483-9
+   Hammitt JK, 2007, REV ENV ECON POLICY, V1, P228, DOI 10.1093/reep/rem015
+   Heine D, 2012, WP12180 IMF
+   Holland M, 2011, TECHNICAL POLICY BRI
+   Kiuila O, 2014, 66599 MPRA U LIB MUN
+   Laboratory Oak Ridge National (ORNL) Resources for the Future (RFF), 1995, REPORTS, P1994
+   Leimbach M, 2014, GLOBAL IQ DELIVERABL, V4, P1
+   Maca V, 2012, J ENVIRON DEV, V21, P181, DOI 10.1177/1070496512442504
+   Markandya A, 2009, LANCET, V374, P2006, DOI 10.1016/S0140-6736(09)61715-3
+   Massetti E, 2014, GLOBAL IQ DELIVERABL, V5, P1
+   Meyer B, 1998, MODELLIERUNG NACHHAL
+   Morgenstern RD, 2000, OECD ANCILLARY BENEF, P95
+   Muller NZ, 2007, J ENVIRON ECON MANAG, V54, P1, DOI 10.1016/j.jeem.2006.12.002
+   Muller NZ, 2011, AM ECON REV, V101, P1649, DOI 10.1257/aer.101.5.1649
+   Muller NZ, 2009, AM ECON REV, V99, P1714, DOI 10.1257/aer.99.5.1714
+   Nam KM, 2013, GLOBAL ENVIRON CHANG, V23, P1648, DOI 10.1016/j.gloenvcha.2013.09.003
+   Nemet GF, 2010, ENVIRON RES LETT, V5, DOI 10.1088/1748-9326/5/1/014007
+   Nordhaus W, 2014, J ASSOC ENVIRON RESO, V1, P273, DOI 10.1086/676035
+   OECD, 2014, COST AIR POLL HLTH I
+   OECD, 2012, JOBS POT SHIFT LOW C
+   OECD, 2002, ENVEPOCGSP200113 OEC
+   OECD, 2012, MORT RISK VAL ENV HL
+   [OECD (Organization for Economic Co-operation and Development) WHO Regional Office for Europe], 2015, EC COST HLTH IMP AIR
+   Paltsev S., 2005, MIT EMISSIONS PREDIC
+   Parry I, 2014, MUCH CARBON PRICING
+   Parry I, 2014, IMFDIRECT INT MON FU
+   PEARCE D, 1991, ECON J, V101, P938, DOI 10.2307/2233865
+   Preiss P, 2008, V1 3 USERS MANUAL DE, V63
+   Rabl A., 2014, MUCH IS CLEAN AIR WO
+   Recka L, 2013, POLIT EKON, V61, P248
+   Riekkola AK, 2011, ENERG POLICY, V39, P4985, DOI 10.1016/j.enpol.2011.06.015
+   Scasny M, 2012, 66606 MPRA U LIB MUN
+   Scasny M, 2015, 842015 FDN EN ENR MA
+   Scheraga JD, 1993, P 1993 NAT TAX J, P133
+   Searl A., 2007, INT ASS HEAV MET REL
+   Somanathan E, 2014, CLIMATE CHANGE 2014: MITIGATION OF CLIMATE CHANGE, P1141
+   Spadaro JV, 2008, RISK ANAL, V28, P603, DOI 10.1111/j.1539-6924.2008.01041.x
+   Spadaro JV, 2008, ENVIRON IMPACT ASSES, V28, P166, DOI 10.1016/j.eiar.2007.04.001
+   Stocker T. F., 2013, CONTRIBUTION WORKING
+   Syri S, 2001, ENERG POLICY, V29, P871, DOI 10.1016/S0301-4215(01)00022-2
+   Van Harmelen T., 2002, ENVIRON SCI POLICY, V5, P349, DOI DOI 10.1016/S1462-9011(02)00043-6
+   van Vuuren DP, 2014, CLIMATIC CHANGE, V122, P373, DOI 10.1007/s10584-013-0906-1
+   van Vuuren DP, 2011, CLIMATIC CHANGE, V109, P5, DOI 10.1007/s10584-011-0148-z
+   van Vuuren DP, 2006, ENERG POLICY, V34, P444, DOI 10.1016/j.enpol.2004.06.012
+   Watson R. T., 2001, CLIMATE CHANGE 2001
+   Weinzettel J, 2012, ECOL INDIC, V17, P68, DOI 10.1016/j.ecolind.2011.04.035
+   West JJ, 2013, NAT CLIM CHANGE, V3, P885, DOI [10.1038/nclimate2009, 10.1038/NCLIMATE2009]
+NR 81
+TC 10
+Z9 10
+U1 0
+U2 17
+PU SPRINGER
+PI NEW YORK
+PA 233 SPRING ST, NEW YORK, NY 10013 USA
+SN 0924-6460
+EI 1573-1502
+J9 ENVIRON RESOUR ECON
+JI Environ. Resour. Econ.
+PD OCT
+PY 2015
+VL 62
+IS 2
+BP 383
+EP 415
+DI 10.1007/s10640-015-9969-y
+PG 33
+WC Economics; Environmental Studies
+SC Business & Economics; Environmental Sciences & Ecology
+GA CT3DI
+UT WOS:000362686700009
+DA 2018-06-21
+ER
+
+PT J
+AU Neverre, N
+   Dumas, P
+AF Neverre, Noemie
+   Dumas, Patrice
+TI Projecting and valuing domestic water use at regional scale: A generic
+   method applied to the Mediterranean at the 2060 horizon
+SO WATER RESOURCES AND ECONOMICS
+LA English
+DT Article
+DE Domestic water demand; Water value; Projection; Hydroeconomic modelling;
+   Mediterranean
+ID RESOURCES; DEMAND; AVAILABILITY; SCENARIOS
+AB The present work focuses on the demand side of future water scarcity assessment, and more precisely on domestic water demand. It proposes a quantitative projection of domestic water demand, combined with an original estimation of the economic benefit of water at large scale. The general method consists of building economic demand functions taking into account the impact of the level of equipment, proxied by economic development. The cost and the price of water are assumed to grow with economic development.
+   The methodology was applied to the Mediterranean region, at the 2060 horizon. Our results show the evolution of water demand and value, measured by surplus, over time As long as GDP per capita and water price remain low, demand per capita increases along with economic development, and surplus per capita increases with demand. As demand approaches saturation, the combined negative effects of water cost and price increase on surplus grow stronger, and surplus per capita begins to decrease.
+   The developed methodology is meant to be used for large-scale hydroeconomic modelling, in particular for regions with heterogeneous levels of development and low data availability. (C) 2015 Elsevier B.V. All rights reserved.
+C1 [Neverre, Noemie; Dumas, Patrice] CIRED, F-94736 Nogent Sur Marne, France.
+   [Neverre, Noemie] CNRS, F-75016 Paris, France.
+   [Dumas, Patrice] Ctr Cooperat Int Rech Agron Dev CIRAI, F-75016 Paris, France.
+   [Neverre, Noemie] Ecole Natl Ponts & Chaussees, F-77455 Champs Sur Marne, France.
+RP Neverre, N (reprint author), CIRED, Campus Jardin Trop,45 Bis Ave Belle Gabrielle, F-94736 Nogent Sur Marne, France.
+EM neverre@centre-cired.fr; dumas@centre-cired.fr
+CR Alcamo J, 2003, HYDROLOG SCI J, V48, P317, DOI 10.1623/hysj.48.3.317.45290
+   Alcamo J, 2003, HYDROLOG SCI J, V48, P339, DOI 10.1623/hysj.48.3.339.45278
+   Alcamo J, 2007, HYDROLOG SCI J, V52, P247, DOI 10.1623/hysj.52.2.247
+   Allan J.A., 1997, VIRTUAL WATER LONG T
+   Arbues F, 2003, J SOCIO-ECON, V32, P81, DOI DOI 10.1016/S1053-5357(03)00005-2
+   Arbues F, 2006, URBAN STUD, V43, P2421, DOI 10.1080/00420980601038255
+   Barros V, 2014, CLIMATE CHANGE 2014: IMPACTS, ADAPTATION, AND VULNERABILITY, PT A: GLOBAL AND SECTORAL ASPECTS, pIX
+   Biemans H, 2011, WATER RESOUR RES, V47, DOI 10.1029/2009WR008929
+   Bleu Plan, 2012, MED INF SYST ENV DEV
+   de Haas H, 2011, GLOBAL ENVIRON CHANG, V21, pS59, DOI 10.1016/j.gloenvcha.2011.09.003
+   Doll P., 2002, WATER RESOUR RES, V38, P8, DOI DOI 10.1029/2001WR000355
+   Falkenmark Malin, 1993, P80
+   FLORKE M., 2004, EUROPEAN OUTLOOK WAT
+   Frondel Manuel, 2008, 16 ANN C EUR ASS ENV
+   Garcia-valinas MA, 2005, ENVIRON RESOUR ECON, V32, P183, DOI 10.1007/s10640-005-3363-0
+   Gleick PH, 1996, WATER INT, V21, P83, DOI 10.1080/02508069608686494
+   Hanasaki N, 2013, HYDROL EARTH SYST SC, V17, P2375, DOI 10.5194/hess-17-2375-2013
+   Harou JJ, 2009, J HYDROL, V375, P627, DOI 10.1016/j.jhydrol.2009.06.037
+   Hayashi A, 2013, MITIG ADAPT STRAT GL, V18, P591, DOI 10.1007/s11027-012-9377-3
+   Howard G., 2003, DOMESTIC WATER QUANT
+   Hughes G, 2010, UTIL POLICY, V18, P142, DOI 10.1016/j.jup.2010.03.002
+   Margat J, 2004, 158 UNEPMAP
+   Margat J., 1999, TECHNICAL REPORT
+   Martinez-Espineira R, 2003, ENVIRON RESOUR ECON, V26, P5, DOI 10.1023/A:1025693823235
+   Martinez-Espineira R, 2002, ENVIRON RESOUR ECON, V21, P161, DOI 10.1023/A:1014547616408
+   Martins R., 2005, ESTUDOS GEMF
+   Medellin-Azuara J, 2008, CLIMATIC CHANGE, V87, pS75, DOI 10.1007/s10584-007-9355-z
+   Nauges C, 2000, LAND ECON, V76, P68, DOI 10.2307/3147258
+   OECD, 2010, TECHNICAL REPORT
+   Rozenberg J, 2014, CLIMATIC CHANGE, V122, P509, DOI 10.1007/s10584-013-0904-3
+   Schleich J, 2009, ECOL ECON, V68, P1756, DOI 10.1016/j.ecolecon.2008.11.012
+   Shen YJ, 2008, HYDROLOG SCI J, V53, P11, DOI 10.1623/hysj.53.1.11
+   Ward PJ, 2010, ENVIRON RES LETT, V5, DOI 10.1088/1748-9326/5/4/044011
+   Willmott C.J., 1981, PHYSICAL GEOGR, V2, P184, DOI DOI 10.1080/02723646.1981.10642213
+   Young Robert, 2005, DETERMINING EC VALUE
+NR 35
+TC 2
+Z9 2
+U1 0
+U2 5
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 2212-4284
+J9 WATER RESOUR ECON
+JI Water Resour. Econ.
+PD JUL
+PY 2015
+VL 11
+BP 33
+EP 46
+DI 10.1016/j.wre.2015.06.001
+PG 14
+WC Economics; Environmental Sciences; Environmental Studies; Water
+   Resources
+SC Business & Economics; Environmental Sciences & Ecology; Water Resources
+GA CY0ZC
+UT WOS:000366134500004
+DA 2018-06-21
+ER
+
+PT J
+AU Alfieri, L
+   Feyen, L
+   Dottori, F
+   Bianchi, A
+AF Alfieri, Lorenzo
+   Feyen, Luc
+   Dottori, Francesco
+   Bianchi, Alessandra
+TI Ensemble flood risk assessment in Europe under high end climate
+   scenarios
+SO GLOBAL ENVIRONMENTAL CHANGE-HUMAN AND POLICY DIMENSIONS
+LA English
+DT Article
+DE EURO-CORDEX climate projections; RCP 8.5; Shared socioeconomic pathways
+   (SSP); Flood risk; Potential flood damage
+ID CHANGE PROJECTIONS; BIAS CORRECTION; RESOLUTION; MODEL; HAZARD; SCALE;
+   BENEFITS; RUNOFF; MAP
+AB At the current rate of global warming, the target of limiting it within 2 degrees by the end of the century seems more and more unrealistic. Policymakers, businesses and organizations leading international negotiations urge the scientific community to provide realistic and accurate assessments of the possible consequences of so called "high end" climate scenarios.
+   This study illustrates a novel procedure to assess the future flood risk in Europe under high levels of warming. It combines ensemble projections of extreme streamflow for the current century based on EURO-CORDEX RCP 8.5 climate scenarios with recent advances in European flood hazard mapping. Further novelties include a threshold-based evaluation of extreme event magnitude and frequency, an alternative method to removing bias in climate projections, the latest pan-European exposure maps, and an improved flood vulnerability estimation.
+   Estimates of population affected and direct flood damages indicate that by the end of the century the socio-economic impact of river floods in Europe is projected to increase by an average 220% due to climate change only. When coherent socio-economic development pathways are included in the assessment, central estimates of population annually affected by floods range between 500,000 and 640,000 in 2050, and between 540,000 and 950,000 in 2080, as compared to 216,000 in the current climate. A larger range is foreseen in the annual flood damage, currently of 5.3 B(sic), which is projected to rise at 20-40 B(sic) in 2050 and 30-100 B(sic) in 2080, depending on the future economic growth. (C) 2015 The Authors. Published by Elsevier Ltd.
+C1 [Alfieri, Lorenzo; Feyen, Luc; Dottori, Francesco; Bianchi, Alessandra] Commiss European Communities, Joint Res Ctr, I-21027 Ispra, VA, Italy.
+RP Alfieri, L (reprint author), Commiss European Communities, Joint Res Ctr, TP 122,Via E Fermi 2749, I-21027 Ispra, VA, Italy.
+EM lorenzo.alfieri@jrc.ec.europa.eu
+OI Dottori, Francesco/0000-0002-1388-3303; Alfieri,
+   Lorenzo/0000-0002-3616-386X
+FU European Union Seventh Framework Programme FP7 (HELIX: "High-End cLimate
+   Impacts and eXtremes") [603864]
+FX The research leading to these results has received funding from the
+   European Union Seventh Framework Programme FP7/2007-2013 under grant
+   agreement no. 603864 (HELIX: "High-End cLimate Impacts and eXtremes";
+   www.helixclimate.eu).
+CR Alfieri L., 2015, HYDROL EARTH SYST SC, V12, P1119, DOI DOI 10.5194/HESSD-12-1119-2015
+   Alfieri L, 2011, ADV GEOSCIENCES, V29, P13, DOI [DOI 10.5194/ADGEO-29-13-2011, 10.5194/adgeo-29-13-2011]
+   Alfieri L, 2014, HYDROL PROCESS, V28, P4067, DOI 10.1002/hyp.9947
+   Arnell NW, 2016, CLIMATIC CHANGE, V134, P387, DOI 10.1007/s10584-014-1084-5
+   Association of British Insurers (ABI), 2005, FIN RISKS CLIM CHANG
+   Bates PD, 2000, J HYDROL, V236, P54, DOI 10.1016/S0022-1694(00)00278-X
+   Batista e Silva F., 2012, J LAND USE SCI, P1, DOI DOI 10.1080/1747423X.2012.667450
+   Silva FBE, 2013, J MAPS, V9, P16, DOI 10.1080/17445647.2013.764830
+   Bubeck P, 2011, NAT HAZARD EARTH SYS, V11, P3293, DOI 10.5194/nhess-11-3293-2011
+   Burek P., 2013, 26167 EUR EN, DOI [10.2788/26160, DOI 10.2788/26160]
+   Burek P., 2013, LISFLOOD DISTRIBUTED
+   Carpenter TM, 1999, J HYDROL, V224, P21, DOI 10.1016/S0022-1694(99)00115-8
+   Dankers R, 2014, P NATL ACAD SCI USA, V111, P3257, DOI 10.1073/pnas.1302078110
+   Dankers R, 2009, J GEOPHYS RES-ATMOS, V114, DOI 10.1029/2008JD011523
+   de Kok J.-L., 2009, NAT HAZARDS, V52, P143
+   Ehret U, 2012, HYDROL EARTH SYST SC, V16, P3391, DOI 10.5194/hess-16-3391-2012
+   Evans E.P., 2000, RISK ASSESSMENT PROG
+   Falter D, 2015, J HYDROL, V524, P182, DOI [10.1016/j.jhydrol.2015.02.021, 10.1016/j.jhydrol.2015,02.021]
+   Feyen L., 2012, CLIM CHANGE, P1
+   Fluet-Chouinard E, 2015, REMOTE SENS ENVIRON, V158, P348, DOI 10.1016/j.rse.2014.10.015
+   Foudi S, 2015, LAND USE POLICY, V42, P278, DOI 10.1016/j.landusepol.2014.08.002
+   Hall J. W., 2003, Environmental Hazards, V5, P51
+   Hirabayashi Y, 2013, NAT CLIM CHANGE, V3, P816, DOI [10.1038/nclimate1911, 10.1038/NCLIMATE1911]
+   Huang S., 2014, INT J CLIMATOL
+   Huizinga H. J., 2007, FLOOD DAMAGE FUNCTIO
+   Hurrell J. W., 2003, GEOPHYS MONOGR SER, P1, DOI DOI 10.1029/134GM01
+   Jacob D, 2014, REG ENVIRON CHANGE, V14, P563, DOI 10.1007/s10113-013-0499-2
+   Jarvis A., 2008, HOLE FILLED SEAMLESS
+   Jongman B, 2014, NAT CLIM CHANGE, V4, P264, DOI [10.1038/nclimate2124, 10.1038/NCLIMATE2124]
+   Linde A. H. te, 2011, Natural Hazards and Earth System Sciences, V11, P459, DOI 10.5194/nhess-11-459-2011
+   Lugeri N, 2010, MITIG ADAPT STRAT GL, V15, P621, DOI 10.1007/s11027-009-9211-8
+   Muerth MJ, 2013, HYDROL EARTH SYST SC, V17, P1189, DOI 10.5194/hess-17-1189-2013
+   Neal J., 2011, HYDROL PROCESS
+   Ntegeka V., 2013, EFAS METEO EUROPEAN
+   O'Neill BC, 2014, CLIMATIC CHANGE, V122, P387, DOI 10.1007/s10584-013-0905-2
+   Penning-Rowsell EC, 2015, T I BRIT GEOGR, V40, P44, DOI 10.1111/tran.12053
+   Perez J, 2014, CLIM DYNAM, V43, P2663, DOI 10.1007/s00382-014-2078-8
+   Rijks D., 1998, 17735 EUR EN EC JOIN
+   Rojas R, 2012, J GEOPHYS RES-ATMOS, V117, DOI 10.1029/2012JD017461
+   Rojas R, 2013, GLOBAL ENVIRON CHANG, V23, P1737, DOI 10.1016/j.gloenvcha.2013.08.006
+   Sampson CC, 2015, WATER RESOUR RES, V51, P7358, DOI 10.1002/2015WR016954
+   Schumann GJP, 2014, NATURE, V507, P169, DOI 10.1038/507169e
+   Themessl MJ, 2012, CLIMATIC CHANGE, V112, P449, DOI 10.1007/s10584-011-0224-4
+   Thielen J, 2009, HYDROL EARTH SYST SC, V13, P125, DOI 10.5194/hess-13-125-2009
+   Thiemig V, 2013, J HYDROL, V499, P324, DOI 10.1016/j.jhydrol.2013.07.012
+   Tramblay Y, 2014, J HYDROL, V519, P549, DOI 10.1016/j.jhydrol.2014.07.052
+   UNISDR, 2009, UNISDR TERM DIS RISK
+   Van Der Knijff JM, 2010, INT J GEOGR INF SCI, V24, P189, DOI 10.1080/13658810802549154
+   van Vuuren DP, 2014, CLIMATIC CHANGE, V122, P415, DOI 10.1007/s10584-013-0974-2
+   Wanders N, 2014, WATER RESOUR RES, V50, P6874, DOI 10.1002/2013WR014639
+   Ward PJ, 2014, J FLOOD RISK MANAG, V7, P141, DOI 10.1111/jfr3.12029
+   Ward P.J., 2013, ENVIRON RES LETT, V8
+   Winsemius H. C., 2012, HYDROL EARTH SYST SC, V9, P9611, DOI [DOI 10.5194/HESSD-9-9611-2012, 10.5194/hessd-9-9611-2012]
+   Yan K., 2015, HYDROL PROCESS
+NR 54
+TC 30
+Z9 32
+U1 3
+U2 32
+PU ELSEVIER SCI LTD
+PI OXFORD
+PA THE BOULEVARD, LANGFORD LANE, KIDLINGTON, OXFORD OX5 1GB, OXON, ENGLAND
+SN 0959-3780
+EI 1872-9495
+J9 GLOBAL ENVIRON CHANG
+JI Glob. Environ. Change-Human Policy Dimens.
+PD NOV
+PY 2015
+VL 35
+BP 199
+EP 212
+DI 10.1016/j.gloenvcha.2015.09.004
+PG 14
+WC Environmental Sciences; Environmental Studies; Geography
+SC Environmental Sciences & Ecology; Geography
+GA CZ0AI
+UT WOS:000366767100019
+OA gold_or_bronze
+HC Y
+HP N
+DA 2018-06-21
+ER
+
+PT J
+AU Birkmann, J
+   Cutter, SL
+   Rothman, DS
+   Welle, T
+   Garschagen, M
+   van Ruijven, B
+   O'Neill, B
+   Preston, BL
+   Kienberger, S
+   Cardona, OD
+   Siagian, T
+   Hidayati, D
+   Setiadi, N
+   Binder, CR
+   Hughes, B
+   Pulwarty, R
+AF Birkmann, Joern
+   Cutter, Susan L.
+   Rothman, Dale S.
+   Welle, Torsten
+   Garschagen, Matthias
+   van Ruijven, Bas
+   O'Neill, Brian
+   Preston, Benjamin L.
+   Kienberger, Stefan
+   Cardona, Omar D.
+   Siagian, Tiodora
+   Hidayati, Deny
+   Setiadi, Neysa
+   Binder, Claudia R.
+   Hughes, Barry
+   Pulwarty, Roger
+TI Scenarios for vulnerability: opportunities and constraints in the
+   context of climate change and disaster risk
+SO CLIMATIC CHANGE
+LA English
+DT Article
+ID ADAPTATION
+AB Most scientific assessments for climate change adaptation and risk reduction are based on scenarios for climatic change. Scenarios for socio-economic development, particularly in terms of vulnerability and adaptive capacity, are largely lacking. This paper focuses on the utility of socio-economic scenarios for vulnerability, risk and adaptation research. The paper introduces the goals and functions of scenarios in general and reflects on the current global debate around shared socio-economic pathways (SSPs). It examines the options and constraints of scenario methods for risk and vulnerability assessments in the context of climate change and natural hazards. Two case studies are used to contrast the opportunities and current constraints in scenario methods at different scales: the global WorldRiskIndex, based on quantitative data and indicators; and a local participatory scenario development process in Jakarta, showing a qualitative approach. The juxtaposition of a quantitative approach with global data and a qualitative-participatory local approach provides new insights on how different methods and scenario techniques can be applied in vulnerability and risk research.
+C1 [Birkmann, Joern; Welle, Torsten; Garschagen, Matthias; Setiadi, Neysa] United Nations Univ, Inst Environm & Human Secur, Bonn, Germany.
+   [Cutter, Susan L.] Univ S Carolina, Hazards & Vulnerabil Res Inst, Columbia, SC 29208 USA.
+   [Rothman, Dale S.; Hughes, Barry] Univ Denver, Pardee Ctr Int Futures, Denver, CO USA.
+   [van Ruijven, Bas; O'Neill, Brian] Natl Ctr Atmospher Res, Boulder, CO 80307 USA.
+   [Preston, Benjamin L.] Oak Ridge Natl Lab, Climate Change Sci Inst, Oak Ridge, TN USA.
+   [Kienberger, Stefan] Salzburg Univ, Interfac Dept Geoinformat Z GIS, A-5020 Salzburg, Austria.
+   [Cardona, Omar D.] Univ Nacl Colombia, Inst Estudios Ambientales IDEA, Manizales, Colombia.
+   [Siagian, Tiodora] Govt Indonesia, Stat Indonesia BPS, Jakarta, Indonesia.
+   [Hidayati, Deny] Indonesian Inst Sci LIPI, Jakarta, Indonesia.
+   [Binder, Claudia R.] Univ Munich LMU, Dept Geog, Munich, Germany.
+   [Pulwarty, Roger] NOAA, Earth Syst Res Lab, Boulder, CO USA.
+RP Birkmann, J (reprint author), United Nations Univ, Inst Environm & Human Secur, Bonn, Germany.
+EM birkmann@ehs.unu.edu; stefan.kienberger@sbg.ac.at
+RI Toro, Johan/P-9939-2016; O'Neill, Brian/E-6531-2013
+OI Cutter, Susan/0000-0002-7005-8596; van Ruijven, Bas/0000-0003-1232-5892
+CR Birkmann J., 2011, WORLD RISK REPORT 20, P13
+   Birkmann J, 2010, SUSTAIN SCI, V5, P171, DOI 10.1007/s11625-010-0108-y
+   Carter TR, 1994, PART IPCC SPECIAL RE, P72
+   Dickson J. R., 2010, PATTERNS POTENTIAL H, V2
+   Field C, 2012, SPECIAL REPORT WORKI
+   Giannini V, 2011, ADV SCI RES, V7, P71, DOI DOI 10.5194/asr-7-71-2011
+   Glenn JC, 2009, MILLENIUM PROJECT FU
+   Hallegatte S, 2011, NAT CLIM CHANGE, V1, P151, DOI 10.1038/NCLIMATE1135
+   Hughes B.B., 2009, REDUCING GLOBAL POVE, V1
+   Hughes BB, 2013, PATTERNS POTENTIAL H, V5
+   Hughes BB, 2011, PATTERNS POTENTIAL H, V3
+   Jones RN, 2011, WIRES CLIM CHANGE, V2, P296, DOI 10.1002/wcc.97
+   KHAKEE A., 1999, FORESIGHT, V1, P229
+   Kok K, 2011, TECHNOL FORECAST SOC, V78, P835, DOI 10.1016/j.techfore.2011.01.004
+   Kriegler E, 2012, GLOBAL ENVIRON CHANG, V22, P807, DOI 10.1016/j.gloenvcha.2012.05.005
+   Mathers CD, 2006, PLOS MED, V3, DOI 10.1371/journal.pmed.0030442
+   Moss RH, 2010, NATURE, V463, P747, DOI 10.1038/nature08823
+   O&rsquo;Neill BC, 2013, CLIMATIC CHANGE, DOI [10.1007/sl0584-013-0905-2, DOI 10.1007/S10584-013-0905-2]
+   Peduzzi P, 2012, NAT CLIM CHANGE, V2, P289, DOI 10.1038/NCLIMATE1410
+   Preston BL, 2009, MITIG ADAPT STRAT GL, V14, P251, DOI 10.1007/s11027-008-9163-4
+   Rothman DS, 2013, BUILDING GLOBAL INFR, V4
+   Schipper ELF, 2009, CLIM DEV, V1, P16, DOI 10.3763/cdev.2009.0004
+   Scholz R. W., 2002, EMBEDDED CASE STUDY
+   Tol RSJ, 2007, ENVIRON DEV ECON, V12, P687, DOI 10.1017/S1355770X07003841
+   Tol RSJ, 2007, GLOBAL ENVIRON CHANG, V17, P218, DOI 10.1016/j.gloenvcha.2006.08.001
+   UNEP, 2007, GLOB ENV OUTL GEO 4
+   United Nations/ ISDR (International Strategy for Disaster Reduction), 2004, LIV RISK GLOB REV DI
+   van Aalst MK, 2008, GLOBAL ENVIRON CHANG, V18, P165, DOI 10.1016/j.gloenvcha.2007.06.002
+   van Ruijven BJ, 2014, CLIMATIC CHANGE, V122, P481, DOI 10.1007/s10584-013-0931-0
+   van Vuuren DP, 2014, CLIMATIC CHANGE, V122, P373, DOI 10.1007/s10584-013-0906-1
+   van Vuuren DP, 2012, ENVIRON RES LETT, V7, DOI 10.1088/1748-9326/7/2/024012
+   van Vuuren DP, 2012, GLOBAL ENVIRON CHANG, V22, P21, DOI 10.1016/j.gloenvcha.2011.08.002
+   Welle T., 2012, WORLD RISK REPORT 20, P11
+   Wiek A, 2006, FUTURES, V38, P740, DOI 10.1016/j.futures.2005.12.003
+   World Bank, 2013, GLOB EC SOC DAT WORL
+NR 35
+TC 19
+Z9 19
+U1 6
+U2 51
+PU SPRINGER
+PI DORDRECHT
+PA VAN GODEWIJCKSTRAAT 30, 3311 GZ DORDRECHT, NETHERLANDS
+SN 0165-0009
+EI 1573-1480
+J9 CLIMATIC CHANGE
+JI Clim. Change
+PD NOV
+PY 2015
+VL 133
+IS 1
+BP 53
+EP 68
+DI 10.1007/s10584-013-0913-2
+PG 16
+WC Environmental Sciences; Meteorology & Atmospheric Sciences
+SC Environmental Sciences & Ecology; Meteorology & Atmospheric Sciences
+GA CU4FW
+UT WOS:000363483600005
+DA 2018-06-22
+ER
+
+PT J
+AU Baldos, ULC
+   Hertel, TW
+AF Baldos, Uris Lantz C.
+   Hertel, Thomas W.
+TI The role of international trade in managing food security risks from
+   climate change
+SO FOOD SECURITY
+LA English
+DT Article
+DE Climate change impacts; Food security; Price volatility; International
+   trade; Climate change adaptation
+ID AGRICULTURAL TRADE; CROP; PRODUCTIVITY; DISTORTIONS; VOLATILITY;
+   INCREASE; MARKETS; SHOCKS
+AB International trade plays an important role in facilitating global food security in the face of a changing climate. In considering this issue, it is useful to distinguish between two different time scales: inter-annual and inter-decadal. Inter-annual adjustments in international trade can play an important role in shifting supplies from food surplus regions to regions facing food deficits which emerge as a consequence of extreme weather events, civil strife, and/or other disruptions The first section of the paper explores the evidence on increased inter-annual supply side volatility, as well as historical and prospective analyses of adaptation to such volatility and the role international trade can play in mitigating the adverse impacts on food security. In the long run, we expect that the fundamental patterns of comparative advantage will be altered by the changing climate as well as availability of technology and endowments (water for irrigation, labor force, capital stock). In a freely functioning global economy, long run trade patterns will respond to this evolving comparative advantage. However, historical food trade has not been free of obstacles, with both tariff and non-tariff barriers often limiting the adjustment of trade to the changing economic landscape. This section of the paper capitalizes on a newly available library of climate impact results in order to characterize the tails (both optimistic and pessimistic) of this distribution. We then explore the potential for a more freely functioning global trading system to deliver improved long run food security in 2050.
+C1 [Baldos, Uris Lantz C.; Hertel, Thomas W.] Purdue Univ, Dept Agr Econ, W Lafayette, IN 47907 USA.
+RP Baldos, ULC (reprint author), Purdue Univ, Dept Agr Econ, 403 West State St, W Lafayette, IN 47907 USA.
+EM ubaldos@purdue.edu
+FU U.S. Department of Energy, Office of Science, Office of Biological and
+   Environmental Research, Integrated Assessment Research Program
+   [DE-SC005171]; OECD Cooperative Research Programme on Biological
+   Resource Management for Sustainable Agricultural Systems
+FX The authors acknowledge support for the underlying research into the
+   climate-food-energy-land-water nexus from U.S. Department of Energy,
+   Office of Science, Office of Biological and Environmental Research,
+   Integrated Assessment Research Program, Grant No. DE-SC005171.; This
+   paper was part of a workshop sponsored by the OECD Cooperative Research
+   Programme on Biological Resource Management for Sustainable Agricultural
+   Systems.
+CR Abbott P. C., 2011, WHATS DRIVING FOOD P
+   Ahmed SA, 2009, ENVIRON RES LETT, V4, DOI 10.1088/1748-9326/4/3/034004
+   Ahmed SA, 2011, GLOBAL ENVIRON CHANG, V21, P46, DOI 10.1016/j.gloenvcha.2010.10.003
+   Anania G., 2013, AGR EXPORT RESTRICTI, P47
+   Anderson K, 2013, J ECON LIT, V51, P423, DOI 10.1257/jel.51.2.423
+   Anderson K, 2012, OXFORD REV ECON POL, V28, P235, DOI 10.1093/oxrep/grs001
+   [Anonymous], 2013, SSP DAT V 0 93
+   Baldos ULC, 2014, AUST J AGR RESOUR EC, V58, P554, DOI 10.1111/1467-8489.12048
+   Baldos ULC, 2013, ENVIRON RES LETT, V8, DOI 10.1088/1748-9326/8/3/034024
+   Banerjee L, 2007, WORLD DEV, V35, P1989, DOI 10.1016/j.worlddev.2006.11.010
+   Burgess R, 2010, AM ECON REV, V100, P449, DOI 10.1257/aer.100.2.449
+   Diffenbaugh NS, 2007, GEOPHYS RES LETT, V34, DOI 10.1029/2007GL030000
+   Diffenbaugh NS, 2012, NAT CLIM CHANGE, V2, P514, DOI 10.1038/NCLIMATE1491
+   Diffenbaugh NS, 2005, P NATL ACAD SCI USA, V102, P15774, DOI 10.1073/pnas.0506042102
+   Disdier AC, 2008, REV ECON STAT, V90, P37, DOI 10.1162/rest.90.1.37
+   Easterling DR, 2000, SCIENCE, V289, P2068, DOI 10.1126/science.289.5487.2068
+   Elliott J, 2014, P NATL ACAD SCI USA, V111, P3239, DOI 10.1073/pnas.1222474110
+   FAO, 2014, FAOSTAT
+   FAO, 2012, FAO FOOD SEC STAT
+   FOSTER J, 1984, ECONOMETRICA, V52, P761, DOI 10.2307/1913475
+   Fuglie KO, 2012, PRODUCTIVITY GROWTH IN AGRICULTURE: AN INTERNATIONAL PERSPECTIVE, P335, DOI 10.1079/9781845939212.0335
+   Hertel T. W., 2014, ENERG ECON, DOI [10.1016/j.eneco.2014.04.014, DOI 10.1016/J.ENEC0.2014.04.014]
+   Hertel TW, 2014, P NATL ACAD SCI USA, V111, P13799, DOI 10.1073/pnas.1403543111
+   Hertel TW, 2010, GLOBAL ENVIRON CHANG, V20, P577, DOI 10.1016/j.gloenvcha.2010.07.001
+   Hertel TW, 2009, REV DEV ECON, V13, P543, DOI 10.1111/j.1467-9361.2008.00483.x
+   IEA, 2012, WORLD EN OUTL
+   IEA, 2008, WORLD EN OUTL
+   IPCC, 2013, CONTR WORK GROUP 1 5
+   Ivanic M., 2008, SSRN ELIBRARY
+   Kriegler E, 2012, GLOBAL ENVIRON CHANG, V22, P807, DOI 10.1016/j.gloenvcha.2012.05.005
+   Limao N, 2001, WORLD BANK ECON REV, V15, P451, DOI 10.1093/wber/15.3.451
+   Lobell DB, 2014, SCIENCE, V344, P516, DOI 10.1126/science.1251423
+   Lobell DB, 2013, ENVIRON RES LETT, V8, DOI 10.1088/1748-9326/8/1/015012
+   Long SP, 2006, SCIENCE, V312, P1918, DOI 10.1126/science.1114722
+   Ludena CE, 2007, AGR ECON, V37, P1, DOI 10.1111/j.1574-0862.2007.00218.x
+   Martin W, 2012, AM J AGR ECON, V94, P422, DOI 10.1093/ajae/aar105
+   Monfreda C, 2008, GLOBAL BIOGEOCHEM CY, V22, DOI 10.1029/2007GB002947
+   Muller C, 2014, AGR ECON-BLACKWELL, V45, P37, DOI 10.1111/agec.12088
+   Muller C., 2010, CLIAMTE CHANGE IMPAC
+   Neiken L., 2003, FAO METHODOLOGY ESTI
+   Nelson GC, 2014, P NATL ACAD SCI USA, V111, P3274, DOI 10.1073/pnas.1222465110
+   O'Neill BC, 2014, CLIMATIC CHANGE, V122, P387, DOI 10.1007/s10584-013-0905-2
+   Olmstead AL, 2011, P NATL ACAD SCI USA, V108, P480, DOI 10.1073/pnas.1008279108
+   REILLY J, 1994, GLOBAL ENVIRON CHANG, V4, P24, DOI 10.1016/0959-3780(94)90019-1
+   Reilly J. M., 2002, CHANGING CLIMATE CHA
+   Rosenzweig C, 2014, P NATL ACAD SCI USA, V111, P3268, DOI 10.1073/pnas.1222463110
+   Schlenker W, 2010, ENVIRON RES LETT, V5, DOI 10.1088/1748-9326/5/1/014010
+   Schlenker W, 2009, P NATL ACAD SCI USA, V106, P15594, DOI 10.1073/pnas.0906865106
+   Schmidhuber J, 2007, P NATL ACAD SCI USA, V104, P19703, DOI 10.1073/pnas.0701976104
+   Stocker T. F., 2014, CONTRIBUTION WORKING
+   TOBEY J, 1992, J AGR RESOUR ECON, V17, P195
+   Verma M, 2014, ENVIRON RES LETT, V9, DOI 10.1088/1748-9326/9/6/064028
+   Villoria Nelson, 2014, AGMIP TOOL GEOSHARE
+   WTO General Council, 2014, DEC PUBL STOCKH FOOD
+NR 54
+TC 17
+Z9 17
+U1 11
+U2 38
+PU SPRINGER
+PI NEW YORK
+PA 233 SPRING ST, NEW YORK, NY 10013 USA
+SN 1876-4517
+EI 1876-4525
+J9 FOOD SECUR
+JI Food Secur.
+PD APR
+PY 2015
+VL 7
+IS 2
+BP 275
+EP 290
+DI 10.1007/s12571-015-0435-z
+PG 16
+WC Food Science & Technology
+SC Food Science & Technology
+GA CF6YG
+UT WOS:000352702200010
+DA 2018-06-21
+ER
+
+PT J
+AU Nazemi, A
+   Wheater, HS
+AF Nazemi, A.
+   Wheater, H. S.
+TI On inclusion of water resource management in Earth system models - Part
+   2: Representation of water supply and allocation and opportunities for
+   improved modeling
+SO HYDROLOGY AND EARTH SYSTEM SCIENCES
+LA English
+DT Article
+ID SHARED SOCIOECONOMIC PATHWAYS; ENVIRONMENT SIMULATOR JULES; COMMUNITY
+   LAND MODEL; LARGE RIVER SYSTEMS; 3 GORGES DAM; CLIMATE-CHANGE;
+   SURFACE-WATER; RESERVOIR OPERATION; HYDROLOGICAL MODEL; ROUTING MODEL
+AB Human water use has significantly increased during the recent past. Water withdrawals from surface and groundwater sources have altered terrestrial discharge and storage, with large variability in time and space. These withdrawals are driven by sectoral demands for water, but are commonly subject to supply constraints, which determine water allocation. Water supply and allocation, therefore, should be considered together with water demand and appropriately included in Earth system models to address various large-scale effects with or without considering possible climate interactions. In a companion paper, we review the modeling of demand in large-scale models. Here, we review the algorithms developed to represent the elements of water supply and allocation in land surface and global hydrologic models. We note that some potentially important online implications, such as the effects of large reservoirs on land-atmospheric feedbacks, have not yet been fully investigated. Regarding offline implications, we find that there are important elements, such as groundwater availability and withdrawals, and the representation of large reservoirs, which should be improved. We identify major sources of uncertainty in current simulations due to limitations in data support, water allocation algorithms, host large-scale models as well as propagation of various biases across the integrated modeling system. Considering these findings with those highlighted in our companion paper, we note that advancements in computation and coupling techniques as well as improvements in natural and anthropogenic process representation and parameterization in host large-scale models, in conjunction with remote sensing and data assimilation can facilitate inclusion of water resource management at larger scales. Nonetheless, various modeling options should be carefully considered, diagnosed and intercompared. We propose a modular framework to develop integrated models based on multiple hypotheses for data support, water resource management algorithms and host models in a unified uncertainty assessment framework. A key to this development is the availability of regional-scale data for model development, diagnosis and validation. We argue that the time is right for a global initiative, based on regional case studies, to move this agenda forward.
+C1 [Nazemi, A.; Wheater, H. S.] Univ Saskatchewan, Global Inst Water Secur, Saskatoon, SK S7N 3H5, Canada.
+RP Nazemi, A (reprint author), Univ Saskatchewan, Global Inst Water Secur, 11 Innovat Blvd, Saskatoon, SK S7N 3H5, Canada.
+EM ali.nazemi@usask.ca
+FU Canada Excellence Research Chair in Water Security at the University of
+   Saskatchewan
+FX The first author has attended NASA's Applied Remote Sensing Training
+   free webinar series (http://water.gsfc.nasa.gov/) and would like to
+   thank Amita Mehta, Evan Johnson and John Bolten for providing useful
+   materials related to remote sensing technology. The authors gratefully
+   acknowledge the constructive comments from the editor and two anonymous
+   reviewers as well as Jan Polcher, Ingjerd Haddeland, Naota Hanasaki,
+   Jason Evans and Bruce Davison, which have enabled us to make significant
+   improvements to this paper. Financial support for this survey was
+   provided by the Canada Excellence Research Chair in Water Security at
+   the University of Saskatchewan..
+CR Adam JC, 2007, J GEOPHYS RES-ATMOS, V112, DOI 10.1029/2007JD008525
+   Adam JC, 2008, J CLIMATE, V21, P1807, DOI 10.1175/2007JCLI1535.1
+   Alcamo J, 2003, HYDROLOG SCI J, V48, P317, DOI 10.1623/hysj.48.3.317.45290
+   Alcamo J, 2007, HYDROLOG SCI J, V52, P247, DOI 10.1623/hysj.52.2.247
+   Arnell NW, 2004, GLOBAL ENVIRON CHANG, V14, P31, DOI 10.1016/j.gloenvcha.2003.10.006
+   Arnold JG, 1998, J AM WATER RESOUR AS, V34, P73, DOI 10.1111/j.1752-1688.1998.tb05961.x
+   Asrar G. R., 2013, BULL AMER METEOR SOC, V94, pES8, DOI DOI 10.1175/BAMS-D-12-00011.1
+   BELLMAN R, 1952, P NATL ACAD SCI USA, V38, P716, DOI 10.1073/pnas.38.8.716
+   Bergstrom S., 1995, Computer models of watershed hydrology., P443
+   Best MJ, 2011, GEOSCI MODEL DEV, V4, P677, DOI 10.5194/gmd-4-677-2011
+   Beven K, 2006, HYDROL EARTH SYST SC, V10, P609, DOI 10.5194/hess-10-609-2006
+   Beven K, 2006, J HYDROL, V320, P18, DOI 10.1016/j.jhydrol.2005.07.007
+   Beven KJ, 2012, WATER RESOUR RES, V48, DOI 10.1029/2011WR010982
+   Beven KJ, 2012, FRESHWATER BIOL, V57, P124, DOI 10.1111/j.1365-2427.2011.02592.x
+   Biancamaria S, 2010, IEEE J-STARS, V3, P6, DOI 10.1109/JSTARS.2009.2034614
+   Biemans H, 2011, WATER RESOUR RES, V47, DOI 10.1029/2009WR008929
+   Biemans H, 2009, J HYDROMETEOROL, V10, P1011, DOI 10.1175/2008JHM1067.1
+   Blanc E., 2013, 239 MIT
+   Chen J., 2008, IAHS PUBLICATION, V319, P116
+   Chow V. T., 1998, MAGRAW HILL SERIES W
+   Clark DB, 2011, GEOSCI MODEL DEV, V4, P701, DOI 10.5194/gmd-4-701-2011
+   Clark MP, 2011, WATER RESOUR RES, V47, DOI 10.1029/2010WR009827
+   Dadson S, 2013, PHILOS T R SOC A, V371, DOI 10.1098/rsta.2012.0412
+   Dankers R, 2014, P NATL ACAD SCI USA, V111, P3257, DOI 10.1073/pnas.1302078110
+   Dantzig G B, 1965, LINEAR PROGRAMMING E
+   Dirmeyer PA, 1999, B AM METEOROL SOC, V80, P851, DOI 10.1175/1520-0477(1999)080<0851:TPPOTG>2.0.CO;2
+   Doll P, 2012, J GEODYN, V59-60, P143, DOI 10.1016/j.jog.2011.05.001
+   Doll P, 2009, HYDROL EARTH SYST SC, V13, P2413
+   Doll P, 2014, WATER RESOUR RES, V50, P5698, DOI 10.1002/2014WR015595
+   Doll P, 2003, J HYDROL, V270, P105, DOI 10.1016/S0022-1694(02)00283-4
+   Drewniak B, 2013, GEOSCI MODEL DEV, V6, P495, DOI 10.5194/gmd-6-495-2013
+   Duan Q, 2006, J HYDROL, V320, P3, DOI 10.1016/j.jhydrol.2005.07.031
+   Dunlap R, 2014, B AM METEOROL SOC, V95, pES34, DOI 10.1175/BAMS-D-13-00122.1
+   Durand M, 2010, IEEE J-STARS, V3, P20, DOI 10.1109/JSTARS.2009.2033453
+   Entekhabi D, 2010, P IEEE, V98, P704, DOI 10.1109/JPROC.2010.2043918
+   Falkenmark M, 2013, PHILOS T R SOC A, V371, DOI 10.1098/rsta.2012.0410
+   Fan Y, 2011, CLIM DYNAM, V37, P253, DOI 10.1007/s00382-010-0829-8
+   Fekete B. M., 1999, GLOBAL COMPOSITE RUN
+   Fekete BM, 2002, GLOBAL BIOGEOCHEM CY, V16, DOI 10.1029/1999GB001254
+   Ferguson IM, 2010, WATER RESOUR RES, V46, DOI 10.1029/2009WR008616
+   Fernandez-Quiruelas V, 2011, ENVIRON MODELL SOFTW, V26, P1057, DOI 10.1016/j.envsoft.2011.03.006
+   Foster S., 2006, NONRENEWABLE GROUNDW
+   Fu L. L., 2009, P OCEANOBS09 C
+   Gao H, 2012, WATER RESOUR RES, V48, DOI 10.1029/2012WR012063
+   Gentine P, 2012, J CONTEMP WAT RES ED, V147, P28, DOI 10.1111/j.1936-704X.2012.03105.x
+   Gerten D, 2004, J HYDROL, V286, P249, DOI 10.1016/j.jhydrol.2003.09.029
+   Gleeson T, 2012, NATURE, V488, P197, DOI 10.1038/nature11295
+   Gleeson T, 2010, NAT GEOSCI, V3, P378, DOI 10.1038/ngeo881
+   Gleick P. H, 2000, WORLDS WATER 2000 20
+   Gleick PH, 2013, CLIMATE SCI SERVING, P151, DOI DOI 10.1007/978-94-007-6692-1_6
+   Gochis D. J., 2013, WRF HYDRO MODEL TECH
+   Goldberg D. E., 1989, GENETIC ALGORITHMS S
+   Grey D, 2013, PHILOS T R SOC A, V371, DOI 10.1098/rsta.2012.0406
+   Gudmundsson L, 2012, J HYDROMETEOROL, V13, P604, DOI 10.1175/JHM-D-11-083.1
+   Gupta HV, 1998, WATER RESOUR RES, V34, P751, DOI 10.1029/97WR03495
+   Haddeland I, 2006, GEOPHYS RES LETT, V33, DOI 10.1029/2006GL026047
+   Haddeland I, 2007, HYDROL EARTH SYST SC, V11, P1035
+   Haddeland I, 2006, J HYDROL, V324, P210, DOI 10.1016/j.jhydrol.2005.09.028
+   Haddeland I, 2014, P NATL ACAD SCI USA, V111, P3251, DOI 10.1073/pnas.1222475110
+   Haddeland I, 2011, J HYDROMETEOROL, V12, P869, DOI 10.1175/2011JHM1324.1
+   Hanasaki N, 2008, HYDROL EARTH SYST SC, V12, P1007, DOI 10.5194/hess-12-1007-2008
+   Hanasaki N, 2008, HYDROL EARTH SYST SC, V12, P1027, DOI 10.5194/hess-12-1027-2008
+   Hanasaki N, 2013, HYDROL EARTH SYST SC, V17, P2393, DOI 10.5194/hess-17-2393-2013
+   Hanasaki N, 2013, HYDROL EARTH SYST SC, V17, P2375, DOI 10.5194/hess-17-2375-2013
+   Hanasaki N, 2006, J HYDROL, V327, P22, DOI 10.1016/j.jhydrol.2005.11.011
+   Hanasaki N, 2010, J HYDROL, V384, P232, DOI 10.1016/j.jhydrol.2009.09.028
+   Hassanzadeh E, 2014, J HYDROL ENG, V19, P943, DOI 10.1061/(ASCE)HE.1943-5584.0000854
+   Hejazi MI, 2014, HYDROL EARTH SYST SC, V18, P2859, DOI 10.5194/hess-18-2859-2014
+   Hill C, 2004, COMPUT SCI ENG, V6, P18, DOI 10.1109/MCISE.2004.1255817
+   Hossain F, 2012, J HYDROL ENG, V17, P837, DOI 10.1061/(ASCE)HE.1943-5584.0000541
+   Hossain MS, 2013, WATER RESOUR MANAG, V27, P3387, DOI 10.1007/s11269-013-0353-9
+   Huggins L. F., 1982, HYDROLOGIC MODELING, P169
+   Hurrell J, 2009, B AM METEOROL SOC, V90, P1819, DOI 10.1175/2009BAMS2752.1
+   Hurrell JW, 2013, B AM METEOROL SOC, V94, P1339, DOI 10.1175/BAMS-D-12-00121.1
+   Ke Y, 2012, GEOSCI MODEL DEV, V5, P1341, DOI 10.5194/gmd-5-1341-2012
+   Kollet SJ, 2008, WATER RESOUR RES, V44, DOI 10.1029/2007WR006004
+   Kollet SJ, 2010, WATER RESOUR RES, V46, DOI 10.1029/2009WR008730
+   Lai XJ, 2014, HYDROL PROCESS, V28, P150, DOI 10.1002/hyp.10077
+   Lawrence D. M., 2012, CHALLENGES REPRESENT
+   Lawrence DM, 2011, J ADV MODEL EARTH SY, V3, DOI 10.1029/2011MS000045
+   Lecca G, 2011, J HYDROL, V403, P186, DOI 10.1016/j.jhydrol.2011.04.003
+   Lehner B, 2004, J HYDROL, V296, P1, DOI 10.1016/j.jhydrol.2004.03.028
+   Lehner B, 2013, HYDROL PROCESS, V27, P2171, DOI 10.1002/hyp.9740
+   Lehner B, 2011, FRONT ECOL ENVIRON, V9, P494, DOI 10.1890/100125
+   Lettenmaier DP, 2009, NAT GEOSCI, V2, P452, DOI 10.1038/ngeo567
+   Levis S., 2011, TECHNICAL DESCRIPTIO
+   Levis S, 2012, J CLIMATE, V25, P4839, DOI 10.1175/JCLI-D-11-00446.1
+   Li HY, 2013, J HYDROMETEOROL, V14, P808, DOI 10.1175/JHM-D-12-015.1
+   Li HY, 2011, J GEOPHYS RES-ATMOS, V116, DOI 10.1029/2011JD016276
+   Liang X, 1994, J GEOPHYS RES-ATMOS, V99, P14415, DOI 10.1029/94JD00483
+   Liebe J, 2005, PHYS CHEM EARTH, V30, P448, DOI 10.1016/j.pce.2005.06.011
+   Liu CM, 2002, INT J WATER RESOUR D, V18, P453, DOI 10.1080/0790062022000006934
+   Liu JG, 2012, SCIENCE, V337, P649, DOI 10.1126/science.1219471
+   Liu JG, 2013, GLOBAL ENVIRON CHANG, V23, P633, DOI 10.1016/j.gloenvcha.2013.02.002
+   Liu S, 2013, BIOGEOSCIENCES, V10, P2915, DOI 10.5194/bg-10-2915-2013
+   Lohmann D, 1996, TELLUS A, V48, P708, DOI 10.1034/j.1600-0870.1996.t01-3-00009.x
+   Lohmann D, 1998, HYDROLOG SCI J, V43, P131, DOI 10.1080/02626669809492107
+   MacKay MD, 2009, LIMNOL OCEANOGR, V54, P2315, DOI 10.4319/lo.2009.54.6_part_2.2315
+   MacKay M. D., 2011, AGU FALL M, V1, P1359
+   MacKay M, 2013, CLIMATIC CHANGE, V117, P55, DOI 10.1007/s10584-012-0560-z
+   Maxwell RM, 2007, ADV WATER RESOUR, V30, P2447, DOI 10.1016/j.advwatres.2007.05.018
+   Maxwell RM, 2011, MON WEATHER REV, V139, P96, DOI 10.1175/2010MWR3392.1
+   Maxwell RM, 2005, J HYDROMETEOROL, V6, P233, DOI 10.1175/JHM422.1
+   Meigh JR, 1999, WATER RESOUR MANAG, V13, P85, DOI 10.1023/A:1008025703712
+   Meybeck M, 2003, PHILOS T R SOC B, V358, P1935, DOI 10.1098/rstb.2003.1379
+   Michetti M, 2014, LAND, V3, P793, DOI 10.3390/land3030793
+   Miller GW, 2006, DESALINATION, V187, P65, DOI 10.1016/j.desal.2005.04.068
+   Mu Q, 2007, REMOTE SENS ENVIRON, V111, P519, DOI 10.1016/j.rse.2007.04.015
+   Mu QZ, 2011, REMOTE SENS ENVIRON, V115, P1781, DOI 10.1016/j.rse.2011.02.019
+   Muller Schmied H, 2014, HYDROL EARTH SYST SC, V18, P3511, DOI 10.5194/hess-18-3511-2014
+   Nakayama T, 2013, HYDROL PROCESS, V27, P3350, DOI 10.1002/hyp.9835
+   Nakayama T, 2013, GLOBAL PLANET CHANGE, V100, P38, DOI 10.1016/j.gloplacha.2012.10.004
+   Nazemi A, 2015, HYDROL EARTH SYST SC, V19, P33, DOI 10.5194/hess-19-33-2015
+   Nazemi A., 2002, P NAFIPS FLINT 2002, P227, DOI [10.1109/NAFIPS.2002.1018060, DOI 10.1109/NAFIPS.2002.1018060]
+   Nazemi A., 2006, P IEEE C EV COMP, P1901, DOI [10.1109/CEC.2006.1688539, DOI 10.1109/CEC.2006.1688539]
+   Nazemi A., 2014, EOS T AM GEOPHYS UN, V95, P288, DOI [10.1002/2014EOS320007, DOI 10.1002/2014EOS320007]
+   Nazemi AR, 2006, J HYDRAUL RES, V44, P269, DOI 10.1080/00221686.2006.9521681
+   Nazemi A, 2014, ADV WATER RESOUR, V63, P131, DOI 10.1016/j.advwatres.2013.11.009
+   Nazemi A, 2013, WATER RESOUR RES, V49, P291, DOI 10.1029/2012WR012755
+   Nazemi Alireza, 2008, BHS 10 NAT HYDR S EX
+   Nilsson C, 2005, SCIENCE, V308, P405, DOI 10.1126/science.1107887
+   Oki T, 2001, HYDROLOG SCI J, V46, P983, DOI 10.1080/02626660109492890
+   Oki T, 2013, CLIMATE SCI SERVING, P185, DOI DOI 10.1007/978-94-007-6692-1_7
+   Oki T., 1998, EARTH INTERACT, V2, P1, DOI DOI 10.1175/1087-3562(1998)002<LESS
+   Oki T, 2006, SCIENCE, V313, P1068, DOI 10.1126/science.1128845
+   Oleson KW, 2008, J GEOPHYS RES-BIOGEO, V113, DOI 10.1029/2007JG000563
+   Oleson KW, 2004, NCARTN461STR, DOI [10.5065/D6N877R0, DOI 10.5065/D6N877R0]
+   Pietroniro A, 2007, HYDROL EARTH SYST SC, V11, P1279, DOI 10.5194/hess-11-1279-2007
+   Pokhrel Y, 2012, J HYDROMETEOROL, V13, P255, DOI 10.1175/JHM-D-11-013.1
+   Pokhrel YN, 2012, NAT GEOSCI, V5, P389, DOI [10.1038/ngeo1476, 10.1038/NGEO1476]
+   Polcher J., 2014, EARTH SYST SCI DISCU, V11, pC3403
+   Polcher J., 2011, 34 WATCH
+   PONCE VM, 1994, J HYDROL, V162, P433, DOI 10.1016/0022-1694(94)90241-0
+   Popper K., 1995, LOGIC SCI DISCOVERY
+   Postel SL, 1996, SCIENCE, V271, P785, DOI 10.1126/science.271.5250.785
+   Prudhomme C, 2014, P NATL ACAD SCI USA, V111, P3262, DOI 10.1073/pnas.1222473110
+   Pryke A, 2007, LECT NOTES COMPUT SC, V4403, P361
+   Rani D, 2010, WATER RESOUR MANAG, V24, P1107, DOI 10.1007/s11269-009-9488-0
+   REVELLE C, 1969, WATER RESOUR RES, V5, P767, DOI 10.1029/WR005i004p00767
+   Rodell M, 2007, HYDROGEOL J, V15, P159, DOI 10.1007/s10040-006-0103-7
+   Rodell M, 2009, NATURE, V460, P999, DOI 10.1038/nature08238
+   Rosenzweig C, 2014, P NATL ACAD SCI USA, V111, P3268, DOI 10.1073/pnas.1222463110
+   Rosolem R, 2013, HYDROL PROCESS, V27, P2075, DOI 10.1002/hyp.9362
+   Rosolem R, 2012, J GEOPHYS RES-ATMOS, V117, DOI 10.1029/2011JD016355
+   Rost S, 2008, WATER RESOUR RES, V44, DOI 10.1029/2007WR006331
+   Rouholahnejad E, 2012, ENVIRON MODELL SOFTW, V31, P28, DOI 10.1016/j.envsoft.2011.12.001
+   Sato H, 2015, SOIL SCI PLANT NUTR, V61, P34, DOI 10.1080/00380768.2014.917593
+   Savtchenko A, 2004, ADV SPACE RES, V34, P710, DOI 10.1016/j.asr.2004.03.012
+   Schewe J, 2014, P NATL ACAD SCI USA, V111, P3245, DOI 10.1073/pnas.1222460110
+   Schiermeier Q., 2013, NATURE, V505, P10, DOI DOI 10.1038/505010A
+   Schwiegelshohn U, 2010, FUTURE GENER COMP SY, V26, P1104, DOI 10.1016/j.future.2010.05.010
+   Siebert S, 2010, HYDROL EARTH SYST SC, V14, P1863, DOI 10.5194/hess-14-1863-2010
+   Skliris N, 2004, J MARINE SYST, V52, P121, DOI 10.1016/j.jmarsys.2004.02.005
+   Smith M. J., 2014, AM METEOROL SOC, V95, P1453, DOI [10.1175/BAMS-D-13-00080.1,2014., DOI 10.1175/BAMS-D-13-00080.1]
+   Sorooshian S, 2011, B AM METEOROL SOC, V92, P1353, DOI 10.1175/2011BAMS3158.1
+   Sorooshian S, 2011, J GEOPHYS RES-ATMOS, V116, DOI 10.1029/2010JD014775
+   Strzepek K., 2012, 236 IGSM WRS MIT
+   Strzepek K., 2010, 189 IGSM WRS MIT
+   Sun AY, 2012, J HYDROL, V422, P1, DOI 10.1016/j.jhydrol.2011.10.025
+   Swenson SC, 2012, J ADV MODEL EARTH SY, V4, DOI 10.1029/2012MS000165
+   Syvitski JPM, 2005, SCIENCE, V308, P376, DOI 10.1126/science.1109454
+   Takata K, 2003, GLOBAL PLANET CHANGE, V38, P209, DOI 10.1016/S0921-8181(03)00030-4
+   Takeuchi K, 1997, HYDROLOG SCI J, V42, P583, DOI 10.1080/02626669709492055
+   Tang QH, 2010, J HYDROMETEOROL, V11, P156, DOI 10.1175/2009JHM1152.1
+   Tapley BD, 2004, SCIENCE, V305, P503, DOI 10.1126/science.1099192
+   Taylor RG, 2013, NAT CLIM CHANGE, V3, P322, DOI [10.1038/nclimate1744, 10.1038/NCLIMATE1744]
+   Tebakari T, 2012, HYDROL PROCESS, V26, P2411, DOI 10.1002/hyp.9345
+   Tesfa TK, 2014, GEOSCI MODEL DEV, V7, P947, DOI 10.5194/gmd-7-947-2014
+   Trenberth KE, 2014, SURV GEOPHYS, V35, P515, DOI 10.1007/s10712-012-9214-y
+   USGS, 2011, WAT US US
+   Van Beek L., 2009, GLOBAL HYDROLOGICAL
+   van Beek LPH, 2011, WATER RESOUR RES, V47, DOI 10.1029/2010WR009791
+   van Dijk AIJM, 2011, HYDROL EARTH SYST SC, V15, P39, DOI 10.5194/hess-15-39-2011
+   Vorosmarty CJ, 2010, NATURE, V467, P555, DOI 10.1038/nature09440
+   Voisin N, 2013, HYDROL EARTH SYST SC, V17, P4555, DOI 10.5194/hess-17-4555-2013
+   Voisin N, 2013, HYDROL EARTH SYST SC, V17, P3605, DOI 10.5194/hess-17-3605-2013
+   von Bloh W, 2010, ENVIRON MODELL SOFTW, V25, P685, DOI 10.1016/j.envsoft.2009.11.012
+   Vorosmarty CJ, 1998, J HYDROL, V207, P147, DOI 10.1016/S0022-1694(98)00109-7
+   Vorosmarty CJ, 1997, AMBIO, V26, P210
+   Vorosmarty CJ, 2003, GLOBAL PLANET CHANGE, V39, P169, DOI 10.1016/S0921-8181(03)00023-7
+   Wada Y, 2014, EARTH SYST DYNAM, V5, P15, DOI 10.5194/esd-5-15-2014
+   Wada Y, 2013, GEOPHYS RES LETT, V40, P4626, DOI 10.1002/grl.50686
+   Wada Y, 2012, WATER RESOUR RES, V48, DOI 10.1029/2011WR010562
+   Wada Y, 2011, WATER RESOUR RES, V47, DOI 10.1029/2010WR009792
+   Wada Y, 2010, GEOPHYS RES LETT, V37, DOI 10.1029/2010GL044571
+   Wagener T, 2004, RAINFALL RUNOFF MODE
+   Wang YQ, 2004, J METEOROL SOC JPN, V82, P1599, DOI 10.2151/jmsj.82.1599
+   Wehner M, 2008, INT J HIGH PERFORM C, V22, P149, DOI 10.1177/1094342007085023
+   Wheater H, 2013, PHILOS T R SOC A, V371, DOI 10.1098/rsta.2012.0409
+   White K, 2006, EOS T AGU, DOI DOI 10.1029/2008E0100001
+   Williams DL, 2006, PHOTOGRAMM ENG REM S, V72, P1171, DOI 10.14358/PERS.72.10.1171
+   Wisser D, 2010, HYDROL EARTH SYST SC, V14, P1, DOI 10.5194/hess-14-1-2010
+   Wood EF, 2011, WATER RESOUR RES, V47, DOI 10.1029/2010WR010090
+   Wu Y., 2014, P MODSIM 2007 INT C, P1561
+   Wu YP, 2012, J HYDROMETEOROL, V13, P270, DOI 10.1175/JHM-D-10-05028.1
+   Ye AZ, 2014, HYDROL PROCESS, V28, P5755, DOI 10.1002/hyp.10081
+   Yilmaz MT, 2014, WATER RESOUR RES, V50, P386, DOI 10.1002/2013WR014194
+   Yoshikawa S, 2014, HYDROL EARTH SYST SC, V18, P4289, DOI 10.5194/hess-18-4289-2014
+   Zektser I. S., 2004, GROUNDWATER RESOURCE
+   Zhao F, 2012, J HYDROMETEOROL, V13, P735, DOI 10.1175/JHM-D-11-061.1
+NR 200
+TC 33
+Z9 33
+U1 2
+U2 39
+PU COPERNICUS GESELLSCHAFT MBH
+PI GOTTINGEN
+PA BAHNHOFSALLEE 1E, GOTTINGEN, 37081, GERMANY
+SN 1027-5606
+EI 1607-7938
+J9 HYDROL EARTH SYST SC
+JI Hydrol. Earth Syst. Sci.
+PY 2015
+VL 19
+IS 1
+BP 63
+EP 90
+DI 10.5194/hess-19-63-2015
+PG 28
+WC Geosciences, Multidisciplinary; Water Resources
+SC Geology; Water Resources
+GA CA5EA
+UT WOS:000348929800004
+OA gold
+DA 2018-06-22
+ER
+
+PT J
+AU Hasegawa, T
+   Fujimori, S
+   Takahashi, K
+   Masui, T
+AF Hasegawa, Tomoko
+   Fujimori, Shinichiro
+   Takahashi, Kiyoshi
+   Masui, Toshihiko
+TI Scenarios for the risk of hunger in the twenty-first century using
+   Shared Socioeconomic Pathways
+SO ENVIRONMENTAL RESEARCH LETTERS
+LA English
+DT Article
+DE risk of hunger; SSP; CGE model; socioeconomic scenario
+ID GLOBAL WATER SCARCITY; CLIMATE-CHANGE; FOOD SECURITY; AGRICULTURE;
+   FUTURE; MODELS
+AB Shared socioeconomic pathways (SSPs) are being developed internationally for cross-sectoral assessments of climate change impacts, adaptation, and mitigation. These are five scenarios that include both qualitative and quantitative information for mitigation and adaptation challenges to climate change. In this study, we quantified scenarios for the risk of hunger in the 21st century using SSPs, and clarified elements that influence future hunger risk. There were two primary findings: (1) risk of hunger in the 21st-century greatly differed among five SSPs; and (2) population growth, improvement in the equality of food distribution within a country, and increases in food consumption mainly driven by income growth greatly influenced future hunger risk and were important elements in its long-term assessment.
+C1 [Hasegawa, Tomoko; Fujimori, Shinichiro; Takahashi, Kiyoshi; Masui, Toshihiko] Natl Inst Environm Studies, Ctr Social & Environm Syst Res, Tsukuba, Ibaraki 3058506, Japan.
+RP Hasegawa, T (reprint author), Natl Inst Environm Studies, Ctr Social & Environm Syst Res, 16-2 Onogawa, Tsukuba, Ibaraki 3058506, Japan.
+EM hasegawa.tomoko@nies.go.jp
+RI Fujimori, Shinichiro/A-1288-2015
+OI Fujimori, Shinichiro/0000-0001-7897-1796
+FU Environment Research and Technology Development Fund of the Ministry of
+   the Environment, Japan [2-1402]; climate change research program of the
+   National Institute for Environmental Studies
+FX The authors are grateful to two anonymous reviewers for their useful
+   comments. This research was supported by the Environment Research and
+   Technology Development Fund (2-1402) of the Ministry of the Environment,
+   Japan, and the climate change research program of the National Institute
+   for Environmental Studies.
+CR Alexandratos N., 2012, 1203 ESA FAO
+   Barrett CB, 2010, SCIENCE, V327, P825, DOI 10.1126/science.1182768
+   Bruinsma J., 2006, WORLD AGR 2030 2050
+   FAO, 2008, FAO METH MEAS FOOD D
+   FAO/WHO, 1973, FOOD SEC
+   FAO/ WHO, 1973, FOOD SEC, V522
+   Fujimori S, 2012, DISCUSSION PAPER SER
+   Fujimori S, 2014, FOOD SECUR, V6, P685, DOI 10.1007/s12571-014-0375-z
+   Godfray HCJ, 2010, SCIENCE, V327, P812, DOI 10.1126/science.1185383
+   Hanasaki N, 2013, HYDROL EARTH SYST SC, V17, P2393, DOI 10.5194/hess-17-2393-2013
+   Hanasaki N, 2013, HYDROL EARTH SYST SC, V17, P2375, DOI 10.5194/hess-17-2375-2013
+   Hasegawa T, CONSEQUENCE IN PRESS
+   Hasegawa T, 2014, ENVIRON SCI TECHNOL, V48, P438, DOI 10.1021/es4034149
+   IIASA, 2012, SHAR SOC PATHW SSP D
+   Kii M, 2013, ENVIRON MODEL ASSESS, V18, P299, DOI 10.1007/s10666-012-9348-9
+   Meehl GA, 2007, B AM METEOROL SOC, V88, P1383, DOI 10.1175/BAMS-88-9-1383
+   Morgan MG, 2008, CLIMATIC CHANGE, V90, P189, DOI 10.1007/s10584-008-9458-1
+   Nakicenovic N, 2000, SPECIAL REPORT EMISS
+   Nelson G. C., 2010, FOOD SECURITY FARMIN
+   Nelson GC, 2014, P NATL ACAD SCI USA, V111, P3274, DOI 10.1073/pnas.1222465110
+   O'Neill BC, 2014, CLIMATIC CHANGE, V122, P387, DOI 10.1007/s10584-013-0905-2
+   Robinson S, 2014, AGR ECON-BLACKWELL, V45, P21, DOI 10.1111/agec.12087
+   Schmidhuber J, 2007, P NATL ACAD SCI USA, V104, P19703, DOI 10.1073/pnas.0701976104
+   Taylor KE, 2012, B AM METEOROL SOC, V93, P485, DOI 10.1175/BAMS-D-11-00094.1
+   Valin H, 2014, AGR ECON-BLACKWELL, V45, P51, DOI 10.1111/agec.12089
+   van Ruijven BJ, 2014, CLIMATIC CHANGE, V122, P481, DOI 10.1007/s10584-013-0931-0
+   van Vuuren DP, 2014, CLIMATIC CHANGE, V122, P373, DOI 10.1007/s10584-013-0906-1
+   von Lampe M, 2014, AGR ECON-BLACKWELL, V45, P3, DOI 10.1111/agec.12086
+NR 28
+TC 13
+Z9 13
+U1 1
+U2 27
+PU IOP PUBLISHING LTD
+PI BRISTOL
+PA TEMPLE CIRCUS, TEMPLE WAY, BRISTOL BS1 6BE, ENGLAND
+SN 1748-9326
+J9 ENVIRON RES LETT
+JI Environ. Res. Lett.
+PD JAN
+PY 2015
+VL 10
+IS 1
+AR 014010
+DI 10.1088/1748-9326/10/1/014010
+PG 8
+WC Environmental Sciences; Meteorology & Atmospheric Sciences
+SC Environmental Sciences & Ecology; Meteorology & Atmospheric Sciences
+GA AZ8ZX
+UT WOS:000348501800011
+OA gold
+DA 2018-06-22
+ER
+
+PT J
+AU Dong, WH
+   Liu, Z
+   Liao, H
+   Tang, QH
+   Li, XE
+AF Dong, Weihua
+   Liu, Zhao
+   Liao, Hua
+   Tang, Qiuhong
+   Li, Xian'en
+TI New climate and socio-economic scenarios for assessing global human
+   health challenges due to heat risk
+SO CLIMATIC CHANGE
+LA English
+DT Article
+ID EXTREME HEAT; US CITIES; ENVIRONMENTAL HAZARDS; TEMPERATURE EXTREMES;
+   PUBLIC-HEALTH; UNITED-STATES; MORTALITY; VULNERABILITY; WAVE;
+   SUSTAINABILITY
+AB Motivated by growing heat-related morbidity and mortality in a warming climate, this paper assesses global heat health risk in order to understand the challenges to sustainability in the 21st century, using four Representative Concentration Pathways (RCPs) of the HadGEM2-ES climate model and five Shared Socio-Economic Pathways (SSPs). Factors influencing global heat health risk were reviewed and risks were estimated based on heat hazard and socio-economic vulnerability. Hazard, vulnerability, risk and in particular, populations at different risk levels, were analyzed quantitatively at both global and regional scales. The results show that under an RCP8.5-SSP3 scenario, the world will be subject to the highest heat health risk, with rapidly increasing hazard levels and vulnerability over the century. Less developed or developing regions, such as Africa and Southeast Asia, are at the highest risk. The heat risk under an RCP2.6-SSP1 scenario will first increase and then fall, resulting in the lowest heat-health-risk pattern. We found that heat health risk will increase during the century under all RCP-SSP scenarios, with a higher frequency, higher intensity, longer duration and expanding spatial reach. Significant differences were observed across regions. The results make clear that the increasing risk poses significant challenges to sustainable human health. To meet these challenges, more attention and effective actions are urgently needed from both policy makers and individuals.
+C1 [Dong, Weihua; Liu, Zhao; Liao, Hua; Li, Xian'en] Beijing Normal Univ, State Key Lab Remote Sensing Sci, Beijing Key Lab Remote Sensing Environm & Digital, Beijing 100875, Peoples R China.
+   [Dong, Weihua; Liu, Zhao; Liao, Hua; Li, Xian'en] Beijing Normal Univ, Sch Geog, Beijing 100875, Peoples R China.
+   [Liu, Zhao] Beijing Normal Univ, State Key Lab Earth Surface Proc & Resource, Beijing 100875, Peoples R China.
+RP Dong, WH (reprint author), Beijing Normal Univ, State Key Lab Remote Sensing Sci, Beijing Key Lab Remote Sensing Environm & Digital, Beijing 100875, Peoples R China.
+EM dongweihua@bnu.edu.cn; liuzhaofairy@gmail.com; liaohua@mail.bnu.edu.cn;
+   tangqh@igsnrr.ac.cn; lixianen@mail.bnu.edu.cn
+OI Tang, Qiuhong/0000-0002-0886-6699
+FU National Basic Research Program of China (973 Program) [2012CB955403];
+   National Natural Science Foundations of China (NSFC) [41471382]
+FX This research was supported by the National Basic Research Program of
+   China (973 Program) (Grant No. 2012CB955403) and National Natural
+   Science Foundations of China (NSFC, Grant No. 41471382). Comments from
+   the reviewers are appreciated, which helped in the improvement of the
+   article's quality. All the climate and socio-economic data used in this
+   study are available at the ISI-MIP ESGF Node
+   (http://esg.pik-potsdam.de).
+CR Adger WN, 2006, GLOBAL ENVIRON CHANG, V16, P268, DOI 10.1016/j.gloenvcha.2006.02.006
+   Anderson B, 2010, ENV HLTH PERSPECT, V119, P210, DOI [10.1289/ehp.1002313, DOI 10.1289/EHP.1002313]
+   Anderson BG, 2009, EPIDEMIOLOGY, V20, P205, DOI 10.1097/EDE.0b013e318190ee08
+   Barrow MW, 1998, AM FAM PHYSICIAN, V58, P749
+   Blaikie P., 2004, RISK NATURAL HAZARDS
+   Bouchama A, 2002, NEW ENGL J MED, V346, P1978, DOI 10.1056/NEJMra011089
+   Braga ALF, 2002, ENVIRON HEALTH PERSP, V110, P859, DOI 10.1289/ehp.02110859
+   CDC, 2002, MMWR-MORBID MORTAL W, V51, P567
+   Collins TW, 2009, APPL GEOGR, V29, P448, DOI 10.1016/j.apgeog.2008.10.005
+   Curriero FC, 2002, AM J EPIDEMIOL, V155, P80, DOI 10.1093/aje/155.1.80
+   Cutter SL, 2003, SOC SCI QUART, V84, P242, DOI 10.1111/1540-6237.8402002
+   Dolney TJ, 2006, ENVIRON RES, V101, P94, DOI 10.1016/j.envres.2005.08.008
+   Dong WH, 2014, SUSTAINABILITY-BASEL, V6, P7334, DOI 10.3390/su6107334
+   Fischer EM, 2010, NAT GEOSCI, V3, P398, DOI 10.1038/NGEO866
+   Fouillet A, 2006, INT ARCH OCC ENV HEA, V80, P16, DOI 10.1007/s00420-006-0089-4
+   Garssen J, 2005, Euro Surveill, V10, P165
+   Hajat S, 2010, J EPIDEMIOL COMMUN H, V64, P753, DOI 10.1136/jech.2009.087999
+   Hansen AL, 2008, INT J EPIDEMIOL, V37, P1359, DOI 10.1093/ije/dyn165
+   Harlan SL, 2006, SOC SCI MED, V63, P2847, DOI 10.1016/j.socscimed.2006.07.030
+   Hempel S, 2013, EARTH SYST DYNAM, V4, P219, DOI 10.5194/esd-4-219-2013
+   IPCC, 2013, CLIM CHANG 2013 PHYS
+   Johnson DP, 2012, APPL GEOGR, V35, P23, DOI 10.1016/j.apgeog.2012.04.006
+   Johnson DP, 2009, INT J HEALTH GEOGR, V8, DOI 10.1186/1476-072X-8-57
+   Jones CD, 2011, GEOSCI MODEL DEV, V4, P543, DOI 10.5194/gmd-4-543-2011
+   JONES TS, 1982, JAMA-J AM MED ASSOC, V247, P3327, DOI 10.1001/jama.247.24.3327
+   Koppe C., 2004, HEAT WAVES RISKS RES
+   Kovats RS, 2008, ANNU REV PUBL HEALTH, V29, P41, DOI 10.1146/annurev.publhealth.29.020907.090843
+   Kriegler E, 2012, GLOBAL ENVIRON CHANG, V22, P807, DOI 10.1016/j.gloenvcha.2012.05.005
+   Luber G, 2008, AM J PREV MED, V35, P429, DOI 10.1016/j.amepre.2008.08.021
+   Lundgren K, 2013, SUSTAINABILITY-BASEL, V5, P3116, DOI 10.3390/su5073116
+   Medina-Ramon M, 2007, OCCUP ENVIRON MED, V64, P827, DOI 10.1136/oem.2007.033175
+   Meehl GA, 2004, SCIENCE, V305, P994, DOI 10.1126/science.1098704
+   Morrow BH, 1999, DISASTERS, V23, P1, DOI 10.1111/1467-7717.00102
+   Moss RH, 2010, NATURE, V463, P747, DOI 10.1038/nature08823
+   Nakicenovic N., 2000, SPECIAL REPORT EMISS
+   NWS (National Weather Service), 2015, REG WAM WATCH ADV CR
+   O'Neill BC, 2014, CLIMATIC CHANGE, V122, P387, DOI 10.1007/s10584-013-0905-2
+   O'Neill MS, 2003, AM J EPIDEMIOL, V157, P1074, DOI 10.1093/aje/kwg096
+   PAN WH, 1995, LANCET, V345, P353, DOI 10.1016/S0140-6736(95)90341-0
+   Parry M.L., 2007, CLIMATE CHANGE 2007, P7
+   Poumadere M, 2005, RISK ANAL, V25, P1483, DOI 10.1111/j.1539-6925.2005.00694.x
+   Reid CE, 2009, ENVIRON HEALTH PERSP, V117, P1730, DOI 10.1289/ehp.0900683
+   Robine JM, 2008, CR BIOL, V331, P171, DOI 10.1016/j.crvi.2007.12.001
+   Robinson PJ, 2001, J APPL METEOROL, V40, P762, DOI 10.1175/1520-0450(2001)040<0762:OTDOAH>2.0.CO;2
+   Schwartz J, 2005, EPIDEMIOLOGY, V16, P67, DOI 10.1097/01.ede.0000147114.25957.71
+   Semenza JC, 1996, NEW ENGL J MED, V335, P84, DOI 10.1056/NEJM199607113350203
+   Smith C, 2009, THEOR APPL CLIMATOL, V98, P19, DOI 10.1007/s00704-008-0086-5
+   Steenland K, 2002, AM J EPIDEMIOL, V156, P11, DOI 10.1093/aje/kwf001
+   Tan JG, 2007, INT J BIOMETEOROL, V51, P193, DOI 10.1007/s00484-006-0058-3
+   Tian ZX, 2013, PLOS ONE, V8, DOI 10.1371/journal.pone.0077321
+   Tomlinson C.J., 2011, UK INT J HEA GEOGR, V10, P42, DOI DOI 10.1186/1476-072X-10-42
+   Turner BL, 2003, P NATL ACAD SCI USA, V100, P8074, DOI 10.1073/pnas.1231335100
+   United Nations Disaster Relief Office (UNDRO), 1991, MIT NAT DIS PHEN EFF
+   van Vuuren DP, 2014, CLIMATIC CHANGE, V122, P373, DOI 10.1007/s10584-013-0906-1
+   van Vuuren DP, 2012, GLOBAL ENVIRON CHANG, V22, P21, DOI 10.1016/j.gloenvcha.2011.08.002
+   van Vuuren DP, 2011, CLIMATIC CHANGE, V109, P5, DOI 10.1007/s10584-011-0148-z
+   Vaneckova P, 2008, ENVIRON RES, V108, P361, DOI 10.1016/j.envres.2008.07.015
+   Vescovi L, 2005, CLIMATE RES, V30, P71, DOI 10.3354/cr030071
+   Warszawski L, 2014, P NATL ACAD SCI USA, V111, P3228, DOI 10.1073/pnas.1312330110
+   WMO, 2013, GLOB CLIM 2001 2010
+NR 60
+TC 13
+Z9 14
+U1 2
+U2 30
+PU SPRINGER
+PI DORDRECHT
+PA VAN GODEWIJCKSTRAAT 30, 3311 GZ DORDRECHT, NETHERLANDS
+SN 0165-0009
+EI 1573-1480
+J9 CLIMATIC CHANGE
+JI Clim. Change
+PD JUN
+PY 2015
+VL 130
+IS 4
+BP 505
+EP 518
+DI 10.1007/s10584-015-1372-8
+PG 14
+WC Environmental Sciences; Meteorology & Atmospheric Sciences
+SC Environmental Sciences & Ecology; Meteorology & Atmospheric Sciences
+GA CI4GD
+UT WOS:000354705200003
+OA gold_or_bronze
+DA 2018-06-21
+ER
+
+PT J
+AU Nazemi, A
+   Wheater, HS
+AF Nazemi, A.
+   Wheater, H. S.
+TI On inclusion of water resource management in Earth system models - Part
+   1: Problem definition and representation of water demand
+SO HYDROLOGY AND EARTH SYSTEM SCIENCES
+LA English
+DT Article
+ID GENERAL-CIRCULATION MODELS; LAND-SURFACE SCHEME; SHARED SOCIOECONOMIC
+   PATHWAYS; CONTERMINOUS UNITED-STATES; GLOBAL VEGETATION MODEL; SOUTHERN
+   GREAT-PLAINS; SPACE-TIME CLIMATE; HYDROLOGY MODEL; SOIL-MOISTURE; RIVER
+   FLOW
+AB Human activities have caused various changes to the Earth system, and hence the interconnections between human activities and the Earth system should be recognized and reflected in models that simulate Earth system processes. One key anthropogenic activity is water resource management, which determines the dynamics of human-water interactions in time and space and controls human livelihoods and economy, including energy and food production. There are immediate needs to include water resource management in Earth system models. First, the extent of human water requirements is increasing rapidly at the global scale and it is crucial to analyze the possible imbalance between water demands and supply under various scenarios of climate change and across various temporal and spatial scales. Second, recent observations show that human-water interactions, manifested through water resource management, can substantially alter the terrestrial water cycle, affect land-atmospheric feedbacks and may further interact with climate and contribute to sea-level change. Due to the importance of water resource management in determining the future of the global water and climate cycles, the World Climate Research Program's Global Energy and Water Exchanges project (WRCP-GEWEX) has recently identified gaps in describing human water interactions as one of the grand challenges in Earth system modeling (GEWEX, 2012). Here, we divide water resource management into two interdependent elements, related firstly to water demand and secondly to water supply and allocation. In this paper, we survey the current literature on how various components of water demand have been included in large-scale models, in particular land surface and global hydrological models. Issues of water supply and allocation are addressed in a companion paper. The available algorithms to represent the dominant demands are classified based on the demand type, mode of simulation and underlying modeling assumptions. We discuss the pros and cons of available algorithms, address various sources of uncertainty and highlight limitations in current applications. We conclude that current capability of large-scale models to represent human water demands is rather limited, particularly with respect to future projections and coupled land-atmospheric simulations. To fill these gaps, the available models, algorithms and data for representing various water demands should be systematically tested, intercompared and improved. In particular, human water demands should be considered in conjunction with water supply and allocation, particularly in the face of water scarcity and unknown future climate.
+C1 [Nazemi, A.; Wheater, H. S.] Univ Saskatchewan, Global Inst Water Secur, Saskatoon, SK S7N 3H5, Canada.
+RP Nazemi, A (reprint author), Univ Saskatchewan, Global Inst Water Secur, 11 Innovat Blvd, Saskatoon, SK S7N 3H5, Canada.
+EM ali.nazemi@usask.ca
+FU Canada Excellence Research Chair in Water Security at the University of
+   Saskatchewan
+FX The first author would like to thank Amir Aghakouchak for his valuable
+   inputs during the early stages of this survey. The authors gratefully
+   acknowledge the constructive comments from the editor, Jan Polcher,
+   Ingjerd Haddeland, Jason Evans and two anonymous reviewers, which have
+   enabled us to make significant improvements to this paper. Financial
+   support for this study was provided by the Canada Excellence Research
+   Chair in Water Security at the University of Saskatchewan.
+CR Abdullah K. B., 2006, IRRIG DRAIN, V55, P219, DOI [10.1002/ird.254, DOI 10.1002/IRD.254]
+   Adam JC, 2003, J GEOPHYS RES-ATMOS, V108, DOI 10.1029/2002JD002499
+   Adam JC, 2007, J GEOPHYS RES-ATMOS, V112, DOI 10.1029/2007JD008525
+   Adegoke JO, 2003, MON WEATHER REV, V131, P556, DOI 10.1175/1520-0493(2003)131<0556:IOIOMS>2.0.CO;2
+   AghaKouchak A, 2015, J GREAT LAKES RES, V41, P307, DOI 10.1016/j.jglr.2014.12.007
+   Alcamo J, 2003, HYDROLOG SCI J, V48, P317, DOI 10.1623/hysj.48.3.317.45290
+   Alcamo J, 1997, GLOBAL CHANGE GLOBAL
+   Alcamo J, 2007, HYDROLOG SCI J, V52, P247, DOI 10.1623/hysj.52.2.247
+   Allen R. G., 1998, FAO Irrigation and Drainage Paper
+   Antonellini M, 2008, HYDROGEOL J, V16, P1541, DOI 10.1007/s10040-008-0319-9
+   Arnell NW, 1999, GLOBAL ENVIRON CHANG, V9, pS31, DOI 10.1016/S0959-3780(99)00017-5
+   Arnell NW, 2004, GLOBAL ENVIRON CHANG, V14, P31, DOI 10.1016/j.gloenvcha.2003.10.006
+   Arthington AH, 2006, ECOL APPL, V16, P1311, DOI 10.1890/1051-0761(2006)016[1311:TCOPEF]2.0.CO;2
+   Barella-Ortiz A, 2013, HYDROL EARTH SYST SC, V17, P4625, DOI 10.5194/hess-17-4625-2013
+   BARNSTON AG, 1984, J CLIM APPL METEOROL, V23, P865, DOI 10.1175/1520-0450(1984)023<0865:TEOIOW>2.0.CO;2
+   Beddington J, 2013, PHILOS T R SOC A, V371, DOI 10.1098/rsta.2012.0414
+   Blanc E., 2013, 239 MIT
+   Blyth E., 2011, 38 WATCH
+   Bondeau A, 2007, GLOBAL CHANGE BIOL, V13, P679, DOI 10.1111/j.1365-2486.2006.01305.x
+   Bormann H., 2011, FOOD ENV, V62, P23
+   Boucher O, 2004, CLIM DYNAM, V22, P597, DOI 10.1007/s00382-004-0402-4
+   Bowman DMJS, 2009, SCIENCE, V324, P481, DOI 10.1126/science.1163886
+   Brovkin V, 2006, CLIM DYNAM, V26, P587, DOI 10.1007/s00382-005-0092-6
+   Calvin K, 2013, CLIMATIC CHANGE, V117, P545, DOI 10.1007/s10584-012-0650-y
+   Cayan DR, 2010, P NATL ACAD SCI USA, V107, P21271, DOI 10.1073/pnas.0912391107
+   Central Intelligence Agency (CIA), 2001, CIA WORLD FACTB
+   Chaturvedi V., 2013, MITIG ADAPT STRAT GL, V18, P1, DOI DOI 10.1007/S11027-013-9497-4
+   Chaturvedi V., 2013, CLIMATE POLICY IMPLI
+   Chen F, 2001, MON WEATHER REV, V129, P569, DOI 10.1175/1520-0493(2001)129<0569:CAALSH>2.0.CO;2
+   Chen F, 2001, MON WEATHER REV, V129, P587, DOI 10.1175/1520-0493(2001)129<0587:CAALSH>2.0.CO;2
+   Chenoweth J, 2014, HYDROL EARTH SYST SC, V18, P2325, DOI 10.5194/hess-18-2325-2014
+   CIAT, 2005, GRIDD POP WORLD VERS
+   Claussen M., 2001, UNDERSTANDING EARTH, P145
+   Cole MA, 2004, APPL ECON LETT, V11, P1, DOI 10.1080/1350485042000187435
+   Collins W. D., 2004, NCARTN464STR, P226
+   Collins WD, 2006, J CLIMATE, V19, P2144, DOI 10.1175/JCLI3760.1
+   Compton E., 2011, 44 WATCH
+   Cosgrove BA, 2003, J GEOPHYS RES-ATMOS, V108, DOI [10.1029/2002JD003316, 10.1029/2002JD003118]
+   Crutzen P.J., 2006, EARTH SYSTEM SCI ANT, P13
+   Crutzen PJ, 2003, CLIMATIC CHANGE, V61, P251, DOI 10.1023/B:CLIM.0000004708.74871.62
+   Dadson S, 2013, PHILOS T R SOC A, V371, DOI 10.1098/rsta.2012.0412
+   Davies EGR, 2013, ADV WATER RESOUR, V52, P296, DOI 10.1016/j.advwatres.2012.11.020
+   de Rosnay P, 2003, GEOPHYS RES LETT, V30, DOI 10.1029/2003GL018024
+   DeAngelis A, 2010, J GEOPHYS RES-ATMOS, V115, DOI 10.1029/2010JD013892
+   DEARDORFF JW, 1978, J GEOPHYS RES-OCEANS, V83, P1889, DOI 10.1029/JC083iC04p01889
+   Dee DP, 2011, Q J ROY METEOR SOC, V137, P553, DOI 10.1002/qj.828
+   Destouni G, 2010, GEOPHYS RES LETT, V37, DOI 10.1029/2010GL044153
+   Dickinson R.E., 1984, GEOPHYS MONOGR SER, V29, P58, DOI DOI 10.1029/GM029P0058
+   DICKINSON RE, 1983, ADV GEOPHYS, V25, P305
+   Doll P, 2009, HYDROL EARTH SYST SC, V13, P2413
+   Doll P, 2014, WATER RESOUR RES, V50, P5698, DOI 10.1002/2014WR015595
+   Doll P, 2009, ENVIRON RES LETT, V4, DOI 10.1088/1748-9326/4/3/035006
+   Doll P, 2000, ICID J, V49, P55
+   Doll P, 2002, WATER RESOUR RES, V38, DOI 10.1029/2001WR000355
+   Douglas EM, 2009, GLOBAL PLANET CHANGE, V67, P117, DOI 10.1016/j.gloplacha.2008.12.007
+   DUCOUDRE NI, 1993, J CLIMATE, V6, P248, DOI 10.1175/1520-0442(1993)006<0248:SANSOP>2.0.CO;2
+   Ek MB, 2003, J GEOPHYS RES-ATMOS, V108, DOI 10.1029/2002JD003296
+   Eltahir EAB, 1998, WATER RESOUR RES, V34, P765, DOI 10.1029/97WR03499
+   Entekhabi D, 1989, J CLIMATE, V2, P816, DOI 10.1175/1520-0442(1989)002<0816:LSHPFA>2.0.CO;2
+   Evans JP, 2008, WATER RESOUR RES, V44, DOI 10.1029/2007WR006671
+   Falkenmark M, 2013, PHILOS T R SOC A, V371, DOI 10.1098/rsta.2012.0410
+   Farmer W., 2011, 195 MIT
+   Fischer G, 2007, TECHNOL FORECAST SOC, V74, P1083, DOI 10.1016/j.techfore.2006.05.021
+   Florke M, 2013, GLOBAL ENVIRON CHANG, V23, P144, DOI 10.1016/j.gloenvcha.2012.10.018
+   Florke M., 2004, EEARNC03007 U KASS
+   Forster H, 2010, REG ENVIRON CHANGE, V10, P327, DOI 10.1007/s10113-009-0104-x
+   Friedl MA, 2002, REMOTE SENS ENVIRON, V83, P287, DOI 10.1016/S0034-4257(02)00078-0
+   Gao H, 2012, WATER RESOUR RES, V48, DOI 10.1029/2012WR012063
+   Gaybullaev B, 2012, J MT SCI-ENGL, V9, P538, DOI 10.1007/s11629-012-2273-1
+   Gerten D, 2013, HYDROL EARTH SYST SC, V17, P3841, DOI 10.5194/hess-17-3841-2013
+   Gerten D, 2004, J HYDROL, V286, P249, DOI 10.1016/j.jhydrol.2003.09.029
+   Gerten D., 2011, 47 WATCH
+   Gerten D., 2010, CLIMATE CHANGE IMPAC
+   GEWEX, 2012, GEWEX DOC SER, V2012
+   Giordano M, 2009, ANNU REV ENV RESOUR, V34, P153, DOI 10.1146/annurev.environ.030308.100251
+   Gleeson T, 2012, NATURE, V488, P197, DOI 10.1038/nature11295
+   Gleick PH, 2003, ANNU REV ENV RESOUR, V28, P275, DOI 10.1146/annurev.energy.28.040202.122849
+   Gleick PH, 1996, WATER INT, V21, P83, DOI 10.1080/02508069608686494
+   Gleick PH, 2013, CLIMATE SCI SERVING, P151, DOI DOI 10.1007/978-94-007-6692-1_6
+   Gober P, 2014, HYDROL EARTH SYST SC, V18, P1413, DOI 10.5194/hess-18-1413-2014
+   Gosling SN, 2011, HYDROL EARTH SYST SC, V15, P279, DOI 10.5194/hess-15-279-2011
+   Grey D, 2013, PHILOS T R SOC A, V371, DOI 10.1098/rsta.2012.0406
+   Gueneau A., 2012, CLMAG AGR MODULE COM
+   Guimberteau M, 2012, CLIM DYNAM, V39, P1329, DOI 10.1007/s00382-011-1252-5
+   Haddeland I, 2007, HYDROL EARTH SYST SC, V11, P1035
+   Haddeland I, 2006, J HYDROL, V324, P210, DOI 10.1016/j.jhydrol.2005.09.028
+   Haddeland I, 2014, P NATL ACAD SCI USA, V111, P3251, DOI 10.1073/pnas.1222475110
+   Haddeland I, 2011, J HYDROMETEOROL, V12, P869, DOI 10.1175/2011JHM1324.1
+   Hagemann S, 1998, CLIM DYNAM, V14, P17, DOI 10.1007/s003820050205
+   Hanasaki N, 2008, HYDROL EARTH SYST SC, V12, P1007, DOI 10.5194/hess-12-1007-2008
+   Hanasaki N, 2008, HYDROL EARTH SYST SC, V12, P1027, DOI 10.5194/hess-12-1027-2008
+   Hanasaki N, 2013, HYDROL EARTH SYST SC, V17, P2393, DOI 10.5194/hess-17-2393-2013
+   Hanasaki N, 2013, HYDROL EARTH SYST SC, V17, P2375, DOI 10.5194/hess-17-2375-2013
+   Hanasaki N, 2006, J HYDROL, V327, P22, DOI 10.1016/j.jhydrol.2005.11.011
+   Hanasaki N, 2010, J HYDROL, V384, P232, DOI 10.1016/j.jhydrol.2009.09.028
+   Harding KJ, 2012, J HYDROMETEOROL, V13, P1687, DOI 10.1175/JHM-D-11-099.1
+   Harding KJ, 2012, J HYDROMETEOROL, V13, P1667, DOI 10.1175/JHM-D-11-098.1
+   Hejazi M. I., 2013, HYDROL EARTH SYST SC, V10, P3327, DOI [10.5194/hessd-10-3327-2013, DOI 10.5194/HESSD-10-3327-2013]
+   Hejazi MI, 2013, HYDROL EARTH SYST SC, P3383, DOI DOI 10.5194/HESSD-10-3383-2013
+   Hejazi M, 2014, TECHNOL FORECAST SOC, V81, P205, DOI 10.1016/j.techfore.2013.05.006
+   Hejazi M, 2013, HYDROLOG SCI J, V58, P519, DOI 10.1080/02626667.2013.772301
+   Hobbins MT, 2008, GEOPHYS RES LETT, V35, DOI 10.1029/2008GL033840
+   Hossain F, 2012, J HYDROL ENG, V17, P837, DOI 10.1061/(ASCE)HE.1943-5584.0000541
+   Hourdin F, 2006, CLIM DYNAM, V27, P787, DOI 10.1007/s00382-006-0158-0
+   Hughes G, 2010, UTIL POLICY, V18, P142, DOI 10.1016/j.jup.2010.03.002
+   IIASA/FAO, 2012, GLOB AGR EC ZON GAEZ
+   IPCC, 2000, IPCC SPEC REP EM SCE
+   Kalnay E, 1996, B AM METEOROL SOC, V77, P437, DOI 10.1175/1520-0477(1996)077<0437:TNYRP>2.0.CO;2
+   Kanamitsu M, 2002, B AM METEOROL SOC, V83, P1631, DOI [10.1175/BAMS-83-11-1631, 10.1175/Bams-83-11-1631]
+   Karl TR, 2003, SCIENCE, V302, P1719, DOI 10.1126/science.1090228
+   Kim H, 2009, GEOPHYS RES LETT, V36, DOI 10.1029/2009GL039006
+   Konar M, 2013, HYDROL EARTH SYST SC, V17, P3219, DOI 10.5194/hess-17-3219-2013
+   Konzmann M, 2013, HYDROLOG SCI J, V58, P88, DOI 10.1080/02626667.2013.746495
+   Koster RD, 2004, SCIENCE, V305, P1138, DOI 10.1126/science.1100217
+   Kriegler E, 2012, GLOBAL ENVIRON CHANG, V22, P807, DOI 10.1016/j.gloenvcha.2012.05.005
+   Krysanova V, 1998, ECOL MODEL, V106, P261, DOI 10.1016/S0304-3800(97)00204-4
+   Kump L. R., 2010, EARTH SYSTEM
+   Kyle P, 2013, INT J GREENH GAS CON, V13, P112, DOI 10.1016/j.ijggc.2012.12.006
+   Lai XJ, 2014, HYDROL PROCESS, V28, P150, DOI 10.1002/hyp.10077
+   Lawrence D. M., 2012, CHALLENGES REPRESENT
+   Lawrence DM, 2011, J ADV MODEL EARTH SY, V3, DOI 10.1029/2011MS000045
+   Leng GY, 2013, J GEOPHYS RES-ATMOS, V118, P9789, DOI 10.1002/jgrd.50792
+   Lenton TM, 2000, TELLUS B, V52, P1159, DOI 10.1034/j.1600-0889.2000.01104.x
+   Levis S., 2011, TECHNICAL DESCRIPTIO
+   Levis S, 2012, J CLIMATE, V25, P4839, DOI 10.1175/JCLI-D-11-00446.1
+   Li HY, 2013, J HYDROMETEOROL, V14, P808, DOI 10.1175/JHM-D-12-015.1
+   Liang X, 1994, J GEOPHYS RES-ATMOS, V99, P14415, DOI 10.1029/94JD00483
+   Lissner T. K., 2012, 4 EGU LEON C HYDR SO
+   Liu JY, 2010, J GEOGR SCI, V20, P483, DOI 10.1007/s11442-010-0483-4
+   Livneh B, 2011, J HYDROMETEOROL, V12, P1299, DOI 10.1175/2011JHM1361.1
+   Lo MH, 2013, GEOPHYS RES LETT, V40, P301, DOI 10.1002/grl.50108
+   Lobell DB, 2006, GEOPHYS RES LETT, V33, DOI 10.1029/2005GL025492
+   Lorenz C, 2012, J HYDROMETEOROL, V13, P1397, DOI 10.1175/JHM-D-11-088.1
+   Lu Y., 2013, THESIS U CALIFORNIA
+   Lucas-Picher P, 2011, J HYDROMETEOROL, V12, P849, DOI 10.1175/2011JHM1327.1
+   Macknick J., 2011, NRELTP6A205090
+   MANABE S, 1969, MON WEATHER REV, V97, P739, DOI 10.1175/1520-0493(1969)097<0739:CATOC>2.3.CO;2
+   Maurer EP, 2002, J CLIMATE, V15, P3237, DOI 10.1175/1520-0442(2002)015<3237:ALTHBD>2.0.CO;2
+   MCKENNEY MS, 1993, AGR FOREST METEOROL, V64, P81, DOI 10.1016/0168-1923(93)90095-Y
+   McNeill John R., 2000, SOMETHING NEW SUN EN
+   Mehta VK, 2013, AGR WATER MANAGE, V117, P70, DOI 10.1016/j.agwat.2012.10.021
+   Meinshausen M, 2011, CLIMATIC CHANGE, V109, P213, DOI 10.1007/s10584-011-0156-z
+   Meybeck M, 2003, PHILOS T R SOC B, V358, P1935, DOI 10.1098/rstb.2003.1379
+   Milano M, 2013, HYDROLOG SCI J, V58, P498, DOI 10.1080/02626667.2013.774458
+   MILLER JR, 1994, J CLIMATE, V7, P914, DOI 10.1175/1520-0442(1994)007<0914:CSRFIC>2.0.CO;2
+   MILLY PCD, 1992, J CLIMATE, V5, P209, DOI 10.1175/1520-0442(1992)005<0209:PEASMI>2.0.CO;2
+   Mitchell TD, 2005, INT J CLIMATOL, V25, P693, DOI 10.1002/joc.1181
+   Moore N, 2001, J APPL METEOROL, V40, P1297, DOI 10.1175/1520-0450(2001)040<1297:IIRATG>2.0.CO;2
+   Moss RH, 2010, NATURE, V463, P747, DOI 10.1038/nature08823
+   Music B, 2007, J HYDROMETEOROL, V8, P969, DOI 10.1175/JHM627.1
+   Nakayama T, 2013, HYDROL PROCESS, V27, P3350, DOI 10.1002/hyp.9835
+   Nakayama T, 2011, AGR FOREST METEOROL, V151, P314, DOI 10.1016/j.agrformet.2010.11.006
+   Nassopoulos H., 2008, WAT HYDR PESS HYDR O
+   Nassopoulos H, 2012, CLIMATIC CHANGE, V114, P497, DOI 10.1007/s10584-012-0423-7
+   Nazemi A, 2015, HYDROL EARTH SYST SC, V19, P63, DOI 10.5194/hess-19-63-2015
+   Nazemi A., 2002, P NAFIPS FLINT 2002, P227, DOI [10.1109/NAFIPS.2002.1018060, DOI 10.1109/NAFIPS.2002.1018060]
+   Nazemi A., 2014, EOS T AM GEOPHYS UN, V95, P288, DOI [10.1002/2014EOS320007, DOI 10.1002/2014EOS320007]
+   Nazemi A, 2014, ADV WATER RESOUR, V63, P131, DOI 10.1016/j.advwatres.2013.11.009
+   Nazemi A, 2013, WATER RESOUR RES, V49, P291, DOI 10.1029/2012WR012755
+   New M, 1999, J CLIMATE, V12, P829, DOI 10.1175/1520-0442(1999)012<0829:RTCSTC>2.0.CO;2
+   New M, 2000, J CLIMATE, V13, P2217, DOI 10.1175/1520-0442(2000)013<2217:RTCSTC>2.0.CO;2
+   Ngo-Duc T, 2005, J GEOPHYS RES-ATMOS, V110, DOI 10.1029/2004JD005434
+   Ngo-Duc T, 2007, WATER RESOUR RES, V43, DOI 10.1029/2006WR004941
+   Ngo-Duc T, 2005, GEOPHYS RES LETT, V32, DOI 10.1029/2005GL022719
+   NICHOLSON SE, 1988, PROG PHYS GEOG, V12, P36, DOI 10.1177/030913338801200102
+   Nilsson C, 2005, SCIENCE, V308, P405, DOI 10.1126/science.1107887
+   NOILHAN J, 1989, MON WEATHER REV, V117, P536, DOI 10.1175/1520-0493(1989)117<0536:ASPOLS>2.0.CO;2
+   Oki T, 2013, CLIMATE SCI SERVING, P185, DOI DOI 10.1007/978-94-007-6692-1_7
+   Oki T., 1998, EARTH INTERACT, V2, P1, DOI DOI 10.1175/1087-3562(1998)002<LESS
+   Oki T, 2006, SCIENCE, V313, P1068, DOI 10.1126/science.1128845
+   Oleson KW, 2008, J GEOPHYS RES-BIOGEO, V113, DOI 10.1029/2007JG000563
+   Oleson KW, 2004, NCARTN461STR, DOI [10.5065/D6N877R0, DOI 10.5065/D6N877R0]
+   Ozdogan M, 2008, REMOTE SENS ENVIRON, V112, P3520, DOI 10.1016/j.rse.2008.04.010
+   Ozdogan M, 2010, J HYDROMETEOROL, V11, P171, DOI 10.1175/2009JHM1116.1
+   PIELKE RA, 1992, METEOROL ATMOS PHYS, V49, P69, DOI 10.1007/BF01025401
+   Pietroniro A, 2007, HYDROL EARTH SYST SC, V11, P1279, DOI 10.5194/hess-11-1279-2007
+   Pitman AJ, 2009, GEOPHYS RES LETT, V36, DOI 10.1029/2009GL039076
+   PITMAN AJ, 1990, NATURE, V346, P734, DOI 10.1038/346734a0
+   Pitman AJ, 2003, INT J CLIMATOL, V23, P479, DOI 10.1002/joc.893
+   Poff NL, 2010, FRESHWATER BIOL, V55, P147, DOI 10.1111/j.1365-2427.2009.02204.x
+   POLCHER J, 2014, HYDROL EARTH SYST SC, V11, pC3403
+   Polcher J., 2011, 34 WATCH
+   Portmann F. T., 2010, GLOBAL BIOGEOCHEM CY, V24, P24, DOI DOI 10.1029/2008GB003435
+   Postel SL, 1996, SCIENCE, V271, P785, DOI 10.1126/science.271.5250.785
+   PRECODA N, 1991, AMBIO, V20, P109
+   PRIESTLEY CHB, 1972, MON WEATHER REV, V100, P81, DOI 10.1175/1520-0493(1972)100<0081:OTAOSH>2.3.CO;2
+   Prudhomme C, 2014, P NATL ACAD SCI USA, V111, P3262, DOI 10.1073/pnas.1222473110
+   Qian Y, 2013, J HYDROMETEOROL, V14, P700, DOI 10.1175/JHM-D-12-0134.1
+   Rausch S, 2014, RESOUR ENERGY ECON, V36, P556, DOI 10.1016/j.reseneeco.2013.09.001
+   Rodell M, 2009, NATURE, V460, P999, DOI 10.1038/nature08238
+   ROHLING EJ, 1992, J GEOPHYS RES-OCEANS, V97, P11191, DOI 10.1029/92JC00767
+   Rosenzweig C, 2014, P NATL ACAD SCI USA, V111, P3268, DOI 10.1073/pnas.1222463110
+   Rost S, 2008, WATER RESOUR RES, V44, DOI 10.1029/2007WR006331
+   Rost S, 2009, ENVIRON RES LETT, V4, DOI 10.1088/1748-9326/4/4/044002
+   Rudolf B., 2005, GLOBAL PRECIPITATION, P163
+   Sacks WJ, 2009, CLIM DYNAM, V33, P159, DOI 10.1007/s00382-008-0445-z
+   Saeed F, 2009, GEOPHYS RES LETT, V36, DOI 10.1029/2009GL040625
+   Schellnhuber H.J., 1998, EARTH SYSTEM ANAL IN
+   Schellnhuber HJ, 1999, NATURE, V402, pC19, DOI 10.1038/35011515
+   Schewe J, 2014, P NATL ACAD SCI USA, V111, P3245, DOI 10.1073/pnas.1222460110
+   Schiermeier Q., 2013, NATURE, V505, P10, DOI DOI 10.1038/505010A
+   Schlosser C.A., 2007, 147 MIT
+   Sellers P.J., 1992, CLIMATE SYSTEM MODEL, P451
+   Sellers PJ, 1996, J CLIMATE, V9, P676, DOI 10.1175/1520-0442(1996)009<0676:ARLSPF>2.0.CO;2
+   Sellers PJ, 1996, B AM METEOROL SOC, V77, P1987, DOI 10.1175/1520-0477(1996)077<1987:TIIIGD>2.0.CO;2
+   SELLERS PJ, 1986, J ATMOS SCI, V43, P505, DOI 10.1175/1520-0469(1986)043<0505:ASBMFU>2.0.CO;2
+   SELLERS PJ, 1994, INT J REMOTE SENS, V15, P3519, DOI 10.1080/01431169408954343
+   Shiklomanov I A, 1998, WORLD WATER RESOURCE
+   Shiklomanov I A, 1997, ASSESSMENT WATER RES
+   SHIKLOMANOV IA, 2000, WORLD WATER SCENARIO, P160
+   Short W., 2009, COMMUNICATION
+   Siebert S, 2005, HYDROL EARTH SYST SC, V9, P535, DOI 10.5194/hess-9-535-2005
+   Siebert S, 2010, HYDROL EARTH SYST SC, V14, P1863, DOI 10.5194/hess-14-1863-2010
+   Siebert S., 2007, GLOBAL MAP IRRIGATIO
+   Siebert S., 2008, GLOBAL CROP WATER MO
+   Siebert S, 2010, J HYDROL, V384, P198, DOI [10.1016/j.jhydro1.2009.07.031, 10.1016/j.jhydrol.2009.07.031]
+   Sitch S, 2003, GLOBAL CHANGE BIOL, V9, P161, DOI 10.1046/j.1365-2486.2003.00569.x
+   Sivapalan M, 2012, HYDROL PROCESS, V26, P1270, DOI 10.1002/hyp.8426
+   Skamarock W. C., 2005, NCARTN468STR
+   Skliris N, 2004, J MARINE SYST, V52, P121, DOI 10.1016/j.jmarsys.2004.02.005
+   Smakhtin V, 2004, WATER INT, V29, P307, DOI 10.1080/02508060408691785
+   Small I, 2001, ENVIRON HEALTH PERSP, V109, P547, DOI 10.2307/3455025
+   Smith M., 1992, 46 FOOD AGR ORG UN
+   Solomon S, 2009, P NATL ACAD SCI USA, V106, P1704, DOI 10.1073/pnas.0812721106
+   Sophocleous M, 2002, HYDROGEOL J, V10, P52, DOI 10.1007/s10040-001-0170-8
+   Sorooshian S, 2011, J GEOPHYS RES-ATMOS, V116, DOI 10.1029/2010JD014775
+   Soulis ED, 2000, ATMOS OCEAN, V38, P251, DOI 10.1080/07055900.2000.9649648
+   Steffen W, 2007, AMBIO, V36, P614, DOI 10.1579/0044-7447(2007)36[614:TAAHNO]2.0.CO;2
+   Steffen W, 2011, PHILOS T R SOC A, V369, P842, DOI 10.1098/rsta.2010.0327
+   Steinfeld H, 2006, LIVESTOCKS LONG SHAD
+   Strzepek K., 2012, 222 MIT
+   Strzepek K., 2012, 236 IGSM WRS MIT
+   Strzepek K., 2010, 189 IGSM WRS MIT
+   Sulis M, 2011, WATER RESOUR RES, V47, DOI 10.1029/2010WR009167
+   Takata K, 2003, GLOBAL PLANET CHANGE, V38, P209, DOI 10.1016/S0921-8181(03)00030-4
+   Tang QH, 2010, J HYDROMETEOROL, V11, P156, DOI 10.1175/2009JHM1152.1
+   Tao FL, 2003, AMBIO, V32, P295, DOI 10.1639/0044-7447(2003)032[0295:TWCATI]2.0.CO;2
+   Taylor CM, 2012, NATURE, V489, P423, DOI 10.1038/nature11377
+   Taylor CM, 2010, GEOPHYS RES LETT, V37, DOI 10.1029/2009GL041652
+   Taylor KE, 2012, B AM METEOROL SOC, V93, P485, DOI 10.1175/BAMS-D-11-00094.1
+   Taylor RG, 2013, NAT CLIM CHANGE, V3, P322, DOI [10.1038/nclimate1744, 10.1038/NCLIMATE1744]
+   Tesfa TK, 2014, GEOSCI MODEL DEV, V7, P947, DOI 10.5194/gmd-7-947-2014
+   Tharme RE, 2003, RIVER RES APPL, V19, P397, DOI 10.1002/rra.736
+   Thenkabail PS, 2009, INT J REMOTE SENS, V30, P3679, DOI 10.1080/01431160802698919
+   Trenberth K. E, 1992, CLIMATE SYSTEMS MODE
+   Trenberth KE, 2007, GEOPHYS RES LETT, V34, DOI 10.1029/2007GL030524
+   Trenberth KE, 2014, SURV GEOPHYS, V35, P515, DOI 10.1007/s10712-012-9214-y
+   Tuinenburg OA, 2011, J CLIMATE, V24, P251, DOI 10.1175/2010JCLI3779.1
+   UN, 1997, STAT YB
+   USDA, 2002, 2002 CENS AGR
+   USDA, 2008, 2007 SENS AGR FARM 1, V3
+   van Beek LPH, 2011, WATER RESOUR RES, V47, DOI 10.1029/2010WR009791
+   van Woerden J., 1995, 402001006 RIVM NAT I
+   Vargas-Yanez M, 2010, J MARINE SYST, V82, P171, DOI 10.1016/j.jmarsys.2010.04.013
+   Vassolo S, 2005, WATER RESOUR RES, V41, DOI 10.1029/2004WR003360
+   VERSEGHY DL, 1991, INT J CLIMATOL, V11, P111
+   VERSEGHY DL, 1993, INT J CLIMATOL, V13, P347, DOI 10.1002/joc.3370130402
+   Verseghy DL, 2000, ATMOS OCEAN, V38, P1, DOI 10.1080/07055900.2000.9649637
+   Vitousek PM, 1997, SCIENCE, V277, P494, DOI 10.1126/science.277.5325.494
+   Voisin N, 2013, HYDROL EARTH SYST SC, V17, P4555, DOI 10.5194/hess-17-4555-2013
+   Vorosmarty C.J., 2005, MILLENNIUM ECOSYSTEM, V1, P165
+   Vorosmarty CJ, 1998, J HYDROL, V207, P147, DOI 10.1016/S0022-1694(98)00109-7
+   Vorosmarty CJ, 1997, AMBIO, V26, P210
+   Vorosmarty CJ, 2000, BIOSCIENCE, V50, P753, DOI 10.1641/0006-3568(2000)050[0753:ADOTTW]2.0.CO;2
+   Wada Y, 2014, EARTH SYST DYNAM, V5, P15, DOI 10.5194/esd-5-15-2014
+   Wada Y, 2013, GEOPHYS RES LETT, V40, P4626, DOI 10.1002/grl.50686
+   Wada Y, 2012, WATER RESOUR RES, V48, DOI 10.1029/2011WR010562
+   Wada Y, 2011, WATER RESOUR RES, V47, DOI 10.1029/2010WR009792
+   Wada Y, 2010, GEOPHYS RES LETT, V37, DOI 10.1029/2010GL044571
+   Walko RL, 2000, J APPL METEOROL, V39, P931, DOI 10.1175/1520-0450(2000)039<0931:CABHMF>2.0.CO;2
+   Wei JF, 2013, J HYDROMETEOROL, V14, P275, DOI 10.1175/JHM-D-12-079.1
+   Wise M., 2011, GCAM 3 0 AGR LAND US
+   Wise M. A., 2009, PNNL17943
+   Wise M, 2009, SCIENCE, V324, P1183, DOI 10.1126/science.1168475
+   Wisser D, 2010, HYDROL EARTH SYST SC, V14, P1, DOI 10.5194/hess-14-1-2010
+   Wisser D, 2008, GEOPHYS RES LETT, V35, DOI 10.1029/2008GL035296
+   Wood EF, 2011, WATER RESOUR RES, V47, DOI 10.1029/2010WR010090
+   WRI, 1998, WORLD RES 1998 99
+   WRI, 2000, WORLD RES 2000 01
+   Yoshikawa S, 2014, HYDROL EARTH SYST SC, V18, P4289, DOI 10.5194/hess-18-4289-2014
+   Zhao M, 2001, CLIM DYNAM, V17, P467, DOI 10.1007/PL00013740
+   Zhao M., 2003, PRODUCTION ANAL GSWP, V159
+NR 282
+TC 40
+Z9 41
+U1 1
+U2 42
+PU COPERNICUS GESELLSCHAFT MBH
+PI GOTTINGEN
+PA BAHNHOFSALLEE 1E, GOTTINGEN, 37081, GERMANY
+SN 1027-5606
+EI 1607-7938
+J9 HYDROL EARTH SYST SC
+JI Hydrol. Earth Syst. Sci.
+PY 2015
+VL 19
+IS 1
+BP 33
+EP 61
+DI 10.5194/hess-19-33-2015
+PG 29
+WC Geosciences, Multidisciplinary; Water Resources
+SC Geology; Water Resources
+GA CA5EA
+UT WOS:000348929800003
+OA gold
+DA 2018-06-22
+ER
+
+PT J
+AU Lehner, F
+   Stocker, TF
+AF Lehner, Flavio
+   Stocker, Thomas F.
+TI From local perception to global perspective
+SO NATURE CLIMATE CHANGE
+LA English
+DT Article
+ID CLIMATE; INCREASE; WINTER
+AB Recent sociological studies show that over short time periods the large day-to-day, month-to-month or year-to-year variations in weather at a specific location can influence and potentially bias our perception of climate change, a more long-term and global phenomenon. By weighting local temperature anomalies with the number of people that experience them and considering longer time periods, we illustrate that the share of the world population exposed to warmer-than-normal temperatures has steadily increased during the past few decades. Therefore, warming is experienced by an increasing number of individuals, counter to what might be simply inferred from global mean temperature anomalies. This behaviour is well-captured by current climate models, offering an opportunity to increase confidence in future projections of climate change irrespective of the personal local perception of weather.
+C1 [Lehner, Flavio] NCAR, Boulder, CO 80305 USA.
+   [Stocker, Thomas F.] Univ Bern, Climate & Environm Phys, CH-3012 Bern, Switzerland.
+   [Stocker, Thomas F.] Univ Bern, Oeschger Ctr Climate Change Res, CH-3012 Bern, Switzerland.
+RP Lehner, F (reprint author), NCAR, 1850 Table Mesa Dr, Boulder, CO 80305 USA.
+EM flehner@ucar.edu
+FU National Science Foundation; Swiss National Science Foundation
+FX We are grateful to K. Klein Goldewijk for providing the population data
+   and thank C. C. Raible, A. Pendergrass, K. Trenberth, G. Turi, L. Terray
+   and C. Deser for discussion and constructive comments. The National
+   Center for Atmospheric Research is sponsored by the National Science
+   Foundation. F.L. is supported by an Early Postdoc Mobility fellowship
+   from the Swiss National Science Foundation. T.F.S. is grateful for
+   funding by the Swiss National Science Foundation. We acknowledge the
+   World Climate Research Programme's Working Group on Coupled Modelling,
+   which is responsible for CMIP, and we thank the climate modelling groups
+   for producing and making available their model output. For CMIP, the US
+   Department of Energy's Program for Climate Model Diagnosis and
+   Intercomparison provides coordinating support and led development of
+   software infrastructure in partnership with the Global Organization for
+   Earth System Science Portals.
+CR Barros V, 2012, MANAGING RISKS EXTRE
+   Collins M., 2013, CLIMATE CHANGE 2013, P1029, DOI DOI 10.1017/CBO9781107415324.024
+   Coumou D, 2013, ENVIRON RES LETT, V8, DOI 10.1088/1748-9326/8/3/034018
+   Cowtan K, 2014, Q J ROY METEOR SOC, V140, P1935, DOI 10.1002/qj.2297
+   Dunne JP, 2013, NAT CLIM CHANGE, V3, P563, DOI 10.1038/NCLIMATE1827
+   Goldewijk KK, 2010, HOLOCENE, V20, P565, DOI 10.1177/0959683609356587
+   Hansen J., 2010, REV GEOPHYS, V48
+   Hansen J, 2012, P NATL ACAD SCI USA, V109, pE2415, DOI 10.1073/pnas.1205276109
+   Herring S., 2014, B AM METEOROL SOC S, V95
+   Howe PD, 2013, GLOBAL ENVIRON CHANG, V23, P1488, DOI 10.1016/j.gloenvcha.2013.09.014
+   Howe PD, 2013, NAT CLIM CHANGE, V3, P352, DOI [10.1038/NCLIMATE1768, 10.1038/nclimate1768]
+   Mahlstein I, 2011, ENVIRON RES LETT, V6, DOI 10.1088/1748-9326/6/3/034009
+   McCright AM, 2014, NAT CLIM CHANGE, V4, P1077, DOI 10.1038/NCLIMATE2443
+   Seneviratne SI, 2014, NAT CLIM CHANGE, V4, P161, DOI 10.1038/nclimate2145
+   Stocker T. F, 2014, IPCC CLIMATE CHANGE
+   Stott PA, 2004, NATURE, V432, P610, DOI 10.1038/nature03089
+   Trenberth KE, 2015, NAT CLIM CHANGE, V5, P725, DOI 10.1038/NCLIMATE2657
+   van Vuuren DP, 2012, GLOBAL ENVIRON CHANG, V22, P21, DOI 10.1016/j.gloenvcha.2011.08.002
+   Zaval L, 2014, NAT CLIM CHANGE, V4, P143, DOI 10.1038/NCLIMATE2093
+NR 19
+TC 16
+Z9 16
+U1 2
+U2 12
+PU NATURE PUBLISHING GROUP
+PI LONDON
+PA MACMILLAN BUILDING, 4 CRINAN ST, LONDON N1 9XW, ENGLAND
+SN 1758-678X
+EI 1758-6798
+J9 NAT CLIM CHANGE
+JI Nat. Clim. Chang.
+PD AUG
+PY 2015
+VL 5
+IS 8
+BP 731
+EP 734
+DI 10.1038/NCLIMATE2660
+PG 4
+WC Environmental Sciences; Environmental Studies; Meteorology & Atmospheric
+   Sciences
+SC Environmental Sciences & Ecology; Meteorology & Atmospheric Sciences
+GA CN5QN
+UT WOS:000358484400014
+DA 2018-06-21
+ER
+
+PT J
+AU Fujimori, S
+   Masui, T
+   Matsuoka, Y
+AF Fujimori, Shinichiro
+   Masui, Toshihiko
+   Matsuoka, Yuzuru
+TI Gains from emission trading under multiple stabilization targets and
+   technological constraints
+SO ENERGY ECONOMICS
+LA English
+DT Article
+DE Emission trading; Climate mitigation policy; CGE model; Technological
+   assumptions
+ID CLIMATE-CHANGE MITIGATION; ENERGY TECHNOLOGIES; REDUCTION; SCENARIOS;
+   POLICY
+AB This study quantified the effectiveness of emission trading by considering multiple technological constraints, burden sharing schemes, and climate stabilization targets. We used a global computable general equilibrium model, and evaluated the effectiveness of emission trading using welfare losses associated with climate mitigation for scenarios with and without emission trading, as measured by the Hicksian Equivalent Variation (HEV). We found that emission trading contributed to a reduction in the economic losses associated with climate mitigation for all technological assumptions, burden sharing schemes, and stabilization targets. The net global welfare losses in scenarios without emission trading ranged between 0.7% and 1.9%, whereas emission trading reduced the losses by 0.1% to 0.5%. The range depended on the assumptions in the burden sharing schemes, technological constraints, and stabilization targets. The percentage change in welfare gain from emission trading varied regionally, and was relatively high in low-income or middle-income countries (0.2% to 1.0% and -0.1% to 1.2%, respectively) compared to high-income countries (-0.1% to 03%). Some regions displayed negative values with regard to the effectiveness of emission trading, which might be due to the change in goods and service trades associated with emission trading. If the usage of carbon capture and storage was constrained, welfare loss became large and the effectiveness of emission trading ultimately increased. The use of a burden sharing scheme was a significant factor in changing the effectiveness of emission trading, and the per capita emission convergence in 2050 was more effective for emission trading than a per income convergence. (C) 2014 Elsevier B.V. All rights reserved.
+C1 [Fujimori, Shinichiro; Masui, Toshihiko] Natl Inst Environm Studies, Ctr Social & Environm Syst Res, Tsukuba, Ibaraki 3058506, Japan.
+   [Matsuoka, Yuzuru] Kyoto Univ, Dept Urban & Environm Engn, Kyoto 6068501, Japan.
+RP Matsuoka, Y (reprint author), Natl Inst Environm Studies, 16-2 Onogawa, Tsukuba, Ibaraki 3058506, Japan.
+EM Fujimori.shinichiro@nies.go.jp
+RI Fujimori, Shinichiro/A-1288-2015
+OI Fujimori, Shinichiro/0000-0001-7897-1796
+FU Ministry of Environment of Japan [2-1402, S10-4]
+FX This study was supported by the "Global Environmental Research Fund"
+   2-1402 and S10-4 of the Ministry of Environment of Japan. The authors
+   would like to acknowledge the generosity of the Ministry.
+CR Akashi O, 2012, ENERG ECON, V34, pS346, DOI 10.1016/j.eneco.2012.04.011
+   Bohringer C, 2009, ENERG ECON, V31, pS295, DOI 10.1016/j.eneco.2009.09.009
+   Bohringer C, 2004, J POLICY MODEL, V26, P21, DOI 10.1016/j.jpolymod.2003.11.004
+   Calvin K, 2009, ENERG ECON, V31, pS107, DOI 10.1016/j.eneco.2009.06.006
+   Carbone JC, 2009, J ENVIRON ECON MANAG, V58, P266, DOI 10.1016/j.jeem.2009.01.001
+   Ciscar JC, 2013, ENERG POLICY, V55, P73, DOI 10.1016/j.enpol.2012.10.044
+   CLARKE JF, 1993, ENERG ECON, V15, P123, DOI 10.1016/0140-9883(93)90031-L
+   Clarke L, 2009, ENERG ECON, V31, pS64, DOI 10.1016/j.eneco.2009.10.013
+   den Elzen M, 2008, ENERG POLICY, V36, P1107, DOI 10.1016/j.enpol.2007.11.026
+   Dimaranan BV, 2006, GLOBAL TRADE ASSISTA
+   EC-JRC/ PBL, 2012, EM DAT GLOB ATM RES
+   Fujimori S, 2014, ENERG POLICY, V75, P379, DOI 10.1016/j.enpol.2014.09.015
+   Fujimori S., 2014, FOOD SECUR, P685
+   Fujimori S, 2012, DISCUSSION PAPER SER
+   Fujimori S, 2014, APPL ENERG, V128, P296, DOI 10.1016/j.apenergy.2014.04.074
+   Fujimori S, 2011, ENERG ECON, V33, P461, DOI 10.1016/j.eneco.2011.01.010
+   Hasegawa T, 2014, ENVIRON SCI TECHNOL, V48, P438, DOI 10.1021/es4034149
+   Hof A. F., 2009, MITIG ADAPT STRAT GL, V15, P19
+   IEA, 2009, EN BAL OECD COUNTR
+   IEA, 2012, EN TECHN PERSP 2012
+   IEA, 2008, CO2 CAPT STOR KEY CA
+   IEA, 2009, EN BAL NONOECD COUNT
+   IIASA, 2012, SHAR SOC PATHW SSP D
+   Kawase R, 2013, ENERG POLICY, V63, P1126, DOI 10.1016/j.enpol.2013.09.036
+   Krey V, 2009, ENERG ECON, V31, pS94, DOI 10.1016/j.eneco.2009.07.001
+   Kriegler E, 2014, CLIMATIC CHANGE, V123, P353, DOI 10.1007/s10584-013-0953-7
+   Lofgren H., 2002, MICROCOMPUTERS POLIC, V5
+   Lucas PL, 2007, ENVIRON SCI POLICY, V10, P85, DOI 10.1016/j.envsci.2006.10.007
+   Masui T, 2011, CLIMATIC CHANGE, V109, P59, DOI 10.1007/s10584-011-0150-5
+   O'Neill BC, 2014, CLIMATIC CHANGE, V122, P387, DOI 10.1007/s10584-013-0905-2
+   OECD, 2010, INP OUTP TABL
+   Rogelj J, 2013, NATURE, V493, P79, DOI 10.1038/nature11787
+   Schumacher K, 2006, ENERG POLICY, V34, P3929, DOI 10.1016/j.enpol.2005.09.022
+   Solomon S., 2007, CONTRIBUTION WORKING
+   Tavoni M, 2013, CLIMATIC CHANGE, V118, P1, DOI 10.1007/s10584-013-0757-9
+   Thepkhun P, 2013, ENERG POLICY, V62, P561, DOI 10.1016/j.enpol.2013.07.037
+   UNIDO, 2009, INDSTAT2 2009 ED
+   United Nations, 2007, UN COMM TRAD STAT DA
+   United Nations, 2007, NAT ACC MAIN AGGR DA
+   van Vuuren DP, 2011, CLIMATIC CHANGE, V109, P95, DOI 10.1007/s10584-011-0152-3
+   Webster M, 2010, ENERG POLICY, V38, P1787, DOI 10.1016/j.enpol.2009.11.054
+NR 41
+TC 27
+Z9 28
+U1 2
+U2 30
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0140-9883
+EI 1873-6181
+J9 ENERG ECON
+JI Energy Econ.
+PD MAR
+PY 2015
+VL 48
+BP 306
+EP 315
+DI 10.1016/j.eneco.2014.12.011
+PG 10
+WC Economics
+SC Business & Economics
+GA CF0RT
+UT WOS:000352252600030
+DA 2018-06-21
+ER
+
+PT J
+AU Green, PA
+   Vorosmarty, CJ
+   Harrison, I
+   Farrell, T
+   Saenz, L
+   Fekete, BM
+AF Green, Pamela A.
+   Voeroesmarty, Charles J.
+   Harrison, Ian
+   Farrell, Tracy
+   Saenz, Leonard
+   Fekete, Balazs M.
+TI Freshwater ecosystem services supporting humans: Pivoting from water
+   crisis to water solutions
+SO GLOBAL ENVIRONMENTAL CHANGE-HUMAN AND POLICY DIMENSIONS
+LA English
+DT Article
+DE Ecosystem; Freshwater; Provisioning; Management; Conservation
+ID SHARED SOCIOECONOMIC PATHWAYS; GLOBAL WATER; CLIMATE-CHANGE; SCARCITY;
+   RESOURCES; SECURITY; CONSERVATION; BIODIVERSITY; FLOW; VULNERABILITY
+AB A new global scale water indicator, the freshwater provisioning index for humans (FPIh), maps the capacity of upstream source areas to provide water for human populations downstream. The freshwater provisioning index for humans combined with estimates of threats to water source areas assesses the compounded impacts on freshwater provisions at their point-of-service and the humans they support downstream. Nearly the entire world is serviced by freshwater sources compromised to a moderate extent through human activities, with 82% of the world's population served by upstream areas exposed to high levels of threat. Globally, 75% of the world's population benefits from engineered remediation of highly impaired source areas. Despite these gains, more than 80% of the global population still experiences moderate levels of threat impacting their freshwater provisions. Industrialized nations greatly limit their exposure to threats via infrastructure investments whereas regions in the developing world with moderate threat and little means of mitigation are viewed as the most vulnerable. Populations served by water source areas in industrialized countries receive highest threat reductions overall (50-70%) while those served by provision areas in the least developed countries receive <20% threat decrease. Better management of upstream source areas in poorer countries represents an opportunity to reduce threat lessening reliance on costly engineering solutions. Viewing the world in terms of the threats imposed on freshwater provisions combined with regional capacity to abate these impairments through infrastructure investments yields a spatial typology of freshwater resource development states reflecting region-specific challenges with unique management implications. Global mapping of threat development states provides a synoptic-scale diagnosis of key water resource challenges we link with state-specific water service management strategies including service area conservation, threat reduction, and green and gray infrastructure investments to more sustainably manage upstream freshwater provisions. This study provides a functional architecture to assess potential investment strategies to sustainably protect and manage critical upstream freshwater provisions addressing unique challenges faced by different regions of the world. (C) 2015 Elsevier Ltd. All rights reserved.
+C1 [Green, Pamela A.; Voeroesmarty, Charles J.; Fekete, Balazs M.] CUNY City Coll, CUNY Environm CrossRoads Initiat, New York, NY 10031 USA.
+   [Voeroesmarty, Charles J.; Fekete, Balazs M.] CUNY City Coll, Dept Civil Engn, New York, NY 10031 USA.
+   [Harrison, Ian; Farrell, Tracy; Saenz, Leonard] Conservat Int, Arlington, VA 22202 USA.
+RP Green, PA (reprint author), CUNY City Coll, Marshak Hall,Room 925,160 Convent Ave, New York, NY 10031 USA.
+FU CUNY Environmental CrossRoads Initiative [59161]; NSF [DEB-1115025];
+   International Institute for Applied Systems Analysis (HASA); Global
+   Water Systems Project (GWSP) in Bonn GERMANY; German Federal Ministry of
+   Education and Research (BMBF)
+FX Work represents a collaboration between Conservation International
+   Foundation (CI) and CUNY Environmental CrossRoads Initiative completed
+   under CI grant number 59161. Additional work has been supported by NSF
+   Coupled Natural-Human Systems Program 1 Award No. DEB-1115025, the
+   International Institute for Applied Systems Analysis (HASA), the Global
+   Water Systems Project (GWSP) in Bonn GERMANY, with support from the
+   German Federal Ministry of Education and Research (BMBF). IJH is
+   grateful to the Department of Ichthyology, American Museum of Natural
+   History, New York, for granting Research Associate status, and to
+   Columbia University, New York for granting Adjunct Research Scientist
+   status (for Center of Environmental Research and Conservation) and
+   external Affiliate Status (Department of Ecology, Evolution, and
+   Environmental Biology) and allowing access to library facilities.
+CR Addams L., 2009, EC FRAMEWORKS INFORM
+   Allan D., 2013, RESTORING RIVERS ISS
+   Andrew R, 2014, SOCIOECONOMIC DRIVER, P56
+   Arthington A., 2012, ENV FLOWS SAVING RIV
+   Ashley R., 2006, INFRASTRUCTURE 2030, pChapter 5
+   Asian Development Bank, 2013, AS WAT DEV OUTL 2013
+   Bogardi J.J., 2012, CURR OPIN ENV SUST, V4, P1
+   Bourzac K, 2013, NATURE, V501, pS4, DOI 10.1038/501S4a
+   Braat LC, 2012, ECOSYST SERV, V1, P4, DOI 10.1016/j.ecoser.2012.07.011
+   Brown A., 2011, REV WATER SCARCITY I, V106, P19
+   BRUIJNZEEL L. A., 2010, TROPICAL MONTANE CLO
+   Cabrera E, 2010, WATER ENGINEERING AND MANAGEMENT THROUGH TIME - LEARNING FROM HISTORY, P1
+   Chaves HML, 2007, WATER RESOUR MANAG, V21, P883, DOI 10.1007/s11269-006-9107-2
+   CIESIN, 2011, GLOB RUR URB MAPP PR
+   Costanza R, 2014, GLOBAL ENVIRON CHANG, V26, P152, DOI 10.1016/j.gloenvcha.2014.04.002
+   Cross K., 2011, DIVERSITY LIFE AFRIC, P288
+   Darwall W., 2011, DIVERSITY LIFE AFRIC
+   de Fraiture C., 2007, WATER FOOD WATER LIF, P91
+   de Groot R, 2012, ECOSYST SERV, V1, P50, DOI 10.1016/j.ecoser.2012.07.005
+   Diaz S, 2015, CURR OPIN ENV SUST, V14, P1, DOI 10.1016/j.cosust.2014.11.002
+   Doczi J, 2014, CLIMATE CHANGE AND WATER RESOURCES, P239
+   DUDGEON D, 1992, HYDROBIOLOGIA, V248, P167, DOI 10.1007/BF00006146
+   Dudgeon D, 2006, BIOL REV, V81, P163, DOI 10.1017/S1464793105006950
+   FALKENMARK M, 1989, AMBIO, V18, P112
+   FALKENMARK M, 1989, NAT RESOUR FORUM, V13, P258, DOI 10.1111/j.1477-8947.1989.tb00348.x
+   Farrell T. A., 2010, FRESH WATER ESSENCE, P187
+   Farrell T.A., 2011, GLOB HUM TECHN C GHT, P228, DOI http://dx.doi.org/10.1109/GHTC.2011.93
+   Fay M., 2003, 3102 WORLD BANK, P19
+   Fekete B.M., 2015, EARTH PERSPECTIVES, V2, P1, DOI http://dx.doi.org/10.1186/
+   Foster S, 2013, CURR OPIN ENV SUST, V5, P685, DOI 10.1016/j.cosust.2013.10.010
+   Futian L., 2011, CHINA ECON REV, V22, P444
+   Gerten D, 2013, CURR OPIN ENV SUST, V5, P551, DOI 10.1016/j.cosust.2013.11.001
+   Gleick PH, 2003, SCIENCE, V302, P1524, DOI 10.1126/science.1089967
+   Gleick PH, 1996, WATER INT, V21, P83, DOI 10.1080/02508069608686494
+   Global Administrative areas, 2012, GADM DAT GLOB ADM AR
+   Great Rivers Partnership, 2013, VIS AM GREAT WAT REP
+   Haddeland I, 2014, P NATL ACAD SCI USA, V111, P3251, DOI 10.1073/pnas.1222475110
+   Hamilton L.S., 2005, FOREST WATER PEOPLE
+   Hanasaki N, 2013, HYDROL EARTH SYST SC, V17, P2393, DOI 10.5194/hess-17-2393-2013
+   Hanasaki N, 2013, HYDROL EARTH SYST SC, V17, P2375, DOI 10.5194/hess-17-2375-2013
+   Hoekstra A. Y., 2009, WATER FOOTPRINT MANU
+   Hoekstra AY, 2014, NAT CLIM CHANGE, V4, P318, DOI 10.1038/nclimate2214
+   Hoff H, 2010, J HYDROL, V384, P177, DOI 10.1016/j.jhydrol.2009.06.026
+   International Conference on Water and the Environment (ICWE), 1992, DUBL C WMO GEN
+   International Rivers, 2014, STAT WORLDS RIV
+   International WaterCentre, 2013, PROJ SUMM RIV HLTH E
+   Kalnay E, 1996, B AM METEOROL SOC, V77, P437, DOI 10.1175/1520-0477(1996)077<0437:TNYRP>2.0.CO;2
+   Kistler R, 2001, B AM METEOROL SOC, V82, P247, DOI 10.1175/1520-0477(2001)082<0247:TNNYRM>2.3.CO;2
+   Lawford R, 2013, CURR OPIN ENV SUST, V5, P607, DOI 10.1016/j.cosust.2013.11.005
+   Leadley P.W., 2014, SECRETARIAT CONVENTI, V78
+   Li L., 2000, GLOBAL PERSPECTIVES, P263
+   Morrison J., 2010, CORPORATE WATER ACCO
+   Natural Capital Project, 2013, RIOS RES INV OPT SYS
+   Pagiola S, 2002, SELLING FOREST ENV S
+   Pahl-Wostl C, 2013, CURR OPIN ENV SUST, V5, P708, DOI 10.1016/j.cosust.2013.10.012
+   Pahl-Wostl C, 2013, CURR OPIN ENV SUST, V5, P676, DOI 10.1016/j.cosust.2013.10.018
+   Palmer L, 2014, NAT CLIM CHANGE, V4, P949, DOI 10.1038/nclimate2420
+   Palmer MA, 2005, J APPL ECOL, V42, P208, DOI 10.1111/j.1365-2664.2005.01004.x
+   Palmer MA, 2010, NATURE, V467, P534, DOI 10.1038/467534a
+   Pfister S, 2009, ENVIRON SCI TECHNOL, V43, P4098, DOI 10.1021/es802423e
+   Poff NL, 2010, FRESHWATER BIOL, V55, P147, DOI 10.1111/j.1365-2427.2009.02204.x
+   Postel SL, 1996, SCIENCE, V271, P785, DOI 10.1126/science.271.5250.785
+   Raskin P., 1997, WATER FUTURES ASSESS
+   Ridoutt B.G., 2009, P 6 AUSTR C LIF CYCL
+   Russi D., 2013, EC ECOSYSTEMS BIODIV
+   Sachs J., 2015, AGE SUSTAINABLE DEV
+   Saenz L, 2014, ECOSYST SERV, V9, P180, DOI 10.1016/j.ecoser.2014.06.012
+   Saenz L, 2013, ECOSYST SERV, V5, pE69, DOI 10.1016/j.ecoser.2013.02.005
+   Schneider U, 2014, THEOR APPL CLIMATOL, V115, P15, DOI 10.1007/s00704-013-0860-x
+   Scholes RJ, 2012, CURR OPIN ENV SUST, V4, P139, DOI 10.1016/j.cosust.2011.12.005
+   Shiklomanov Igor, 1993, WATER CRISIS GUIDE W
+   Smakhtin V., 2005, TAKING ACCOUNT ENV W
+   Steffen W, 2015, SCIENCE, V347, DOI 10.1126/science.1259855
+   Sullivan C, 2002, WORLD DEV, V30, P1195, DOI 10.1016/S0305-750X(02)00035-9
+   Taylor RG, 2012, NAT CLIM CHANGE
+   ten Brink P., 2011, EC ECOSYSTEMS BIODIV
+   ten Brink P., 2012, NATURE ITS ROLE TRAN
+   The Economist Newspaper Limited, 2013, ALL DRIED UP EC
+   United Nations Development Programme (UNDP), 2013, HUMAN DEV REPORT, P202
+   United Nations Environment Programme (UNEP), 2014, GREEN INFR GUID WAT
+   United Nations Environmental Program (UNEP), 2011, GREEN EC PATHW SUST
+   United Nations Open Working Group (UN OWG), 2014, OUTC DOC OP WORK GRO
+   United Nations Statistics Division, 2002, UN STAT DIV DEM YB 2
+   United Nations Statistics Division, 2011, UN STAT DIV DEM YB 2
+   Vorosmarty CJ, 2010, NATURE, V467, P555, DOI 10.1038/nature09440
+   Vorosmarty CJ, 2013, CURR OPIN ENV SUST, V5, P539, DOI 10.1016/j.cosust.2013.10.005
+   Vorosmarty C.J., 2015, IMPAIR THEN REPAIR B, V144
+   Vorosmarty C.J., 2005, CONDITIONS TRENDS WO, V1, P165
+   Vorosmarty CJ, 2000, SCIENCE, V289, P284, DOI 10.1126/science.289.5477.284
+   Vorosmarty CJ, 1998, J HYDROL, V207, P147, DOI 10.1016/S0022-1694(98)00109-7
+   Wada Y, 2014, NAT GEOSCI, V7, P615, DOI 10.1038/ngeo2241
+   Wisser D, 2010, HYDROL EARTH SYST SC, V14, P1, DOI 10.5194/hess-14-1-2010
+   World Bank, 2010, AFR DEV FORUM, P1, DOI 10.1596/978-0-8213-8041-3
+   World Bank, 2011, DRIV CHANG WAT ANN R
+   World Bank, 2010, WORLD DEV IND 2010
+   World Water Assessment Programme-WWAP, 2009, 3 WWAP UNESCO UN WOR
+   World Wide Fund for Nature (WWF), 2013, FRESHW HLTH ASS TAK
+   World Wide Fund for Nature (WWF) World Bank, 2013, STRENGTH COMM EC RES
+   WWDR, 2012, OV KEY MESS WWDR4 WO, P16
+   Zehnder AJB, 2003, AQUAT SCI, V65, P1, DOI 10.1007/s000270300000
+NR 100
+TC 24
+Z9 26
+U1 9
+U2 98
+PU ELSEVIER SCI LTD
+PI OXFORD
+PA THE BOULEVARD, LANGFORD LANE, KIDLINGTON, OXFORD OX5 1GB, OXON, ENGLAND
+SN 0959-3780
+EI 1872-9495
+J9 GLOBAL ENVIRON CHANG
+JI Glob. Environ. Change-Human Policy Dimens.
+PD SEP
+PY 2015
+VL 34
+BP 108
+EP 118
+DI 10.1016/j.gloenvcha.2015.06.007
+PG 11
+WC Environmental Sciences; Environmental Studies; Geography
+SC Environmental Sciences & Ecology; Geography
+GA CR8DT
+UT WOS:000361582000010
+DA 2018-06-22
+ER
+
+PT J
+AU Fernandez, FJ
+   Blanco, M
+AF Fernandez, Francisco J.
+   Blanco, Maria
+TI Modelling the Economic Impacts of Climate Change on Global and European
+   Agriculture. Review of Economic Structural Approaches
+SO ECONOMICS-THE OPEN ACCESS OPEN-ASSESSMENT E-JOURNAL
+LA English
+DT Article
+DE Climate change; economic modelling; agricultural markets; food security;
+   food prices
+ID FOOD SECURITY; INTEGRATED ASSESSMENT; RICARDIAN ANALYSIS; US
+   AGRICULTURE; LAND-USE; SCENARIOS; CONSEQUENCES; ADAPTATION; RESPONSES;
+   FARMERS
+AB The economic effects of climate change on agriculture have been widely assessed in the last two decades. Many of these assessments are based on the integration of biophysical and agro-economic models, allowing to understand the physical and socio-economic responses of the agricultural sector to future climate change scenarios. The evolution of the bio-economic approach has gone through different stages. This review analyses its evolution: firstly, framing the bio-economic approach into the context of the assessments of climate change impacts, and secondly, by reviewing empirical studies at the global and European level. Based on this review, common findings emerge in both global and regional assessments. Among them, the authors show that overall results tend to hide significant disparities on smaller spatial scales. Furthermore, due to the effects of crop prices over yield changes, several authors highlight the need to consider endogenous price models to assess production impacts of climate change. Further, major developments are discussed: the progress made since the last two decades and the recent methods used to provide insights into modeling uncertainties. However, there are still challenges to be met. On this matter, the authors take these unresolved challenges as guidelines for future research.
+C1 [Fernandez, Francisco J.; Blanco, Maria] Tech Univ Madrid, ETSI Agronomos, Madrid 28040, Spain.
+RP Fernandez, FJ (reprint author), Tech Univ Madrid, ETSI Agronomos, Avda Complutense 3, Madrid 28040, Spain.
+RI Fernandez Jorquera, Francisco Jose/L-7905-2017; Blanco,
+   Maria/D-4833-2011
+OI Fernandez Jorquera, Francisco Jose/0000-0001-8655-0748; Blanco,
+   Maria/0000-0002-7491-3262
+FU EU [312182 KBBE.2012.1.4-05]
+FX This study has been funded under the ULYSSES project, EU 7th Framework
+   Programme, Project 312182 KBBE.2012.1.4-05.
+CR Adams R. M., 1988, W J AGR EC, V3, P348
+   Adams RM, 1998, CLIMATE RES, V11, P19, DOI 10.3354/cr011019
+   Adams RM, 1999, CLIMATIC CHANGE, V41, P363, DOI 10.1023/A:1005434215112
+   ADAMS RM, 1995, CLIMATIC CHANGE, V30, P147, DOI 10.1007/BF01091839
+   Arent DJ, 2014, CLIMATE CHANGE 2014: IMPACTS, ADAPTATION, AND VULNERABILITY, PT A: GLOBAL AND SECTORAL ASPECTS, P659
+   Barlas Y, 1996, SYST DYNAM REV, V12, P183, DOI 10.1002/(SICI)1099-1727(199623)12:3<183::AID-SDR103>3.3.CO;2-W
+   Bonsch M., 2013, 16 ANN C GLOB EC AN
+   Calzadilla A, 2013, CLIMATIC CHANGE, V120, P357, DOI 10.1007/s10584-013-0822-4
+   Challinor AJ, 2004, AGR FOREST METEOROL, V124, P99, DOI 10.1016/j.agrformet.2004.01.002
+   Ciscar J.C.C., 2009, CLIMATE CHANGE IMPAC
+   Ciscar JC, 2011, P NATL ACAD SCI USA, V108, P2678, DOI 10.1073/pnas.1011612108
+   Darwin R, 1999, CLIMATIC CHANGE, V41, P371, DOI 10.1023/A:1005421707801
+   Darwin R., 1995, WORLD AGR CLIMATE CH
+   Dube S., 2013, ECONOMICS-KIEL, V7, P1
+   Easterling W. E, 2007, CLIMATE CHANGE 2007, V4, P273
+   Ewert F., 2014, ENV MODELLING SOFTWA
+   Falloon P, 2010, SCI TOTAL ENVIRON, V408, P5667, DOI 10.1016/j.scitotenv.2009.05.002
+   Field C. B., 2014, GLOBAL SECTORAL ASPE, VI
+   Fischer G, 2005, PHILOS T ROY SOC B, V360, P2067, DOI 10.1098/rstb.2005.1744
+   Fischer G., 1988, LINKED NATL MODELS T
+   Fischer G., 2002, CLIMATE CHANGE AGR V
+   Frank S., 2014, 14 EAAE C AGR FOOD R
+   Freeman A. M., 1993, MEASUREMENT ENV RESO
+   Hertel TW, 2010, GLOBAL ENVIRON CHANG, V20, P577, DOI 10.1016/j.gloenvcha.2010.07.001
+   Iglesias A., 2009, PESETA AGR STUDY, V24107, P48
+   Iglesias A, 2011, HANDBOOK ON CLIMATE CHANGE AND AGRICULTURE, P49
+   Ignaciuk A., 2014, MODELLING ADAPTATION
+   Jones J. W., 2011, HDB CLIMATE CHANGE A, P131
+   KAISER HM, 1993, AM J AGR ECON, V75, P387, DOI 10.2307/1242923
+   KANE S, 1992, CLIMATIC CHANGE, V21, P17, DOI 10.1007/BF00143251
+   Kriegler E, 2012, GLOBAL ENVIRON CHANG, V22, P807, DOI 10.1016/j.gloenvcha.2012.05.005
+   Kurukulasuriya P, 2006, WORLD BANK ECON REV, V20, P367, DOI 10.1093/wber/lhl004
+   Lane J., 2005, INTEGRATED ASSESSMEN, V5
+   Lavalle C, 2009, AGRON SUSTAIN DEV, V29, P433, DOI 10.1051/agro/2008068
+   Leggett J., 1992, CLIMATE CHANGE 1992, V1, P71
+   Lobell D, 2010, ADV GLOB CHANGE RES, V37, P177, DOI 10.1007/978-90-481-2953-9_10
+   Lobell DB, 2010, AGR FOREST METEOROL, V150, P1443, DOI 10.1016/j.agrformet.2010.07.008
+   Mendelsohn R, 1996, AGR FOREST METEOROL, V80, P55, DOI 10.1016/0168-1923(95)02316-X
+   Mendelsohn R, 2003, LAND ECON, V79, P328, DOI 10.2307/3147020
+   MENDELSOHN R, 1994, AM ECON REV, V84, P753
+   Muller C., 2010, CLIMATE CHANGE IMPAC
+   Nakicenovic N., 2000, SPECIAL REPORT EMISS, P612
+   Nelson G. C., 2010, FOOD SECURITY FARMIN, V172
+   Nelson G.C., 2013, P NATL ACAD SCI USA, V111, P3274
+   Nelson GC, 2009, CLIMATE CHANGE IMPAC, V21
+   Nelson GC, 2014, AGR ECON-BLACKWELL, V45, P85, DOI 10.1111/agec.12091
+   Olesen JE, 2011, EUR J AGRON, V34, P96, DOI 10.1016/j.eja.2010.11.003
+   Olesen JE, 2002, EUR J AGRON, V16, P239, DOI 10.1016/S1161-0301(02)00004-7
+   Parry M, 1999, GLOBAL ENVIRON CHANG, V9, pS51, DOI 10.1016/S0959-3780(99)00018-7
+   Parry M., 2007, CLIMATE CHANGE 2007, V4
+   Parry ML, 2004, GLOBAL ENVIRON CHANG, V14, P53, DOI 10.1016/j.gloenvcha.2003.10.008
+   Quiroga S, 2009, AGR SYST, V101, P91, DOI 10.1016/j.agsy.2009.03.006
+   Ramos F., 2014, 14 EAAE C AGR FOOD R
+   Ramos F., 2014, PREC WORKSH NEW DEV
+   Randhir T. O., 2000, AGR RESOURCE EC REV, V29
+   Reidsma P, 2007, CLIMATIC CHANGE, V84, P403, DOI [10.1007/s10584-007-9242-7, 10.1007/S10584-007-9242-7]
+   Reidsma P, 2009, REG ENVIRON CHANGE, V9, P25, DOI 10.1007/s10113-008-0059-3
+   REILLY J, 1993, AM ECON REV, V83, P306
+   REILLY J, 1994, GLOBAL ENVIRON CHANG, V4, P24, DOI 10.1016/0959-3780(94)90019-1
+   Reilly J, 2003, CLIMATIC CHANGE, V57, P43, DOI 10.1023/A:1022103315424
+   Reilly M, 2010, PHILOS T R SOC B, V365, P3049, DOI 10.1098/rstb.2010.0141
+   Reinsborough MJ, 2002, CAN J ECON, V36, P21, DOI 10.1111/1540-5982.00002
+   ROSENZWEIG C, 1994, NATURE, V367, P133, DOI 10.1038/367133a0
+   Rosenzweig C, 2013, P NATL ACAD SCI USA, V111, P3268, DOI DOI 10.1073/PNAS.1222463110
+   Schimmelpfennig D., 1996, AGR ADAPTATION CLIMA
+   Schmidhuber J, 2007, P NATL ACAD SCI USA, V104, P19703, DOI 10.1073/pnas.0701976104
+   Schmitz C, 2014, AGR ECON-BLACKWELL, V45, P69, DOI 10.1111/agec.12090
+   Schwanitz VJ, 2013, ENVIRON MODELL SOFTW, V50, P120, DOI 10.1016/j.envsoft.2013.09.005
+   Seo SN, 2008, CHIL J AGR RES, V68, P69, DOI 10.4067/S0718-58392008000100007
+   Shrestha S., 2013, REV AGR APPL EC, V16
+   Stott PA, 2006, J CLIMATE, V19, P2763, DOI 10.1175/JCLI3731.1
+   Tobey J., 1992, J AGR RESOUR ECON, P195
+   Tongeren F., 2001, AGR EC, V26, P149
+   Tubiello FN, 2007, EUR J AGRON, V26, P215, DOI 10.1016/j.eja.2006.10.002
+   Uthes S, 2010, ECOL MODEL, V221, P2136, DOI 10.1016/j.ecolmodel.2009.08.010
+   van Ittersum MK, 2003, EUR J AGRON, V18, P187, DOI 10.1016/S1161-0301(02)00095-3
+   van Passel S., 2014, CESIFO WORKING PAPER, V4842
+   van Vuuren DP, 2011, CLIMATIC CHANGE, V109, P5, DOI 10.1007/s10584-011-0148-z
+   von Lampe M, 2014, AGR ECON-BLACKWELL, V45, P3, DOI 10.1111/agec.12086
+   Wang JX, 2009, AGR ECON-BLACKWELL, V40, P323, DOI 10.1111/j.1574-0862.2009.00379.x
+   Watson R. T., 1996, CLIMATE CHANGE 1995
+   Wheeler T, 2013, SCIENCE, V341, P508, DOI 10.1126/science.1239402
+   White JW, 2011, FIELD CROP RES, V124, P357, DOI 10.1016/j.fcr.2011.07.001
+   Witzke H. P., 2014, CAPRI LONG TERM CLIM
+   Wolf J., 2012, ASSESSING ADAPTIVE C
+   Yates DN, 1998, CLIMATIC CHANGE, V38, P261, DOI 10.1023/A:1005364515266
+   Zhang J., 2005, EC DISCUSSION PAPERS
+NR 87
+TC 1
+Z9 1
+U1 2
+U2 34
+PU KIEL INST WORLD ECONOMY
+PI KIEL
+PA HINDENBURGUFER 66, KIEL, D-24105, GERMANY
+SN 1864-6042
+J9 ECONOMICS-KIEL
+JI Economics
+PD APR 10
+PY 2015
+VL 9
+AR 201510
+DI 10.5018/economics-ejournal.ja.2015-10
+PG 54
+WC Economics
+SC Business & Economics
+GA CL4BO
+UT WOS:000356897800001
+OA gold
+DA 2018-06-21
+ER
+
+PT J
+AU Velders, GJM
+   Fahey, DW
+   Daniel, JS
+   Andersen, SO
+   McFarland, M
+AF Velders, Guus J. M.
+   Fahey, David W.
+   Daniel, John S.
+   Andersen, Stephen O.
+   McFarland, Mack
+TI Future atmospheric abundances and climate forcings from scenarios of
+   global and regional hydrofluorocarbon (HFC) emissions
+SO ATMOSPHERIC ENVIRONMENT
+LA English
+DT Article
+DE HFC; Radiative forcing; Climate; Montreal Protocol; CO2-eq emissions
+ID TRENDS; OZONE
+AB Hydrofluorocarbons (HFCs) are manufactured for use as substitutes for ozone-depleting substances that are being phased out globally under Montreal Protocol regulations. While HFCs do not deplete ozone, many are potent greenhouse gases that contribute to climate change. Here, new global scenarios show that baseline emissions of HFCs could reach 4.0-5.3 GtCO(2)-eq yr(-1) in 2050. The new baseline (or business-as-usual) scenarios are formulated for 10 HFC compounds, 11 geographic regions, and 13 use categories. The scenarios rely on detailed data reported by countries to the United Nations; projections of gross domestic product and population; and recent observations of HFC atmospheric abundances. In the baseline scenarios, by 2050 China (31%), India and the rest of Asia (23%), the Middle East and northern Africa (11%), and the USA (10%) are the principal source regions for global HFC emissions: and refrigeration (40-58%) and stationary air conditioning (21-40%) are the major use sectors. The corresponding radiative forcing could reach 0.22-0.25 W m(-2) in 2050, which would be 12-24% of the increase from business-as-usual CO2 emissions from 2015 to 2050. National regulations to limit HFC use have already been adopted in the European Union, Japan and USA, and proposals have been submitted to amend the Montreal Protocol to substantially reduce growth in HFC use. Calculated baseline emissions are reduced by 90% in 2050 by implementing the North America Montreal Protocol amendment proposal. Global adoption of technologies required to meet national regulations would be sufficient to reduce 2050 baseline HFC consumption by more than 50% of that achieved with the North America proposal for most developed and developing countries. (C) 2015 The Authors. Published by Elsevier Ltd.
+C1 [Velders, Guus J. M.] Natl Inst Publ Hlth & Environm RIVM, NL-3720 BA Bilthoven, Netherlands.
+   [Fahey, David W.; Daniel, John S.] NOAA, Earth Syst Res Lab, Div Chem Sci, Boulder, CO 80305 USA.
+   [Andersen, Stephen O.] Inst Governance & Sustainable Dev, Washington, DC 20007 USA.
+   [McFarland, Mack] Chemours, Wilmington, DE 19805 USA.
+RP Velders, GJM (reprint author), Natl Inst Publ Hlth & Environm RIVM, POB 1, NL-3720 BA Bilthoven, Netherlands.
+EM guus.velders@rivm.nl
+RI Daniel, John/D-9324-2011; Manager, CSD Publications/B-2789-2015; Fahey,
+   David/G-4499-2013
+OI Fahey, David/0000-0003-1720-0634
+CR AMCEN, 2015, AFR MIN C ENV CAIR
+   Carpenter L. J., 2014, 55 WORLD MET ORG
+   Davis LW, 2015, P NATL ACAD SCI USA, V112, P5962, DOI 10.1073/pnas.1423558112
+   Fang X., 2015, HYDROFLUOROCARBONS E
+   Gschrey B., 2011, GHG MEASUR MANAG, V1, P85, DOI [10.1080/20430779.2011.579352, DOI 10.1080/20430779.2011.579352]
+   Harris N. R. P., 2014, 55 WORLD MET ORG
+   Intergovernmental Panel on Climate Change/Technology and Economic Assessment Panel (IPCC/TEAP), 2005, SPEC REP SAF OZ LAY
+   Ko M. K. W., 2013, 6 SPARC
+   Lunt MF, 2015, P NATL ACAD SCI USA, V112, P5927, DOI 10.1073/pnas.1420247112
+   Meinshausen M, 2011, CLIMATIC CHANGE, V109, P213, DOI 10.1007/s10584-011-0156-z
+   Montzka SA, 2015, J PHYS CHEM A, V119, P4439, DOI 10.1021/jp5097376
+   Nakicenovic N., 2000, SPECIAL REPORT EMISS
+   O'Doherty S, 2014, ATMOS CHEM PHYS, V14, P9249, DOI 10.5194/acp-14-9249-2014
+   O'Neill B.C., 2012, M WORKSH NAT US NEW, P110
+   Papasavva S, 2010, ENVIRON SCI TECHNOL, V44, P7666, DOI 10.1021/es100849g
+   Phadke A., 2014, LBNL6674E
+   RAMANATHAN V, 1975, SCIENCE, V190, P50, DOI 10.1126/science.190.4209.50
+   RAVISHANKARA AR, 1994, SCIENCE, V263, P71, DOI 10.1126/science.263.5143.71
+   Rigby M, 2014, GEOPHYS RES LETT, V41, P2623, DOI 10.1002/2013GL059099
+   SKM, 2012, PHAS HFC CONS EU ASS
+   UNEP, 2015, PROD CONS OZ DEPL SU
+   UNEP, 2015, 36 M OP END WORK GRO
+   UNEP, 2011, HFCS CRIT LINK PROT
+   UNFCCC, 2014, NAT INV SUBM 2014 UN
+   US Environmental Protection Agency, 2012, EPA NHTSA SET STAND
+   US-EPA, 2015, EPAHQOAR20140198
+   Velders GJM, 2014, ATMOS CHEM PHYS, V14, P4563, DOI 10.5194/acp-14-4563-2014
+   Velders GJM, 2014, ATMOS CHEM PHYS, V14, P2757, DOI 10.5194/acp-14-2757-2014
+   Velders GJM, 2009, P NATL ACAD SCI USA, V106, P10949, DOI 10.1073/pnas.0902817106
+   White House, 2013, US CHIN AGR WORK TOG
+   WMO (World Meteorological Organisation): Scientific Assessment of Ozone Depletion, 2014, 55 WMO
+   Zhang JJ, 2014, NAT CLIM CHANGE, V4, P943, DOI 10.1038/nclimate2377
+NR 32
+TC 17
+Z9 18
+U1 30
+U2 65
+PU PERGAMON-ELSEVIER SCIENCE LTD
+PI OXFORD
+PA THE BOULEVARD, LANGFORD LANE, KIDLINGTON, OXFORD OX5 1GB, ENGLAND
+SN 1352-2310
+EI 1873-2844
+J9 ATMOS ENVIRON
+JI Atmos. Environ.
+PD DEC
+PY 2015
+VL 123
+BP 200
+EP 209
+DI 10.1016/j.atmosenv.2015.10.071
+PN A
+PG 10
+WC Environmental Sciences; Meteorology & Atmospheric Sciences
+SC Environmental Sciences & Ecology; Meteorology & Atmospheric Sciences
+GA DA0PC
+UT WOS:000367498600021
+OA gold_or_bronze
+DA 2018-06-21
+ER
+
+EF
