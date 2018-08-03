@@ -1,6 +1,26 @@
 # SSP-Database
 
-The Shared Socioeconomic Pathway (SSP) Database is meant to be used to track journal articles related to SSPs, as well as give 
-a visualization of the articles in a citation network.
+The Shared Socioeconomic Pathway (SSP) Database categorizes journal articles related to the SSPs. The Database is based upon the work of International Committee On New Integrated Climate change assessment Scenarios or [ICONICS](http://www.cgd.ucar.edu/projects/iconics/publications/), using the citations of each journal article to build a citation network.  
 
-The following files supply the code and instructions to collect and add further articles to the database, as well as create visualizations in python using Matplotlib and Holoviews. 
+The following files can be used to gather more SSP related articles, visualize the networks as graphs year by year and examine the cominations of SSPs and RCPs in each artilce.   
+ 
+## INSTALL
+
+Requires Pandas and Metaknowledge for the Database, Networkx, Matplotlib, Holoviews and Bokeh for visualization.
+
+'''
+import pandas as pd
+import metaknowledge as mk
+import networkx as nx
+import matplotlib.pyplot as plt
+import community
+
+from collections import defaultdict
+
+import holoviews as hv
+import bokeh
+
+from holoviews.operation.datashader import bundle_graph, datashade
+
+hv.extension('bokeh')
+'''
