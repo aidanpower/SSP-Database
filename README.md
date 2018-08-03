@@ -7,6 +7,7 @@ The following files can be used to gather more SSP related articles, visualize t
 ## INSTALL
 
 Requires Python 3
+
 Requires Pandas and Metaknowledge for the Database, Networkx, Matplotlib, Holoviews and Bokeh for visualization.
 
 ```python
