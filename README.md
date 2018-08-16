@@ -28,4 +28,4 @@ from holoviews.operation.datashader import bundle_graph, datashade
 hv.extension('bokeh')
 ```
 
-Copyright University of Waterloo
+This project was created in collaboration with Vanessa Schweizer and Jude Kurniawan at the University of Waterloo
