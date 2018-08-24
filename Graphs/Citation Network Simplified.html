@@ -1,0 +1,932 @@
+
+<script src="https://cdn.pydata.org/bokeh/release/bokeh-0.13.0.min.js" type="text/javascript"></script>
+<script src="https://cdn.pydata.org/bokeh/release/bokeh-widgets-0.13.0.min.js" type="text/javascript"></script>
+<script src="https://cdn.pydata.org/bokeh/release/bokeh-tables-0.13.0.min.js" type="text/javascript"></script>
+<script src="https://cdn.pydata.org/bokeh/release/bokeh-gl-0.13.0.min.js" type="text/javascript"></script>
+<script src="https://code.jquery.com/jquery-2.1.4.min.js" type="text/javascript"></script>
+<script src="https://code.jquery.com/ui/1.10.4/jquery-ui.min.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.20/require.min.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js" type="text/javascript"></script>
+<script type="text/javascript">function HoloViewsWidget() {
+}
+
+HoloViewsWidget.prototype.init_slider = function(init_val){
+  if(this.load_json) {
+    this.from_json()
+  } else {
+    this.update_cache();
+  }
+}
+
+HoloViewsWidget.prototype.populate_cache = function(idx){
+  this.cache[idx].innerHTML = this.frames[idx];
+  if (this.embed) {
+    delete this.frames[idx];
+  }
+}
+
+HoloViewsWidget.prototype.process_error = function(msg){
+}
+
+HoloViewsWidget.prototype.from_json = function() {
+  var data_url = this.json_path + this.id + '.json';
+  $.getJSON(data_url, $.proxy(function(json_data) {
+    this.frames = json_data;
+    this.update_cache();
+    this.update(0);
+  }, this));
+}
+
+HoloViewsWidget.prototype.dynamic_update = function(current){
+  if (current === undefined) {
+    return
+  }
+  this.current = current;
+  if (this.comm) {
+    var msg = {comm_id: this.id+'_client', content: current}
+    this.comm.send(msg);
+  }
+}
+
+HoloViewsWidget.prototype.update_cache = function(force){
+  var frame_len = Object.keys(this.frames).length;
+  for (var i=0; i<frame_len; i++) {
+    if(!this.load_json || this.dynamic)  {
+      var frame = Object.keys(this.frames)[i];
+    } else {
+      var frame = i;
+    }
+    if(!(frame in this.cache) || force) {
+      if ((frame in this.cache) && force) { this.cache[frame].remove() }
+      var div = document.createElement("div");
+      var parent = document.getElementById("_anim_img"+this.id);
+      div.style.display = "none";
+      parent.appendChild(div)
+      this.cache[frame] = div;
+      var cache_id = "_anim_img"+this.id+"_"+frame;
+      this.populate_cache(frame);
+    }
+  }
+}
+
+HoloViewsWidget.prototype.update = function(current){
+  if(current in this.cache) {
+    for (var index in this.cache) {
+      this.cache[index].style.display = "none";
+    }
+    this.cache[current].style.display = "";
+    this.wait = false;
+  }
+}
+
+HoloViewsWidget.prototype.init_comms = function() {
+  var that = this
+  HoloViews.comm_manager.register_target(this.plot_id, this.id, function (msg) { that.process_msg(msg) })
+  if (!this.cached || this.dynamic) {
+    function ack_callback(msg) {
+      msg = JSON.parse(msg.content.data);
+      var comm_id = msg["comm_id"]
+      var comm_status = HoloViews.comm_status[comm_id];
+      if (that.queue.length > 0) {
+        that.time = Date.now();
+        that.dynamic_update(that.queue[that.queue.length-1]);
+        that.queue = [];
+      } else {
+        that.wait = false;
+      }
+      if ((msg.msg_type == "Ready") && msg.content) {
+        console.log("Python callback returned following output:", msg.content);
+      } else if (msg.msg_type == "Error") {
+        console.log("Python failed with the following traceback:", msg['traceback'])
+      }
+    }
+    var comm = HoloViews.comm_manager.get_client_comm(this.plot_id, this.id+'_client', ack_callback);
+    return comm
+  }
+}
+
+HoloViewsWidget.prototype.process_msg = function(msg) {
+}
+
+function SelectionWidget(frames, id, slider_ids, keyMap, dim_vals, notFound, load_json, mode, cached, json_path, dynamic, plot_id){
+  this.frames = frames;
+  this.id = id;
+  this.plot_id = plot_id;
+  this.slider_ids = slider_ids;
+  this.keyMap = keyMap
+  this.current_frame = 0;
+  this.current_vals = dim_vals;
+  this.load_json = load_json;
+  this.mode = mode;
+  this.notFound = notFound;
+  this.cached = cached;
+  this.dynamic = dynamic;
+  this.cache = {};
+  this.json_path = json_path;
+  this.init_slider(this.current_vals[0]);
+  this.queue = [];
+  this.wait = false;
+  if (!this.cached || this.dynamic) {
+    this.comm = this.init_comms();
+  }
+}
+
+SelectionWidget.prototype = new HoloViewsWidget;
+
+
+SelectionWidget.prototype.get_key = function(current_vals) {
+  var key = "(";
+  for (var i=0; i<this.slider_ids.length; i++)
+  {
+    var val = this.current_vals[i];
+    if (!(typeof val === 'string')) {
+      if (val % 1 === 0) { val = val.toFixed(1); }
+      else { val = val.toFixed(10); val = val.slice(0, val.length-1);}
+    }
+    key += "'" + val + "'";
+    if(i != this.slider_ids.length-1) { key += ', ';}
+    else if(this.slider_ids.length == 1) { key += ',';}
+  }
+  key += ")";
+  return this.keyMap[key];
+}
+
+SelectionWidget.prototype.set_frame = function(dim_val, dim_idx){
+  this.current_vals[dim_idx] = dim_val;
+  var key = this.current_vals;
+  if (!this.dynamic) {
+    key = this.get_key(key)
+  }
+  if (this.dynamic || !this.cached) {
+    if ((this.time !== undefined) && ((this.wait) && ((this.time + 10000) > Date.now()))) {
+      this.queue.push(key);
+      return
+    }
+    this.queue = [];
+    this.time = Date.now();
+    this.current_frame = key;
+    this.wait = true;
+    this.dynamic_update(key)
+  } else if (key !== undefined) {
+    this.update(key)
+  }
+}
+
+
+/* Define the ScrubberWidget class */
+function ScrubberWidget(frames, num_frames, id, interval, load_json, mode, cached, json_path, dynamic, plot_id){
+  this.slider_id = "_anim_slider" + id;
+  this.loop_select_id = "_anim_loop_select" + id;
+  this.id = id;
+  this.plot_id = plot_id;
+  this.interval = interval;
+  this.current_frame = 0;
+  this.direction = 0;
+  this.dynamic = dynamic;
+  this.timer = null;
+  this.load_json = load_json;
+  this.mode = mode;
+  this.cached = cached;
+  this.frames = frames;
+  this.cache = {};
+  this.length = num_frames;
+  this.json_path = json_path;
+  document.getElementById(this.slider_id).max = this.length - 1;
+  this.init_slider(0);
+  this.wait = false;
+  this.queue = [];
+  if (!this.cached || this.dynamic) {
+    this.comm = this.init_comms()
+  }
+}
+
+ScrubberWidget.prototype = new HoloViewsWidget;
+
+ScrubberWidget.prototype.set_frame = function(frame){
+  this.current_frame = frame;
+  var widget = document.getElementById(this.slider_id);
+  if (widget === null) {
+    this.pause_animation();
+    return
+  }
+  widget.value = this.current_frame;
+  if (this.dynamic || !this.cached) {
+    if ((this.time !== undefined) && ((this.wait) && ((this.time + 10000) > Date.now()))) {
+      this.queue.push(frame);
+      return
+    }
+    this.queue = [];
+    this.time = Date.now();
+    this.wait = true;
+    this.dynamic_update(frame)
+  } else {
+    this.update(frame)
+  }
+}
+
+ScrubberWidget.prototype.get_loop_state = function(){
+  var button_group = document[this.loop_select_id].state;
+  for (var i = 0; i < button_group.length; i++) {
+    var button = button_group[i];
+    if (button.checked) {
+      return button.value;
+    }
+  }
+  return undefined;
+}
+
+
+ScrubberWidget.prototype.next_frame = function() {
+  this.set_frame(Math.min(this.length - 1, this.current_frame + 1));
+}
+
+ScrubberWidget.prototype.previous_frame = function() {
+  this.set_frame(Math.max(0, this.current_frame - 1));
+}
+
+ScrubberWidget.prototype.first_frame = function() {
+  this.set_frame(0);
+}
+
+ScrubberWidget.prototype.last_frame = function() {
+  this.set_frame(this.length - 1);
+}
+
+ScrubberWidget.prototype.slower = function() {
+  this.interval /= 0.7;
+  if(this.direction > 0){this.play_animation();}
+  else if(this.direction < 0){this.reverse_animation();}
+}
+
+ScrubberWidget.prototype.faster = function() {
+  this.interval *= 0.7;
+  if(this.direction > 0){this.play_animation();}
+  else if(this.direction < 0){this.reverse_animation();}
+}
+
+ScrubberWidget.prototype.anim_step_forward = function() {
+  if(this.current_frame < this.length - 1){
+    this.next_frame();
+  }else{
+    var loop_state = this.get_loop_state();
+    if(loop_state == "loop"){
+      this.first_frame();
+    }else if(loop_state == "reflect"){
+      this.last_frame();
+      this.reverse_animation();
+    }else{
+      this.pause_animation();
+      this.last_frame();
+    }
+  }
+}
+
+ScrubberWidget.prototype.anim_step_reverse = function() {
+  if(this.current_frame > 0){
+    this.previous_frame();
+  } else {
+    var loop_state = this.get_loop_state();
+    if(loop_state == "loop"){
+      this.last_frame();
+    }else if(loop_state == "reflect"){
+      this.first_frame();
+      this.play_animation();
+    }else{
+      this.pause_animation();
+      this.first_frame();
+    }
+  }
+}
+
+ScrubberWidget.prototype.pause_animation = function() {
+  this.direction = 0;
+  if (this.timer){
+    clearInterval(this.timer);
+    this.timer = null;
+  }
+}
+
+ScrubberWidget.prototype.play_animation = function() {
+  this.pause_animation();
+  this.direction = 1;
+  var t = this;
+  if (!this.timer) this.timer = setInterval(function(){t.anim_step_forward();}, this.interval);
+}
+
+ScrubberWidget.prototype.reverse_animation = function() {
+  this.pause_animation();
+  this.direction = -1;
+  var t = this;
+  if (!this.timer) this.timer = setInterval(function(){t.anim_step_reverse();}, this.interval);
+}
+
+function extend(destination, source) {
+  for (var k in source) {
+    if (source.hasOwnProperty(k)) {
+      destination[k] = source[k];
+    }
+  }
+  return destination;
+}
+
+function update_widget(widget, values) {
+  if (widget.hasClass("ui-slider")) {
+    widget.slider('option', {
+      min: 0,
+      max: values.length-1,
+      dim_vals: values,
+      value: 0,
+      dim_labels: values
+    })
+    widget.slider('option', 'slide').call(widget, event, {value: 0})
+  } else {
+    widget.empty();
+    for (var i=0; i<values.length; i++){
+      widget.append($("<option>", {
+        value: i,
+        text: values[i]
+      }))
+    };
+    widget.data('values', values);
+    widget.data('value', 0);
+    widget.trigger("change");
+  };
+}
+
+function init_slider(id, plot_id, dim, values, next_vals, labels, dynamic, step, value, next_dim,
+                     dim_idx, delay, jQueryUI_CDN, UNDERSCORE_CDN) {
+  // Slider JS Block START
+  function loadcssfile(filename){
+    var fileref=document.createElement("link")
+    fileref.setAttribute("rel", "stylesheet")
+    fileref.setAttribute("type", "text/css")
+    fileref.setAttribute("href", filename)
+    document.getElementsByTagName("head")[0].appendChild(fileref)
+  }
+  loadcssfile("https://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css");
+  /* Check if jQuery and jQueryUI have been loaded
+     otherwise load with require.js */
+  var jQuery = window.jQuery,
+    // check for old versions of jQuery
+    oldjQuery = jQuery && !!jQuery.fn.jquery.match(/^1\.[0-4](\.|$)/),
+    jquery_path = '',
+    paths = {},
+    noConflict;
+  var jQueryUI = jQuery.ui;
+  // check for jQuery
+  if (!jQuery || oldjQuery) {
+    // load if it's not available or doesn't meet min standards
+    paths.jQuery = jQuery;
+    noConflict = !!oldjQuery;
+  } else {
+    // register the current jQuery
+    define('jquery', [], function() { return jQuery; });
+  }
+  if (!jQueryUI) {
+    paths.jQueryUI = jQueryUI_CDN.slice(null, -3);
+  } else {
+    define('jQueryUI', [], function() { return jQuery.ui; });
+  }
+  paths.underscore = UNDERSCORE_CDN.slice(null, -3);
+  var jquery_require = {
+    paths: paths,
+    shim: {
+      "jQueryUI": {
+        exports:"$",
+        deps: ['jquery']
+      },
+      "underscore": {
+        exports: '_'
+      }
+    }
+  }
+  require.config(jquery_require);
+  require(["jQueryUI", "underscore"], function(jUI, _){
+    if (noConflict) $.noConflict(true);
+    var vals = values;
+    if (dynamic && vals.constructor === Array) {
+      var default_value = parseFloat(value);
+      var min = parseFloat(vals[0]);
+      var max = parseFloat(vals[vals.length-1]);
+      var wstep = step;
+      var wlabels = [default_value];
+      var init_label = default_value;
+    } else {
+      var min = 0;
+      if (dynamic) {
+        var max = Object.keys(vals).length - 1;
+        var init_label = labels[value];
+        var default_value = values[value];
+      } else {
+        var max = vals.length - 1;
+        var init_label = labels[value];
+        var default_value = value;
+      }
+      var wstep = 1;
+      var wlabels = labels;
+    }
+    function adjustFontSize(text) {
+      var width_ratio = (text.parent().width()/8)/text.val().length;
+      var size = Math.min(0.9, Math.max(0.6, width_ratio))+'em';
+      text.css('font-size', size);
+    }
+    var slider = $('#_anim_widget'+id+'_'+dim);
+    slider.slider({
+      animate: "fast",
+      min: min,
+      max: max,
+      step: wstep,
+      value: default_value,
+      dim_vals: vals,
+      dim_labels: wlabels,
+      next_vals: next_vals,
+      slide: function(event, ui) {
+        var vals = slider.slider("option", "dim_vals");
+        var next_vals = slider.slider("option", "next_vals");
+        var dlabels = slider.slider("option", "dim_labels");
+        if (dynamic) {
+          var dim_val = ui.value;
+          if (vals.constructor === Array) {
+            var label = ui.value;
+          } else {
+            var label = dlabels[ui.value];
+          }
+        } else {
+          var dim_val = vals[ui.value];
+          var label = dlabels[ui.value];
+        }
+        var text = $('#textInput'+id+'_'+dim);
+        text.val(label);
+        adjustFontSize(text);
+        HoloViews.index[plot_id].set_frame(dim_val, dim_idx);
+        if (Object.keys(next_vals).length > 0) {
+          var new_vals = next_vals[dim_val];
+          var next_widget = $('#_anim_widget'+id+'_'+next_dim);
+          update_widget(next_widget, new_vals);
+        }
+      }
+    });
+    slider.keypress(function(event) {
+      if (event.which == 80 || event.which == 112) {
+        var start = slider.slider("option", "value");
+        var stop =  slider.slider("option", "max");
+        for (var i=start; i<=stop; i++) {
+          var delay = i*delay;
+          $.proxy(function doSetTimeout(i) { setTimeout($.proxy(function() {
+            var val = {value:i};
+            slider.slider('value',i);
+            slider.slider("option", "slide")(null, val);
+          }, slider), delay);}, slider)(i);
+        }
+      }
+      if (event.which == 82 || event.which == 114) {
+        var start = slider.slider("option", "value");
+        var stop =  slider.slider("option", "min");
+        var count = 0;
+        for (var i=start; i>=stop; i--) {
+          var delay = count*delay;
+          count = count + 1;
+          $.proxy(function doSetTimeout(i) { setTimeout($.proxy(function() {
+            var val = {value:i};
+            slider.slider('value',i);
+            slider.slider("option", "slide")(null, val);
+          }, slider), delay);}, slider)(i);
+        }
+      }
+    });
+    var textInput = $('#textInput'+id+'_'+dim)
+    textInput.val(init_label);
+    adjustFontSize(textInput);
+  });
+}
+
+function init_dropdown(id, plot_id, dim, vals, value, next_vals, labels, next_dim, dim_idx, dynamic) {
+  var widget = $("#_anim_widget"+id+'_'+dim);
+  widget.data('values', vals)
+  for (var i=0; i<vals.length; i++){
+    if (dynamic) {
+      var val = vals[i];
+    } else {
+      var val = i;
+    }
+    widget.append($("<option>", {
+      value: val,
+      text: labels[i]
+    }));
+  };
+  widget.data("next_vals", next_vals);
+  widget.val(value);
+  widget.on('change', function(event, ui) {
+    if (dynamic) {
+      var dim_val = parseInt(this.value);
+    } else {
+      var dim_val = $.data(this, 'values')[this.value];
+    }
+    var next_vals = $.data(this, "next_vals");
+    if (Object.keys(next_vals).length > 0) {
+      var new_vals = next_vals[dim_val];
+      var next_widget = $('#_anim_widget'+id+'_'+next_dim);
+      update_widget(next_widget, new_vals);
+    }
+    var widgets = HoloViews.index[plot_id]
+    if (widgets) {
+      widgets.set_frame(dim_val, dim_idx);
+    }
+  });
+}
+
+
+if (window.HoloViews === undefined) {
+  window.HoloViews = {}
+  window.PyViz = window.HoloViews
+} else if (window.PyViz === undefined) {
+  window.PyViz = window.HoloViews
+}
+
+
+var _namespace = {
+  init_slider: init_slider,
+  init_dropdown: init_dropdown,
+  comms: {},
+  comm_status: {},
+  index: {},
+  plot_index: {},
+  kernels: {},
+  receivers: {}
+}
+
+for (var k in _namespace) {
+  if (!(k in window.HoloViews)) {
+    window.HoloViews[k] = _namespace[k];
+  }
+}
+
+var JS_MIME_TYPE = 'application/javascript';
+var HTML_MIME_TYPE = 'text/html';
+var EXEC_MIME_TYPE = 'application/vnd.holoviews_exec.v0+json';
+var CLASS_NAME = 'output';
+
+/**
+ * Render data to the DOM node
+ */
+function render(props, node) {
+  var div = document.createElement("div");
+  var script = document.createElement("script");
+  node.appendChild(div);
+  node.appendChild(script);
+}
+
+/**
+ * Handle when a new output is added
+ */
+function handle_add_output(event, handle) {
+  var output_area = handle.output_area;
+  var output = handle.output;
+  if (!output.data.hasOwnProperty(EXEC_MIME_TYPE)) {
+    return
+  }
+  var id = output.metadata[EXEC_MIME_TYPE]["id"];
+  var toinsert = output_area.element.find("." + CLASS_NAME.split(' ')[0]);
+  if (id !== undefined) {
+    var nchildren = toinsert.length;
+    toinsert[nchildren-1].children[0].innerHTML = output.data[HTML_MIME_TYPE];
+    toinsert[nchildren-1].children[1].textContent = output.data[JS_MIME_TYPE];
+    output_area._hv_plot_id = id;
+    if ((window.Bokeh !== undefined) && (id in Bokeh.index)) {
+      HoloViews.plot_index[id] = Bokeh.index[id];
+    } else {
+      HoloViews.plot_index[id] = null;
+    }
+  }
+}
+
+/**
+ * Handle when an output is cleared or removed
+ */
+function handle_clear_output(event, handle) {
+  var id = handle.cell.output_area._hv_plot_id;
+  if ((id === undefined) || !(id in HoloViews.plot_index)) { return; }
+  var comm = window.HoloViews.comm_manager.get_client_comm("hv-extension-comm", "hv-extension-comm", function () {});
+  if (comm !== null) {
+    comm.send({event_type: 'delete', 'id': id});
+  }
+  delete HoloViews.plot_index[id];
+  if ((window.Bokeh !== undefined) & (id in window.Bokeh.index)) {
+    window.Bokeh.index[id].model.document.clear();
+    delete Bokeh.index[id];
+  }
+}
+
+/**
+ * Handle kernel restart event
+ */
+function handle_kernel_cleanup(event, handle) {
+  delete HoloViews.comms["hv-extension-comm"];
+  window.HoloViews.plot_index = {}
+}
+
+/**
+ * Handle update_display_data messages
+ */
+function handle_update_output(event, handle) {
+  handle_clear_output(event, {cell: {output_area: handle.output_area}})
+  handle_add_output(event, handle)
+}
+
+function register_renderer(events, OutputArea) {
+  function append_mime(data, metadata, element) {
+    // create a DOM node to render to
+    var toinsert = this.create_output_subarea(
+    metadata,
+    CLASS_NAME,
+    EXEC_MIME_TYPE
+    );
+    this.keyboard_manager.register_events(toinsert);
+    // Render to node
+    var props = {data: data, metadata: metadata[EXEC_MIME_TYPE]};
+    render(props, toinsert[0]);
+    element.append(toinsert);
+    return toinsert
+  }
+
+  events.on('output_added.OutputArea', handle_add_output);	
+  events.on('output_updated.OutputArea', handle_update_output);
+  events.on('clear_output.CodeCell', handle_clear_output);
+  events.on('delete.Cell', handle_clear_output);
+  events.on('kernel_ready.Kernel', handle_kernel_cleanup);
+
+  OutputArea.prototype.register_mime_type(EXEC_MIME_TYPE, append_mime, {
+    safe: true,
+    index: 0
+  });
+}
+
+if (window.Jupyter !== undefined) {
+  try {
+    var events = require('base/js/events');
+    var OutputArea = require('notebook/js/outputarea').OutputArea;
+    if (OutputArea.prototype.mime_types().indexOf(EXEC_MIME_TYPE) == -1) {
+      register_renderer(events, OutputArea);
+    }
+  } catch(err) {
+  }
+}
+
+// Define Bokeh specific subclasses
+function BokehSelectionWidget() {
+  SelectionWidget.apply(this, arguments);
+}
+
+function BokehScrubberWidget() {
+  ScrubberWidget.apply(this, arguments);
+}
+
+// Let them inherit from the baseclasses
+BokehSelectionWidget.prototype = Object.create(SelectionWidget.prototype);
+BokehScrubberWidget.prototype = Object.create(ScrubberWidget.prototype);
+
+// Define methods to override on widgets
+var BokehMethods = {
+  update_cache : function(){
+    for (var index in this.frames) {
+      this.frames[index] = JSON.parse(this.frames[index]);
+    }
+  },
+  update : function(current){
+    if (current === undefined) {
+      return;
+    }
+    var data = this.frames[current];
+    if (data !== undefined) {
+      if (data.root in HoloViews.plot_index) {
+        var doc = HoloViews.plot_index[data.root].model.document;
+      } else {
+        var doc = Bokeh.index[data.root].model.document;
+      }
+      doc.apply_json_patch(data.content);
+    }
+  },
+  init_comms: function() {
+    if (Bokeh.protocol !== undefined) {
+      this.receiver = new Bokeh.protocol.Receiver()
+    } else {
+      this.receiver = null;
+    }
+    return HoloViewsWidget.prototype.init_comms.call(this);
+  },
+  process_msg : function(msg) {
+    if (this.plot_id in HoloViews.plot_index) {
+      var doc = HoloViews.plot_index[this.plot_id].model.document;
+    } else {
+      var doc = Bokeh.index[this.plot_id].model.document;
+    }
+    if (this.receiver === null) { return }
+    var receiver = this.receiver;
+    if (msg.buffers.length > 0) {
+      receiver.consume(msg.buffers[0].buffer)
+    } else {
+      receiver.consume(msg.content.data)
+    }
+    const comm_msg = receiver.message;
+    if ((comm_msg != null) && (doc != null)) {
+      doc.apply_json_patch(comm_msg.content, comm_msg.buffers)
+    }
+  }
+}
+
+// Extend Bokeh widgets with backend specific methods
+extend(BokehSelectionWidget.prototype, BokehMethods);
+extend(BokehScrubberWidget.prototype, BokehMethods);
+
+window.HoloViews.BokehSelectionWidget = BokehSelectionWidget
+window.HoloViews.BokehScrubberWidget = BokehScrubberWidget
+</script>
+<script type="text/javascript">
+    function JupyterCommManager() {
+    }
+
+    JupyterCommManager.prototype.register_target = function(plot_id, comm_id, msg_handler) {
+      if (window.comm_manager || ((window.Jupyter !== undefined) && (Jupyter.notebook.kernel != null))) {
+        var comm_manager = window.comm_manager || Jupyter.notebook.kernel.comm_manager;
+        comm_manager.register_target(comm_id, function(comm) {
+          comm.on_msg(msg_handler);
+        });
+      } else if ((plot_id in window.PyViz.kernels) && (window.PyViz.kernels[plot_id])) {
+        window.PyViz.kernels[plot_id].registerCommTarget(comm_id, function(comm) {
+          comm.onMsg = msg_handler;
+        });
+      }
+    }
+
+    JupyterCommManager.prototype.get_client_comm = function(plot_id, comm_id, msg_handler) {
+      if (comm_id in window.PyViz.comms) {
+        return window.PyViz.comms[comm_id];
+      } else if (window.comm_manager || ((window.Jupyter !== undefined) && (Jupyter.notebook.kernel != null))) {
+        var comm_manager = window.comm_manager || Jupyter.notebook.kernel.comm_manager;
+        var comm = comm_manager.new_comm(comm_id, {}, {}, {}, comm_id);
+        if (msg_handler) {
+          comm.on_msg(msg_handler);
+        }
+      } else if ((plot_id in window.PyViz.kernels) && (window.PyViz.kernels[plot_id])) {
+        var comm = window.PyViz.kernels[plot_id].connectToComm(comm_id);
+        comm.open();
+        if (msg_handler) {
+          comm.onMsg = msg_handler;
+        }
+      }
+
+      window.PyViz.comms[comm_id] = comm;
+      return comm;
+    }
+
+    window.PyViz.comm_manager = new JupyterCommManager();
+    </script>
+
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.13.0.min.css">
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-widgets-0.13.0.min.css">
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-tables-0.13.0.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+<style>div.hololayout {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+div.holoframe {
+  width: 75%;
+}
+
+div.holowell {
+  display: flex;
+  align-items: center;
+}
+
+form.holoform {
+  background-color: #fafafa;
+  border-radius: 5px;
+  overflow: hidden;
+  padding-left: 0.8em;
+  padding-right: 0.8em;
+  padding-top: 0.4em;
+  padding-bottom: 0.4em;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  margin-bottom: 20px;
+  border: 1px solid #e3e3e3;
+}
+
+div.holowidgets {
+  padding-right: 0;
+  width: 25%;
+}
+
+div.holoslider {
+  min-height: 0 !important;
+  height: 0.8em;
+  width: 100%;
+}
+
+div.holoformgroup {
+  padding-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+div.hologroup {
+  padding-left: 0;
+  padding-right: 0.8em;
+  width: 100%;
+}
+
+.holoselect {
+  width: 92%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.holotext {
+  padding-left:  0.5em;
+  padding-right: 0;
+  width: 100%;
+}
+
+.holowidgets .ui-resizable-se {
+  visibility: hidden
+}
+
+.holoframe > .ui-resizable-se {
+  visibility: hidden
+}
+
+.holowidgets .ui-resizable-s {
+  visibility: hidden
+}
+
+
+/* CSS rules for noUISlider based slider used by JupyterLab extension  */
+
+.noUi-handle {
+  width: 20px !important;
+  height: 20px !important;
+  left: -5px !important;
+  top: -5px !important;
+}
+
+.noUi-handle:before, .noUi-handle:after {
+  visibility: hidden;
+  height: 0px;
+}
+
+.noUi-target {
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+
+div.bk-hbox {
+    display: flex;
+    justify-content: center;
+}
+
+div.bk-hbox div.bk-plot {
+    padding: 8px;
+}
+
+div.bk-hbox div.bk-data-table {
+    padding: 20px;
+}
+</style><div style='display: table; margin: 0 auto;'>
+
+
+
+
+
+
+  <div class="bk-root" id="eecc8c5b-4eb1-484b-b3c5-fb4c7ac79ec5"></div>
+
+<script type="text/javascript">
+  (function(root) {
+  function embed_document(root) {
+    
+  var docs_json = {"83a98820-aa4f-4a0f-98b0-35b13dbbcd16":{"roots":{"references":[{"attributes":{"data_source":{"id":"2d5565ea-1e94-42ec-8d2a-8aaf327782d8","type":"ColumnDataSource"},"glyph":{"id":"bc5a6d95-a118-4c90-b959-1335cc5fa9a3","type":"Circle"},"hover_glyph":{"id":"589cf488-e3ef-4b8d-8d60-3b17848ee98b","type":"Circle"},"muted_glyph":null,"nonselection_glyph":{"id":"dca5a5bb-d4c8-476d-914d-38faf6c67e8a","type":"Circle"},"selection_glyph":null,"view":{"id":"83ba8cf3-fb34-47f2-ab24-65b73f022b64","type":"CDSView"}},"id":"0837016f-903e-4cad-beca-4ac01583092b","type":"GlyphRenderer"},{"attributes":{"callback":null,"data":{"MK_hyphen_minus_ID":["WOS:000433146400002","WOS:000357902900008","WOS:000366767100019","WOS:000376413600010","WOS:000425120000013","WOS:000328622900011","WOS:000434459200009","WOS:000428879800029","WOS:000352702200010","WOS:000384910100004","WOS:000384776900047","WOS:000394634500027","WOS:000411912800005","WOS:000363483600005","WOS:000401888300005","WOS:000407869500007","WOS:000392065000004","WOS:000368172500003","WOS:000410013700028","WOS:000399856900014","WOS:000432342500001","WOS:000407407000007","WOS:000394634500025","WOS:000385595200013","WOS:000410013700026","WOS:000399261400030","WOS:000422915700013","WOS:000418674800001","WOS:000422845000003","WOS:000370492100017","WOS:000413381500008","WOS:000430515400051","WOS:000394634500019","WOS:000412259200013","WOS:000429399000012","WOS:000354705200003","WOS:000374602000024","WOS:000389732700001","WOS:000426896800018","WOS:000411897700161","WOS:000330989300002","WOS:000337218600003","WOS:000331456400003","WOS:000410013700023","WOS:000415031800008","WOS:000388188900001","WOS:000409250800001","WOS:000370454200046","WOS:000394634500023","WOS:000416560600001","WOS:000352252600030","WOS:000385707800001","WOS:000391801000017","WOS:000394634500024","WOS:000396150400008","WOS:000392422500089","WOS:000414707500040","WOS:000431066700001","WOS:000434465900013","WOS:000361582000010","WOS:000376218300026","WOS:000322376000002","WOS:000386481400001","WOS:000348501800011","WOS:000411544400006","WOS:000376484300002","WOS:000360005600042","WOS:000430171600008","WOS:000398753300004","WOS:000387524800005","WOS:000400086300012","WOS:000332954000002","WOS:000341825200016","WOS:000429397300016","WOS:000396348500007","WOS:000394634500018","WOS:000381828300004","WOS:000353953800006","WOS:000389321500008","WOS:000419320100004","WOS:000369524000018","WOS:000382134800017","WOS:000408172600001","WOS:000368956800003","WOS:000414160500029","WOS:000330989300005","WOS:000394634500026","WOS:000414969000028","WOS:000430171600014","WOS:000330989300008","WOS:000358484400014","WOS:000394634500020","WOS:000429764000038","WOS:000387357900001","WOS:000429367300001","WOS:000353574400002","WOS:000396349400009","WOS:000397804000007","WOS:000396348500011","WOS:000425120000014","WOS:000398789800039","WOS:000411912800018","WOS:000433078800002","WOS:000385599800007","WOS:000418122200002","WOS:000428386100002","WOS:000425120000015","WOS:000404545400017","WOS:000426807800008","WOS:000382597200006","WOS:000383291800112","WOS:000407785600006","WOS:000330989300001","WOS:000424392400002","WOS:000348929800003","WOS:000416275100002","WOS:000366134500004","WOS:000399996100005","WOS:000411912800011","WOS:000330989300004","WOS:000394634500016","WOS:000411912800020","WOS:000400643800071","WOS:000430333400002","WOS:000385595800019","WOS:000394634500028","WOS:000425746500009","WOS:000394634500029","WOS:000419157400018","WOS:000394634500015","WOS:000415394200109","WOS:000424630000001","WOS:000429194600020","WOS:000428509200161","WOS:000429046300009","WOS:000418974700011","WOS:000330989300012","WOS:000401452700016","WOS:000330989300013","WOS:000418280000001","WOS:000332954000003","WOS:000394634500017","WOS:000387807200128","WOS:000407785600013","WOS:000362686700009","WOS:000330989300007","WOS:000374602000023","WOS:000424121200003","WOS:000392768800040","WOS:000431999600014","WOS:000431848500073","WOS:000405474400004","WOS:000379079800006","WOS:000429753900018","WOS:000433107100017","WOS:000425082600159","WOS:000394991000001","WOS:000375889400054","WOS:000434385200002","WOS:000350646600010","WOS:000330989300011","WOS:000378446600045","WOS:000379278000002","WOS:000383297200014","WOS:000330989300006","WOS:000394634500022","WOS:000431139900021","WOS:000367498600021","WOS:000371488300008","WOS:000344964000006","WOS:000376932900010","WOS:000390735900020","WOS:000412916700006","WOS:000425568700002","WOS:000408275500093","WOS:000432329700002","WOS:000366999400037","WOS:000330989300010","WOS:000398128000005","WOS:000356835600020","WOS:000425120000009","WOS:000426807800006","WOS:000414367200002","WOS:000395417900001","WOS:000425082600258","WOS:000387581400004","WOS:000430779600040","WOS:000408299800011","WOS:000425959700007","WOS:000382339000023"],"count":[1,8,2,2,2,8,1,1,2,1,5,12,2,3,1,1,1,2,1,1,1,1,17,1,1,1,1,2,1,2,2,1,27,1,2,2,1,1,1,1,27,3,7,4,1,4,1,1,18,2,3,1,1,23,1,1,1,2,1,1,3,53,1,6,1,2,1,1,1,2,2,4,3,1,1,11,14,4,1,1,1,2,2,2,2,34,17,1,1,3,3,7,1,1,1,1,2,1,4,1,2,2,1,2,2,1,2,2,1,4,1,1,6,1,3,1,2,1,2,111,40,3,1,1,2,16,1,12,2,33,2,1,1,1,1,1,3,2,10,1,5,21,1,2,1,11,1,1,1,1,1,2,1,1,1,1,1,1,1,3,16,1,3,2,65,25,1,3,3,8,11,2,1,1,2,1,8,6,1,2,2,1,2,1,1,1,1,1,1,1],"inCore":[true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true],"index":{"__ndarray__":"AAAAAAEAAAACAAAAAwAAAAQAAAAFAAAABgAAAAcAAAAIAAAACQAAAAoAAAALAAAADAAAAA0AAAAOAAAADwAAABAAAAARAAAAEgAAABMAAAAUAAAAFQAAABYAAAAXAAAAGAAAABkAAAAaAAAAGwAAABwAAAAdAAAAHgAAAB8AAAAgAAAAIQAAACIAAAAjAAAAJAAAACUAAAAmAAAAJwAAACgAAAApAAAAKgAAACsAAAAsAAAALQAAAC4AAAAvAAAAMAAAADEAAAAyAAAAMwAAADQAAAA1AAAANgAAADcAAAA4AAAAOQAAADoAAAA7AAAAPAAAAD0AAAA+AAAAPwAAAEAAAABBAAAAQgAAAEMAAABEAAAARQAAAEYAAABHAAAASAAAAEkAAABKAAAASwAAAEwAAABNAAAATgAAAE8AAABQAAAAUQAAAFIAAABTAAAAVAAAAFUAAABWAAAAVwAAAFgAAABZAAAAWgAAAFsAAABcAAAAXQAAAF4AAABfAAAAYAAAAGEAAABiAAAAYwAAAGQAAABlAAAAZgAAAGcAAABoAAAAaQAAAGoAAABrAAAAbAAAAG0AAABuAAAAbwAAAHAAAABxAAAAcgAAAHMAAAB0AAAAdQAAAHYAAAB3AAAAeAAAAHkAAAB6AAAAewAAAHwAAAB9AAAAfgAAAH8AAACAAAAAgQAAAIIAAACDAAAAhAAAAIUAAACGAAAAhwAAAIgAAACJAAAAigAAAIsAAACMAAAAjQAAAI4AAACPAAAAkAAAAJEAAACSAAAAkwAAAJQAAACVAAAAlgAAAJcAAACYAAAAmQAAAJoAAACbAAAAnAAAAJ0AAACeAAAAnwAAAKAAAAChAAAAogAAAKMAAACkAAAApQAAAKYAAACnAAAAqAAAAKkAAACqAAAAqwAAAKwAAACtAAAArgAAAK8AAACwAAAAsQAAALIAAACzAAAAtAAAALUAAAC2AAAAtwAAALgAAAC5AAAAugAAALsAAAC8AAAAvQAAAA==","dtype":"int32","shape":[190]},"index_hover":["Abel Gj, 2018, DEMOGR RES","Absar Sm, 2015, GLOBAL ENVIRON CHANG","Alfieri L, 2015, GLOBAL ENVIRON CHANG","Alfieri L, 2016, CLIMATIC CHANGE","Anderson Gb, 2018, CLIMATIC CHANGE","Arnell Nw, 2014, CLIMATIC CHANGE","Asefi-Najafabady S, 2018, CLIMATIC CHANGE","Bai Zh, 2018, GLOBAL CHANGE BIOL","Baldos Ulc, 2015, FOOD SECUR","Baldos Ulc, 2016, GLOB FOOD SECUR-AGR","Bauer N, 2016, ENERGY","Bauer N, 2017, GLOBAL ENVIRON CHANG","Bijl Dl, 2017, GLOBAL ENVIRON CHANG","Birkmann J, 2015, CLIMATIC CHANGE","Blanco V, 2017, J ENVIRON MANAGE","Bohmelt T, 2017, ENVIRON SCI POLICY","Boke-Olen N, 2017, SCI DATA","Bonsch M, 2016, GCB BIOENERGY","Broin Eo, 2017, TRANSPORT RES D-TR E","Brown Me, 2017, FOOD POLICY","Byers E, 2018, ENVIRON RES LETT","Cai Yy, 2017, FOOD POLICY","Calvin K, 2017, GLOBAL ENVIRON CHANG","Carlsen H, 2016, ENVIRON MODELL SOFTW","Carrara S, 2017, TRANSPORT RES D-TR E","Chen K, 2017, ENVIRON POLLUT","Chowdhury S, 2018, NAT COMMUN","Coffel Ed, 2018, ENVIRON RES LETT","Dai Hc, 2017, ADV CLIM CHANG RES","Daioglou V, 2016, GCB BIOENERGY","Davenport F, 2017, GLOBAL ENVIRON CHANG","Deetman S, 2018, ENVIRON SCI TECHNOL","Dellink R, 2017, GLOBAL ENVIRON CHANG","Distefano T, 2017, ECOL ECON","Doelman Jc, 2018, GLOBAL ENVIRON CHANG","Dong Wh, 2015, CLIMATIC CHANGE","Drouet L, 2016, ENVIRON MODELL SOFTW","Dueri S, 2016, GLOBAL ENVIRON CHANG","Duku C, 2018, PLOS ONE","Duku C, 2018, SCI TOTAL ENVIRON","Ebi Kl, 2014, CLIMATIC CHANGE","Ebi Kl, 2014, ENVIRONMENT","Ebi Kl, 2014, INT J ENV RES PUB HE","Edelenbosch Oy, 2017, TRANSPORT RES D-TR E","Egbendewe Ayg, 2017, CLIMATIC CHANGE","Engstrom K, 2016, EARTH SYST DYNAM","Engstrom K, 2017, EARTH SYST DYNAM","Fang Xk, 2016, ENVIRON SCI TECHNOL","Fricko O, 2017, GLOBAL ENVIRON CHANG","Frieler K, 2017, GEOSCI MODEL DEV","Fujimori S, 2015, ENERG ECON","Fujimori S, 2016, ENVIRON RES LETT","Fujimori S, 2016, SPRINGERPLUS","Fujimori S, 2017, GLOBAL ENVIRON CHANG","Fujimori S, 2017, SUSTAIN SCI","Gambhir A, 2017, ENERGIES","Gao L, 2017, WATER-SUI","Geiger T, 2018, EARTH SYST SCI DATA","Gidden Mj, 2018, ENVIRON MODELL SOFTW","Green Pa, 2015, GLOBAL ENVIRON CHANG","Guivarch C, 2016, ENVIRON MODELL SOFTW","Hanasaki N, 2013, HYDROL EARTH SYST SC","Hanasaki N, 2016, HYDROL EARTH SYST SC","Hasegawa T, 2015, ENVIRON RES LETT","He Cy, 2017, J CLEAN PROD","Hegre H, 2016, ENVIRON RES LETT","Hejazi Mi, 2015, P NATL ACAD SCI USA","Hirsch Al, 2018, EARTHS FUTURE","Hof Af, 2017, ENVIRON SCI POLICY","Hofstra N, 2016, INT J HYG ENVIR HEAL","Hoornweg D, 2017, ENVIRON URBAN","Hunter Lm, 2014, POPUL ENVIRON","Ishida H, 2014, ENVIRON RES LETT","Islam Mmm, 2018, INT J HYG ENVIR HEAL","Iyer G, 2017, NAT CLIM CHANGE","Jiang Lw, 2017, GLOBAL ENVIRON CHANG","Jones B, 2016, ENVIRON RES LETT","Jongman B, 2015, P NATL ACAD SCI USA","Kamei M, 2016, SUSTAIN CITIES SOC","Kinoshita Y, 2018, ENVIRON RES LETT","Knorr W, 2016, BIOGEOSCIENCES","Knorr W, 2016, NAT CLIM CHANGE","Knorr W, 2017, ATMOS CHEM PHYS","Koutroulis Ag, 2016, J HYDROL","Koutroulis Ag, 2018, SCI TOTAL ENVIRON","Kriegler E, 2014, CLIMATIC CHANGE","Kriegler E, 2017, GLOBAL ENVIRON CHANG","La Sorte Fa, 2017, GLOBAL CHANGE BIOL","Lamontagne Jr, 2018, EARTHS FUTURE","Lane L, 2014, CLIMATIC CHANGE","Lehner F, 2015, NAT CLIM CHANGE","Leimbach M, 2017, GLOBAL ENVIRON CHANG","Levesque A, 2018, ENERGY","Liu Jy, 2016, ENVIRON RES LETT","Liu L, 2018, ENVIRON RES LETT","Lutz W, 2015, POP STUD-J DEMOG","Lutz W, 2017, NAT CLIM CHANGE","Mankin Js, 2017, ENVIRON RES LETT","Marangoni G, 2017, NAT CLIM CHANGE","Marsha A, 2018, CLIMATIC CHANGE","Matthews Tkr, 2017, P NATL ACAD SCI USA","Maury O, 2017, GLOBAL ENVIRON CHANG","Meijer Jr, 2018, ENVIRON RES LETT","Merkens Jl, 2016, GLOBAL PLANET CHANGE","Mishra V, 2017, ENVIRON RES LETT","Mogollon Jm, 2018, ENVIRON RES LETT","Monaghan Aj, 2018, CLIMATIC CHANGE","Mora C, 2017, NAT CLIM CHANGE","Mori S, 2018, SUSTAIN SCI","Mouratiadou I, 2016, ENVIRON SCI POLICY","Mundaca L, 2016, APPL ENERG","Murnane Rj, 2017, EARTHS FUTURE","Nakicenovic N, 2014, CLIMATIC CHANGE","Nauels A, 2017, ENVIRON RES LETT","Nazemi A, 2015, HYDROL EARTH SYST SC","Nechifor V, 2017, WATER RESOUR ECON","Neverre N, 2015, WATER RESOUR ECON","Neverre N, 2016, WATER ECON POLICY","Nilsson Ae, 2017, GLOBAL ENVIRON CHANG","O'Neill Bc, 2014, CLIMATIC CHANGE","O'Neill Bc, 2017, GLOBAL ENVIRON CHANG","Palazzo A, 2017, GLOBAL ENVIRON CHANG","Park C, 2017, ENRGY PROCED","Park C, 2018, ENVIRON RES LETT","Parkinson Sc, 2016, ENVIRON MODELL SOFTW","Popp A, 2017, GLOBAL ENVIRON CHANG","Rao Nd, 2018, WIRES CLIM CHANGE","Rao S, 2017, GLOBAL ENVIRON CHANG","Reimann L, 2018, REG ENVIRON CHANGE","Riahi K, 2017, GLOBAL ENVIRON CHANG","Ritchie J, 2017, ENERGY","Ritchie J, 2018, ENVIRON RES LETT","Rogelj J, 2018, NAT CLIM CHANGE","Rohat G, 2018, INT J ENV RES PUB HE","Rosenzweig C, 2018, PHILOS T R SOC A","Roson R, 2017, J POLICY MODEL","Rothman Ds, 2014, CLIMATIC CHANGE","Rozell D, 2017, CLIMATIC CHANGE","Rozenberg J, 2014, CLIMATIC CHANGE","Sallaba F, 2017, EARTH SYST DYNAM","Samir Kc, 2014, POPUL ENVIRON","Samir Kc, 2017, GLOBAL ENVIRON CHANG","Sanchez-Arcilla A, 2016, SCI TOTAL ENVIRON","Satoh Y, 2017, EARTHS FUTURE","Scasny M, 2015, ENVIRON RESOUR ECON","Schweizer Vj, 2014, CLIMATIC CHANGE","Schweizer Vj, 2016, ENVIRON MODELL SOFTW","Sellers S, 2018, INT J ENV RES PUB HE","Spalding-Fecher R, 2017, ENERG POLICY","Spinoni J, 2018, INT J CLIMATOL","Stefanidis K, 2018, SCI TOTAL ENVIRON","Su Xm, 2017, EARTHS FUTURE","Suk Je, 2016, WIRES CLIM CHANGE","Susnik J, 2018, RESOUR CONSERV RECY","Tabara Jd, 2018, CURR OPIN ENV SUST","Tabara Jd, 2018, SUSTAINABILITY-BASEL","Teh Lsl, 2017, REG ENVIRON CHANGE","Trotter Im, 2016, ENERGY","Van Meij H, 2018, ENVIRON RES LETT","Van Puijenbroek Pjtm, 2015, WATER SCI TECHNOL","Van Ruijven Bj, 2014, CLIMATIC CHANGE","Van Ruijven Bj, 2016, ENERG ECON","Van Ruijven Bj, 2016, RESOUR CONSERV RECY","Van Vliet Mth, 2016, GLOBAL ENVIRON CHANG","Van Vuuren Dp, 2014, CLIMATIC CHANGE","Van Vuuren Dp, 2017, GLOBAL ENVIRON CHANG","Van Vuuren Dp, 2018, NAT CLIM CHANGE","Velders Gjm, 2015, ATMOS ENVIRON","Veldkamp Tie, 2016, ENVIRON RES LETT","Wada Y, 2014, ENVIRON RES LETT","Wada Y, 2016, GEOSCI MODEL DEV","Wang M, 2016, J HYDROL","Wang M, 2017, CLEAN-SOIL AIR WATER","Wang M, 2018, J CLEAN PROD","Wang Mr, 2017, SCI TOTAL ENVIRON","Wei Ym, 2018, NAT HAZARDS","Wiebe K, 2015, ENVIRON RES LETT","Wilbanks Tj, 2014, CLIMATIC CHANGE","Witmer Fdw, 2017, J PEACE RES","Xing R, 2015, ENVIRON RES LETT","Xu Yy, 2018, CLIMATIC CHANGE","Yamagata Y, 2018, SUSTAIN SCI","Yao Mt, 2017, ENVIRON PROCESS","Yin Yy, 2017, HYDROL EARTH SYST SC","Yokoi R, 2018, SUSTAINABILITY-BASEL","Yuan Xc, 2016, CLIMATIC CHANGE","Zhang Cy, 2018, J CLEAN PROD","Zhang D, 2017, RESOUR CONSERV RECY","Zhou Q, 2018, CLIMATIC CHANGE","Zhuo L, 2016, ENVIRON INT"],"info":["WOS:000433146400002, Abel Guy J., Non-zero trajectories for long-run net migration assumptions in global population projection models, DEMOGRAPHIC RESEARCH, 38, 1635","WOS:000357902900008, Absar Syeda Mariya, Extending the Shared Socioeconomic Pathways for sub-national impacts adaptation and vulnerability studies, GLOBAL ENVIRONMENTAL CHANGE-HUMAN AND POLICY DIMENSIONS, 33, 83","WOS:000366767100019, Alfieri Lorenzo, Ensemble flood risk assessment in Europe under high end climate scenarios, GLOBAL ENVIRONMENTAL CHANGE-HUMAN AND POLICY DIMENSIONS, 35, 199","WOS:000376413600010, Alfieri Lorenzo, Increasing flood risk under climate change: a pan-European assessment of the benefits of four adaptation strategies, CLIMATIC CHANGE, 136, 507","WOS:000425120000013, Anderson G. Brooke, Projected trends in high-mortality heatwaves under different scenarios of climate population and adaptation in 82 US communities, CLIMATIC CHANGE, 146, 455","WOS:000328622900011, Arnell Nigel W., The global-scale impacts of climate change on water resources and flooding under new climate and socio-economic scenarios, CLIMATIC CHANGE, 122, 127","WOS:000434459200009, Asefi-Najafabady Salvi, Climate change population and poverty: vulnerability and exposure to heat stress in countries bordering the Great Lakes of Africa, CLIMATIC CHANGE, 148, 561","WOS:000428879800029, Bai Zhaohai, Global environmental costs of China's thirst for milk, GLOBAL CHANGE BIOLOGY, 24, 2198","WOS:000352702200010, Baldos Uris Lantz C., The role of international trade in managing food security risks from climate change, FOOD SECURITY, 7, 275","WOS:000384910100004, Baldos Uris Lantz C., Debunking the 'new normal': Why world food prices are expected to resume their long run downward trend, GLOBAL FOOD SECURITY-AGRICULTURE POLICY ECONOMICS AND ENVIRONMENT, 8, 27","WOS:000384776900047, Bauer Nico, Assessing global fossil fuel availability in a scenario framework, ENERGY, 111, 580","WOS:000394634500027, Bauer Nico, Shared Socio-Economic Pathways of the Energy Sector - Quantifying the Narratives, GLOBAL ENVIRONMENTAL CHANGE-HUMAN AND POLICY DIMENSIONS, 42, 316","WOS:000411912800005, Bijl David L., A physically-based model of long-term food demand, GLOBAL ENVIRONMENTAL CHANGE-HUMAN AND POLICY DIMENSIONS, 45, 47","WOS:000363483600005, Birkmann Joern, Scenarios for vulnerability: opportunities and constraints in the context of climate change and disaster risk, CLIMATIC CHANGE, 133, 53","WOS:000401888300005, Blanco Victor, The importance of socio-ecological system dynamics in understanding adaptation to global change in the forestry sector, JOURNAL OF ENVIRONMENTAL MANAGEMENT, 196, 36","WOS:000407869500007, Boehmelt Tobias, Employing the shared socioeconomic pathways to predict CO2 emissions, ENVIRONMENTAL SCIENCE & POLICY, 75, 56","WOS:000392065000004, Boke-Olen Niklas, Data Descriptor: High-resolution African population projections from radiative forcing and socio-economic models 2000 to 2100, SCIENTIFIC DATA, 4","WOS:000368172500003, Bonsch Markus, Trade-offs between land and water requirements for large-scale bioenergy production, GLOBAL CHANGE BIOLOGY BIOENERGY, 8, 11","WOS:000410013700028, Broin Eoin O., Transport infrastructure costs in low-carbon pathways, TRANSPORTATION RESEARCH PART D-TRANSPORT AND ENVIRONMENT, 55, 389","WOS:000399856900014, Brown Molly E., Do markets and trade help or hurt the global food system adapt to climate change?, FOOD POLICY, 68, 154","WOS:000432342500001, Byers Edward, Global exposure and vulnerability to multi-sector development and climate change hotspots, ENVIRONMENTAL RESEARCH LETTERS, 13","WOS:000407407000007, Cai Yongyang, Agricultural research spending must increase in light of future uncertainties, FOOD POLICY, 70, 71","WOS:000394634500025, Calvin Katherine, The SSP4: A world of deepening inequality, GLOBAL ENVIRONMENTAL CHANGE-HUMAN AND POLICY DIMENSIONS, 42, 284","WOS:000385595200013, Carlsen Henrik, Choosing small sets of policy-relevant scenarios by combining vulnerability and diversity approaches, ENVIRONMENTAL MODELLING & SOFTWARE, 84, 155","WOS:000410013700026, Carrara Samuel, Freight futures: The potential impact of road freight on climate policy, TRANSPORTATION RESEARCH PART D-TRANSPORT AND ENVIRONMENT, 55, 359","WOS:000399261400030, Chen Kai, Impact of climate change on heat-related mortality in Jiangsu Province China, ENVIRONMENTAL POLLUTION, 224, 317","WOS:000422915700013, Chowdhury Sourangsu, Ambient PM2.5 exposure and expected premature mortality to 2100 in India under climate change scenarios, NATURE COMMUNICATIONS, 9","WOS:000418674800001, Coffel Ethan D., Temperature and humidity based projections of a rapid rise in global heat stress exposure during the 21st century, ENVIRONMENTAL RESEARCH LETTERS, 13","WOS:000422845000003, Dai Han-Cheng, The impacts of U.S. withdrawal from the Paris Agreement on the carbon emission space and mitigation cost of China EU and Japan under the constraints of the global carbon emission space, ADVANCES IN CLIMATE CHANGE RESEARCH, 8, 226","WOS:000370492100017, Daioglou Vassilis, Projections of the availability and cost of residues from agriculture and forestry, GLOBAL CHANGE BIOLOGY BIOENERGY, 8, 456","WOS:000413381500008, Davenport Frank, Child health outcomes in sub-Saharan Africa: A comparison of changes in climate and socio-economic factors, GLOBAL ENVIRONMENTAL CHANGE-HUMAN AND POLICY DIMENSIONS, 46, 72","WOS:000430515400051, Deetman Sebastiaan, Scenarios for Demand Growth of Metals in Electricity Generation Technologies Cars and Electronic Appliances, ENVIRONMENTAL SCIENCE & TECHNOLOGY, 52, 4950","WOS:000394634500019, Dellink Rob, Long-term economic growth projections in the Shared Socioeconomic Pathways, GLOBAL ENVIRONMENTAL CHANGE-HUMAN AND POLICY DIMENSIONS, 42, 200","WOS:000412259200013, Distefano Tiziano, Are we in deep water? Water scarcity and its limits to economic growth, ECOLOGICAL ECONOMICS, 142, 130","WOS:000429399000012, Doelman Jonathan C., Exploring SSP land-use dynamics using the IMAGE model: Regional and gridded scenarios of land-use change and land-based climate change mitigation, GLOBAL ENVIRONMENTAL CHANGE-HUMAN AND POLICY DIMENSIONS, 48, 119","WOS:000354705200003, Dong Weihua, New climate and socio-economic scenarios for assessing global human health challenges due to heat risk, CLIMATIC CHANGE, 130, 505","WOS:000374602000024, Drouet Laurent, Climate policy under socio-economic scenario uncertainty, ENVIRONMENTAL MODELLING & SOFTWARE, 79, 334","WOS:000389732700001, Dueri Sibylle, Food security or economic profitability? Projecting the effects of climate and socioeconomic changes on global skipjack tuna fisheries under three management strategies, GLOBAL ENVIRONMENTAL CHANGE-HUMAN AND POLICY DIMENSIONS, 41, 1","WOS:000426896800018, Duku Confidence, Impacts of climate change on cropping patterns in a tropical sub-humid watershed, PLOS ONE, 13","WOS:000411897700161, Duku Confidence, Quantifying trade-offs between future yield levels food availability and forest and woodland conservation in Benin, SCIENCE OF THE TOTAL ENVIRONMENT, 610, 1581","WOS:000330989300002, Ebi Kristie L., A new scenario framework for climate change research: background process and future directions, CLIMATIC CHANGE, 122, 363","WOS:000337218600003, Ebi Kristie L., A New Toolkit for Developing Scenarios for CLIMATE CHANGE RESEARCH AND POLICY ANALYSIS, ENVIRONMENT, 56, 6","WOS:000331456400003, Ebi Kristie L., Health in the New Scenarios for Climate Change Research, INTERNATIONAL JOURNAL OF ENVIRONMENTAL RESEARCH AND PUBLIC HEALTH, 11, 30","WOS:000410013700023, Edelenbosch O. Y., Transport fuel demand responses to fuel price and income projections: Comparison of integrated assessment models, TRANSPORTATION RESEARCH PART D-TRANSPORT AND ENVIRONMENT, 55, 310","WOS:000415031800008, Egbendewe Aklesso Y. G., Can intra-regional food trade increase food availability in the context of global climatic change in West Africa?, CLIMATIC CHANGE, 145, 101","WOS:000388188900001, Engstrom Kerstin, Assessing uncertainties in global cropland futures using a conditional probabilistic modelling framework, EARTH SYSTEM DYNAMICS, 7, 893","WOS:000409250800001, Engstrom Kerstin, Impacts of climate mitigation strategies in the energy sector on global land use and carbon balance, EARTH SYSTEM DYNAMICS, 8, 773","WOS:000370454200046, Fang Xuekun, Hydrofluorocarbon (HFC) Emissions in China: An Inventory for 2005-2013 and Projections to 2050, ENVIRONMENTAL SCIENCE & TECHNOLOGY, 50, 2027","WOS:000394634500023, Fricko Oliver, The marker quantification of the Shared Socioeconomic Pathway 2: A middle-of-the-road scenario for the 21st century, GLOBAL ENVIRONMENTAL CHANGE-HUMAN AND POLICY DIMENSIONS, 42, 251","WOS:000416560600001, Frieler Katja, Assessing the impacts of 1.5 degrees C global warming - simulation protocol of the Inter-Sectoral Impact Model Intercomparison Project (ISIMIP2b), GEOSCIENTIFIC MODEL DEVELOPMENT, 10, 4321","WOS:000352252600030, Fujimori Shinichiro, Gains from emission trading under multiple stabilization targets and technological constraints, ENERGY ECONOMICS, 48, 306","WOS:000385707800001, Fujimori Shinichiro, Will international emissions trading help achieve the objectives of the Paris Agreement?, ENVIRONMENTAL RESEARCH LETTERS, 11","WOS:000391801000017, Fujimori Shinichiro, Implication of Paris Agreement in the context of long-term climate mitigation goals, SPRINGERPLUS, 5","WOS:000394634500024, Fujimori Shinichiro, SSP3: AIM implementation of Shared Socioeconomic Pathways, GLOBAL ENVIRONMENTAL CHANGE-HUMAN AND POLICY DIMENSIONS, 42, 268","WOS:000396150400008, Fujimori Shinichiro, Projections of industrial water withdrawal under shared socioeconomic pathways and climate mitigation scenarios, SUSTAINABILITY SCIENCE, 12, 275","WOS:000392422500089, Gambhir Ajay, Assessing the Feasibility of Global Long-Term Mitigation Scenarios, ENERGIES, 10","WOS:000414707500040, Gao Lu, An Economic Assessment of the Global Potential for Seawater Desalination to 2050, WATER, 9","WOS:000431066700001, Geiger Tobias, Continuous national gross domestic product (GDP) time series for 195 countries: past observations (1850-2005) harmonized with future projections according to the Shared Socio-economic Pathways (2006-2100), EARTH SYSTEM SCIENCE DATA, 10, 847","WOS:000434465900013, Gidden Matthew J., A methodology and implementation of automated emissions harmonization for use in Integrated Assessment Models, ENVIRONMENTAL MODELLING & SOFTWARE, 105, 187","WOS:000361582000010, Green Pamela A., Freshwater ecosystem services supporting humans: Pivoting from water crisis to water solutions, GLOBAL ENVIRONMENTAL CHANGE-HUMAN AND POLICY DIMENSIONS, 34, 108","WOS:000376218300026, Guivarch Celine, The diversity of socio-economic pathways and CO2 emissions scenarios: Insights from the investigation of a scenarios database, ENVIRONMENTAL MODELLING & SOFTWARE, 80, 336","WOS:000322376000002, Hanasaki N., A global water scarcity assessment under Shared Socio-economic Pathways - Part 2: Water availability and scarcity, HYDROLOGY AND EARTH SYSTEM SCIENCES, 17, 2393","WOS:000386481400001, Hanasaki Naota, A seawater desalination scheme for global hydrological models, HYDROLOGY AND EARTH SYSTEM SCIENCES, 20, 4143","WOS:000348501800011, Hasegawa Tomoko, Scenarios for the risk of hunger in the twenty-first century using Shared Socioeconomic Pathways, ENVIRONMENTAL RESEARCH LETTERS, 10","WOS:000411544400006, He Chunyang, Will rapid urban expansion in the drylands of northern China continue: A scenario analysis based on the Land Use Scenario Dynamics-urban model and the Shared Socioeconomic Pathways, JOURNAL OF CLEANER PRODUCTION, 165, 57","WOS:000376484300002, Hegre Havard, Forecasting civil conflict along the shared socioeconomic pathways, ENVIRONMENTAL RESEARCH LETTERS, 11","WOS:000360005600042, Hejazi Mohamad I., 21st century United States emissions mitigation could increase water stress more than the climate change it is mitigating, PROCEEDINGS OF THE NATIONAL ACADEMY OF SCIENCES OF THE UNITED STATES OF AMERICA, 112, 10635","WOS:000430171600008, Hirsch Annette L., Biogeophysical Impacts of Land-Use Change on Climate Extremes in Low-Emission Scenarios: Results From HAPPI-Land, EARTHS FUTURE, 6, 396","WOS:000398753300004, Hof Andries F., Global and regional abatement costs of Nationally Determined Contributions (NDCs) and of enhanced action to levels well below 2 degrees C and 1.5 degrees C, ENVIRONMENTAL SCIENCE & POLICY, 71, 30","WOS:000387524800005, Hofstra Nynke, Impacts of population growth urbanisation and sanitation changes on global human Cryptosporidium emissions to surface water, INTERNATIONAL JOURNAL OF HYGIENE AND ENVIRONMENTAL HEALTH, 219, 599","WOS:000400086300012, Hoornweg Daniel, Population predictions for the world's largest cities in the 21st century, ENVIRONMENT AND URBANIZATION, 29, 195","WOS:000332954000002, Hunter Lori M., Enhancing engagement between the population environment and climate research communities: the shared socio-economic pathway process, POPULATION AND ENVIRONMENT, 35, 231","WOS:000341825200016, Ishida Hiroyuki, Global-scale projection and its sensitivity analysis of the health burden attributable to childhood undernutrition under the latest scenario framework for climate change research, ENVIRONMENTAL RESEARCH LETTERS, 9","WOS:000429397300016, Islam M. M. Majedul, Modelling the impact of future socio-economic and climate change scenarios on river microbial water quality, INTERNATIONAL JOURNAL OF HYGIENE AND ENVIRONMENTAL HEALTH, 221, 283","WOS:000396348500007, Iyer Gokul, Explaining differences, NATURE CLIMATE CHANGE, 7, 99","WOS:000394634500018, Jiang Leiwen, Global urbanization projections for the Shared Socioeconomic Pathways, GLOBAL ENVIRONMENTAL CHANGE-HUMAN AND POLICY DIMENSIONS, 42, 193","WOS:000381828300004, Jones B., Spatially explicit global population scenarios consistent with the Shared Socioeconomic Pathways, ENVIRONMENTAL RESEARCH LETTERS, 11","WOS:000353953800006, Jongman Brenden, Declining vulnerability to river floods and the global benefits of adaptation, PROCEEDINGS OF THE NATIONAL ACADEMY OF SCIENCES OF THE UNITED STATES OF AMERICA, 112, E2271","WOS:000389321500008, Kamei Miho, Tokyo's long-term socioeconomic pathways: Towards a sustainable future, SUSTAINABLE CITIES AND SOCIETY, 27, 73","WOS:000419320100004, Kinoshita Youhei, Quantifying the effect of autonomous adaptation to global river flood projections: application to future flood risk assessments, ENVIRONMENTAL RESEARCH LETTERS, 13","WOS:000369524000018, Knorr W., Climate CO2 and human population impacts on global wildfire emissions, BIOGEOSCIENCES, 13, 267","WOS:000382134800017, Knorr W., Demographic controls of future global fire risk, NATURE CLIMATE CHANGE, 6, 781","WOS:000408172600001, Knorr Wolfgang, Wildfire air pollution hazard during the 21st century, ATMOSPHERIC CHEMISTRY AND PHYSICS, 17, 9223","WOS:000368956800003, Koutroulis A. G., Cross sectoral impacts on water availability at+2 degrees C and+3 degrees C for east Mediterranean island states: The case of Crete, JOURNAL OF HYDROLOGY, 532, 16","WOS:000414160500029, Koutroulis A. G., Freshwater vulnerability under high end climate change. A pan-European assessment, SCIENCE OF THE TOTAL ENVIRONMENT, 613, 271","WOS:000330989300005, Kriegler Elmar, A new scenario framework for climate change research: the concept of shared climate policy assumptions, CLIMATIC CHANGE, 122, 401","WOS:000394634500026, Kriegler Elmar, Fossil-fueled development (SSP5): An energy and resource intensive scenario for the 21st century, GLOBAL ENVIRONMENTAL CHANGE-HUMAN AND POLICY DIMENSIONS, 42, 297","WOS:000414969000028, La Sorte Frank A., Global change and the distributional dynamics of migratory bird populations wintering in Central America, GLOBAL CHANGE BIOLOGY, 23, 5284","WOS:000430171600014, Lamontagne Jonathan R., Large Ensemble Analytic Framework for Consequence-Driven Discovery of Climate Change Scenarios, EARTHS FUTURE, 6, 488","WOS:000330989300008, Lane Lee, An institutional critique of new climate scenarios, CLIMATIC CHANGE, 122, 447","WOS:000358484400014, Lehner Flavio, From local perception to global perspective, NATURE CLIMATE CHANGE, 5, 731","WOS:000394634500020, Leimbach Marian, Future growth patterns of world regions - A GDP scenario approach, GLOBAL ENVIRONMENTAL CHANGE-HUMAN AND POLICY DIMENSIONS, 42, 215","WOS:000429764000038, Levesque Antoine, How much energy will buildings consume in 2100? A global perspective within a scenario framework, ENERGY, 148, 514","WOS:000387357900001, Liu Jing-Yu, Temporal and spatial distribution of global mitigation cost: INDCs and equity, ENVIRONMENTAL RESEARCH LETTERS, 11","WOS:000429367300001, Liu Lu, Quantifying the potential for reservoirs to secure future surface water yields in the world's largest river basins, ENVIRONMENTAL RESEARCH LETTERS, 13","WOS:000353574400002, Lutz Wolfgang, Demographic aspects of climate change mitigation and adaptation, POPULATION STUDIES-A JOURNAL OF DEMOGRAPHY, 69, S69","WOS:000396349400009, Lutz Wolfgang, Forecasting societies' adaptive capacities through a demographic metabolism model, NATURE CLIMATE CHANGE, 7, 177","WOS:000397804000007, Mankin Justin S., Influence of internal variability on population exposure to hydroclimatic changes, ENVIRONMENTAL RESEARCH LETTERS, 12","WOS:000396348500011, Marangoni G., Sensitivity of projected long-term CO2 emissions across the Shared Socioeconomic Pathways, NATURE CLIMATE CHANGE, 7, 113","WOS:000425120000014, Marsha A., Influences of climatic and population changes on heat-related mortality in Houston Texas USA, CLIMATIC CHANGE, 146, 471","WOS:000398789800039, Matthews Tom K. R., Communicating the deadly consequences of global warming for human heat stress, PROCEEDINGS OF THE NATIONAL ACADEMY OF SCIENCES OF THE UNITED STATES OF AMERICA, 114, 3861","WOS:000411912800018, Maury O., From shared socio-economic pathways (SSPs) to oceanic system pathways (OSPs): Building policy-relevant scenarios for global oceanic ecosystems and fisheries, GLOBAL ENVIRONMENTAL CHANGE-HUMAN AND POLICY DIMENSIONS, 45, 203","WOS:000433078800002, Meijer Johan R., Global patterns of current and future road infrastructure, ENVIRONMENTAL RESEARCH LETTERS, 13","WOS:000385599800007, Merkens Jan-Ludolf, Gridded population projections for the coastal zone under the Shared Socioeconomic Pathways, GLOBAL AND PLANETARY CHANGE, 145, 57","WOS:000418122200002, Mishra Vimal, Heat wave exposure in India in current 1.5 degrees C and 2.0 degrees C worlds, ENVIRONMENTAL RESEARCH LETTERS, 12","WOS:000428386100002, Mogollon J. M., Assessing future reactive nitrogen inputs into global croplands based on the shared socioeconomic pathways, ENVIRONMENTAL RESEARCH LETTERS, 13","WOS:000425120000015, Monaghan Andrew J., The potential impacts of 21st century climatic and population changes on human exposure to the virus vector mosquito Aedes aegypti, CLIMATIC CHANGE, 146, 487","WOS:000404545400017, Mora Camilo, Global risk of deadly heat, NATURE CLIMATE CHANGE, 7, 501","WOS:000426807800008, Mori Shunsuke, Assessment of mitigation strategies as tools for risk management under future uncertainties: a multi-model approach, SUSTAINABILITY SCIENCE, 13, 329","WOS:000382597200006, Mouratiadou Ioanna, The impact of climate change mitigation on water demand for energy and food: An integrated analysis based on the Shared Socioeconomic Pathways, ENVIRONMENTAL SCIENCE & POLICY, 64, 48","WOS:000383291800112, Mundaca Luis, Assessing regional progress towards a 'Green Energy Economy', APPLIED ENERGY, 179, 1372","WOS:000407785600006, Murnane R. J., Future scenarios for earthquake and flood risk in Eastern Europe and Central Asia, EARTHS FUTURE, 5, 693","WOS:000330989300001, Nakicenovic Nebojsa, A Framework for the Development of New Socio-economic Scenarios for Climate Change Research: Introductory Essay, CLIMATIC CHANGE, 122, 351","WOS:000424392400002, Nauels Alexander, Linking sea level rise and socioeconomic indicators under the Shared Socioeconomic Pathways, ENVIRONMENTAL RESEARCH LETTERS, 12","WOS:000348929800003, Nazemi A., On inclusion of water resource management in Earth system models - Part 1: Problem definition and representation of water demand, HYDROLOGY AND EARTH SYSTEM SCIENCES, 19, 33","WOS:000416275100002, Nechifor V., Projecting irrigation water requirements across multiple socio-economic development futures - A global CGE assessment, WATER RESOURCES AND ECONOMICS, 20, 16","WOS:000366134500004, Neverre Noemie, Projecting and valuing domestic water use at regional scale: A generic method applied to the Mediterranean at the 2060 horizon, WATER RESOURCES AND ECONOMICS, 11, 33","WOS:000399996100005, Neverre Noemie, Projecting Basin-Scale Distributed Irrigation and Domestic Water Demands and Values: A Generic Method for Large-Scale Modeling, WATER ECONOMICS AND POLICY, 2","WOS:000411912800011, Nilsson Annika E., Towards extended shared socioeconomic pathways: A combined participatory bottom-up and top-down methodology with results from the Barents region, GLOBAL ENVIRONMENTAL CHANGE-HUMAN AND POLICY DIMENSIONS, 45, 124","WOS:000330989300004, O'Neill Brian C., A new scenario framework for climate change research: the concept of shared socioeconomic pathways, CLIMATIC CHANGE, 122, 387","WOS:000394634500016, O'Neill Brian C., The roads ahead: Narratives for shared socioeconomic pathways describing world futures in the 21st century, GLOBAL ENVIRONMENTAL CHANGE-HUMAN AND POLICY DIMENSIONS, 42, 169","WOS:000411912800020, Palazzo Amanda, Linking regional stakeholder scenarios and shared socioeconomic pathways: Quantified West African food and climate futures in a global context, GLOBAL ENVIRONMENTAL CHANGE-HUMAN AND POLICY DIMENSIONS, 45, 227","WOS:000400643800071, Park Chan, Impact of Energy Efficient Technologies on Residential CO2 Emissions: A Comparison of Korea and China, 8TH INTERNATIONAL CONFERENCE ON SUSTAINABILITY IN ENERGY AND BUILDINGS SEB-16, 111, 699","WOS:000430333400002, Park Chan, Avoided economic impacts of energy demand changes by 1.5 and 2 degrees C climate stabilization, ENVIRONMENTAL RESEARCH LETTERS, 13","WOS:000385595800019, Parkinson Simon C., Climate and human development impacts on municipal water demand: A spatially-explicit global modeling framework, ENVIRONMENTAL MODELLING & SOFTWARE, 85, 266","WOS:000394634500028, Popp Alexander, Land-use futures in the shared socio-economic pathways, GLOBAL ENVIRONMENTAL CHANGE-HUMAN AND POLICY DIMENSIONS, 42, 331","WOS:000425746500009, Rao Narasimha D., Less global inequality can improve climate outcomes, WILEY INTERDISCIPLINARY REVIEWS-CLIMATE CHANGE, 9","WOS:000394634500029, Rao Shilpa, Future air pollution in the Shared Socio-economic Pathways, GLOBAL ENVIRONMENTAL CHANGE-HUMAN AND POLICY DIMENSIONS, 42, 346","WOS:000419157400018, Reimann Lena, Regionalized Shared Socioeconomic Pathways: narratives and spatial population projections for the Mediterranean coastal zone, REGIONAL ENVIRONMENTAL CHANGE, 18, 235","WOS:000394634500015, Riahi Keywan, The Shared Socioeconomic Pathways and their energy land use and greenhouse gas emissions implications: An overview, GLOBAL ENVIRONMENTAL CHANGE-HUMAN AND POLICY DIMENSIONS, 42, 153","WOS:000415394200109, Ritchie Justin, Why do climate change scenarios return to coal?, ENERGY, 140, 1276","WOS:000424630000001, Ritchie Justin, Defining climate change scenario characteristics with a phase space of cumulative primary energy and carbon intensity, ENVIRONMENTAL RESEARCH LETTERS, 13","WOS:000429194600020, Rogelj Joeri, Scenarios towards limiting global mean temperature increase below 1.5 degrees C, NATURE CLIMATE CHANGE, 8, 325","WOS:000428509200161, Rohat Guillaume, Projecting Drivers of Human Vulnerability under the Shared Socioeconomic Pathways, INTERNATIONAL JOURNAL OF ENVIRONMENTAL RESEARCH AND PUBLIC HEALTH, 15","WOS:000429046300009, Rosenzweig Cynthia, Coordinating AgMIP data and models across global and regional scales for 1.5 degrees C and 2.0 degrees C assessments, PHILOSOPHICAL TRANSACTIONS OF THE ROYAL SOCIETY A-MATHEMATICAL PHYSICAL AND ENGINEERING SCIENCES, 376","WOS:000418974700011, Roson Roberto, The macroeconomic impact of future water scarcity An assessment of alternative scenarios, JOURNAL OF POLICY MODELING, 39, 1141","WOS:000330989300012, Rothman Dale S., Challenges to adaptation: a fundamental concept for the shared socio-economic pathways and beyond, CLIMATIC CHANGE, 122, 495","WOS:000401452700016, Rozell Daniel, Using population projections in climate change analysis, CLIMATIC CHANGE, 142, 521","WOS:000330989300013, Rozenberg Julie, Building SSPs for climate policy analysis: a scenario elicitation methodology to map the space of possible future challenges to mitigation and adaptation, CLIMATIC CHANGE, 122, 509","WOS:000418280000001, Sallaba Florian, Future supply and demand of net primary production in the Sahel, EARTH SYSTEM DYNAMICS, 8, 1191","WOS:000332954000003, Samir K. C., Demographic scenarios by age sex and education corresponding to the SSP narratives, POPULATION AND ENVIRONMENT, 35, 243","WOS:000394634500017, Samir K. C., The human core of the shared socioeconomic pathways: Population scenarios by age sex and level of education for all countries to 2100, GLOBAL ENVIRONMENTAL CHANGE-HUMAN AND POLICY DIMENSIONS, 42, 181","WOS:000387807200128, Sanchez-Arcilla Agustin, Managing coastal environments under climate change: Pathways to adaptation, SCIENCE OF THE TOTAL ENVIRONMENT, 572, 1336","WOS:000407785600013, Satoh Yusuke, Multi-model and multi-scenario assessments of Asian water futures: The Water Futures and Solutions (WFaS) initiative, EARTHS FUTURE, 5, 823","WOS:000362686700009, Scasny Milan, Quantifying the Ancillary Benefits of the Representative Concentration Pathways on Air Quality in Europe, ENVIRONMENTAL & RESOURCE ECONOMICS, 62, 383","WOS:000330989300007, Schweizer Vanessa J., Systematic construction of global socioeconomic pathways using internally consistent element combinations, CLIMATIC CHANGE, 122, 431","WOS:000374602000023, Schweizer Vanessa Jine, Systematically linking qualitative elements of scenarios across levels scales and sectors, ENVIRONMENTAL MODELLING & SOFTWARE, 79, 322","WOS:000424121200003, Sellers Samuel, Climate Change and Health under the Shared Socioeconomic Pathway Framework, INTERNATIONAL JOURNAL OF ENVIRONMENTAL RESEARCH AND PUBLIC HEALTH, 15","WOS:000392768800040, Spalding-Fecher Randall., Electricity supply and demand scenarios for the Southern African power pool, ENERGY POLICY, 101, 403","WOS:000431999600014, Spinoni Jonathan, Changes of heating and cooling degree-days in Europe from 1981 to 2100, INTERNATIONAL JOURNAL OF CLIMATOLOGY, 38, E191","WOS:000431848500073, Stefanidis Konstantinos, Response of a multi-stressed Mediterranean river to future climate and socio-economic scenarios, SCIENCE OF THE TOTAL ENVIRONMENT, 627, 756","WOS:000405474400004, Su Xuanming, Emission pathways to achieve 2.0 degrees C and 1.5 degrees C climate targets, EARTHS FUTURE, 5, 592","WOS:000379079800006, Suk Jonathan E., Climate change malaria and public health: accounting for socioeconomic contexts in past debates and future research, WILEY INTERDISCIPLINARY REVIEWS-CLIMATE CHANGE, 7, 551","WOS:000429753900018, Susnik Janez, Data-driven quantification of the global water-energy-food system, RESOURCES CONSERVATION AND RECYCLING, 133, 179","WOS:000433107100017, David Tabara J., Positive tipping points in a rapidly warming world, CURRENT OPINION IN ENVIRONMENTAL SUSTAINABILITY, 31, 120","WOS:000425082600159, David Tabara Joan, Exploring Institutional Transformations to Address High-End Climate Change in Iberia, SUSTAINABILITY, 10","WOS:000394991000001, Teh Louise S. L., Scenarios for investigating the future of Canada's oceans and marine fisheries under environmental and socioeconomic change, REGIONAL ENVIRONMENTAL CHANGE, 17, 619","WOS:000375889400054, Trotter Ian M., Climate change and electricity demand in Brazil: A stochastic approach, ENERGY, 102, 596","WOS:000434385200002, van Meij Hans, \\ Comparing impacts of climate change and mitigation on global agriculture by 2050, ENVIRONMENTAL RESEARCH LETTERS, 13","WOS:000350646600010, van Puijenbroek P. J. T. M., Global implementation of two shared socioeconomic pathways for future sanitation and wastewater flows, WATER SCIENCE AND TECHNOLOGY, 71, 227","WOS:000330989300011, van Ruijven Bas J., Enhancing the relevance of Shared Socioeconomic Pathways for climate change impacts adaptation and vulnerability research, CLIMATIC CHANGE, 122, 481","WOS:000378446600045, van Ruijven Bas J., Baseline projections for Latin America: base-year assumptions key drivers and greenhouse emissions, ENERGY ECONOMICS, 56, 499","WOS:000379278000002, van Ruijven Bas J., Long-term model-based projections of energy use and CO2 emissions from the global steel and cement industries, RESOURCES CONSERVATION AND RECYCLING, 112, 15","WOS:000383297200014, van Vliet M. T. H., Multi-model assessment of global hydropower and cooling water discharge potential under climate change, GLOBAL ENVIRONMENTAL CHANGE-HUMAN AND POLICY DIMENSIONS, 40, 156","WOS:000330989300006, van Vuuren Detlef P., Climate and socio-economic scenarios for climate change research and assessment: reconciling the new with the old, CLIMATIC CHANGE, 122, 415","WOS:000394634500022, van Vuuren Detlef P., Energy land-use and greenhouse gas emissions trajectories under a green growth paradigm, GLOBAL ENVIRONMENTAL CHANGE-HUMAN AND POLICY DIMENSIONS, 42, 237","WOS:000431139900021, van Vuuren Detlef P., Alternative pathways to the 1.5 degrees C target reduce the need for negative emission technologies, NATURE CLIMATE CHANGE, 8, 391","WOS:000367498600021, Velders Guus J. M., Future atmospheric abundances and climate forcings from scenarios of global and regional hydrofluorocarbon (HFC) emissions, ATMOSPHERIC ENVIRONMENT, 123, 200","WOS:000371488300008, Veldkamp T. I. E., Towards a global water scarcity risk assessment framework: incorporation of probability distributions and hydro-climatic variability, ENVIRONMENTAL RESEARCH LETTERS, 11","WOS:000344964000006, Wada Yoshihide, Sustainability of global water use: past reconstruction and future projections, ENVIRONMENTAL RESEARCH LETTERS, 9","WOS:000376932900010, Wada Y., Modeling global water use for the 21st century: the Water Futures and Solutions (WFaS) initiative and its approaches, GEOSCIENTIFIC MODEL DEVELOPMENT, 9, 175","WOS:000390735900020, Wang Mo, Assessing cost-effectiveness of bioretention on stormwater in response to climate change and urbanization for future scenarios, JOURNAL OF HYDROLOGY, 543, 423","WOS:000412916700006, Wang Mo, Future Scenarios Modeling of Urban Stormwater Management Response to Impacts of Climate Change and Urbanization, CLEAN-SOIL AIR WATER, 45","WOS:000425568700002, Wang Mo, Assessing hydrological effects and performance of low impact development practices based on future scenarios modeling, JOURNAL OF CLEANER PRODUCTION, 179, 12","WOS:000408275500093, Wang Mengru, Reactive nitrogen losses from China's food system for the shared socioeconomic pathways (SSPs), SCIENCE OF THE TOTAL ENVIRONMENT, 605, 884","WOS:000432329700002, Wei Yi-Ming, An integrated assessment of INDCs under Shared Socioeconomic Pathways: an implementation of C(3)IAM, NATURAL HAZARDS, 92, 585","WOS:000366999400037, Wiebe Keith, Climate change impacts on agriculture in 2050 under a range of plausible socioeconomic and emissions scenarios, ENVIRONMENTAL RESEARCH LETTERS, 10","WOS:000330989300010, Wilbanks Thomas J., SSPs from an impact and adaptation perspective, CLIMATIC CHANGE, 122, 473","WOS:000398128000005, Witmer Frank D. W., Subnational violent conflict forecasts for sub-Saharan Africa 2015-65 using climate-sensitive models, JOURNAL OF PEACE RESEARCH, 54, 175","WOS:000356835600020, Xing Rui, An impact assessment of sustainable technologies for the Chinese urban residential sector at provincial level, ENVIRONMENTAL RESEARCH LETTERS, 10","WOS:000425120000009, Xu Yangyang, The importance of aerosol scenarios in projections of future heat extremes, CLIMATIC CHANGE, 146, 393","WOS:000426807800006, Yamagata Yoshiki, Estimating water-food-ecosystem trade-offs for the global negative emission scenario (IPCC-RCP2.6), SUSTAINABILITY SCIENCE, 13, 301","WOS:000414367200002, Yao Mingtian, Building Regional Water-Use Scenarios Consistent with Global Shared Socioeconomic Pathways, ENVIRONMENTAL PROCESSES-AN INTERNATIONAL JOURNAL, 4, 15","WOS:000395417900001, Yin Yuanyuan, Water scarcity under various socio-economic pathways and its potential effects on food production in the Yellow River basin, HYDROLOGY AND EARTH SYSTEM SCIENCES, 21","WOS:000425082600258, Yokoi Ryosuke, Calculation of Characterization Factors of Mineral Resources Considering Future Primary Resource Use Changes: A Comparison between Iron and Copper, SUSTAINABILITY, 10","WOS:000387581400004, Yuan Xiao-Chen, China's socioeconomic risk from extreme events in a changing climate: a hierarchical Bayesian model, CLIMATIC CHANGE, 139, 169","WOS:000430779600040, Zhang Cheng-Yao, Accounting process-related CO2 emissions from global cement production under Shared Socioeconomic Pathways, JOURNAL OF CLEANER PRODUCTION, 184, 451","WOS:000408299800011, Zhang Da, Impacts of urban expansion on ecosystem services in the Beijing-Tianjin-Hebei urban agglomeration China: A scenario analysis based on the Shared Socioeconomic Pathways, RESOURCES CONSERVATION AND RECYCLING, 125, 115","WOS:000425959700007, Zhou Qian, Economic consequences of global climate change and mitigation on future hydropower generation, CLIMATIC CHANGE, 147, 77","WOS:000382339000023, Zhuo La, Consumptive water footprint and virtual water trade scenarios for China - With a focus on crop production consumption and trade, ENVIRONMENT INTERNATIONAL, 94, 211"]},"selected":{"id":"16f9b4c3-1a2d-439c-a7c3-b16a1504be33","type":"Selection"},"selection_policy":{"id":"f70ee9b2-a51c-4a54-a5de-4219220eb89b","type":"UnionRenderers"}},"id":"2d5565ea-1e94-42ec-8d2a-8aaf327782d8","type":"ColumnDataSource"},{"attributes":{"plot":null,"text":"SSP Citation Network - Simplified","text_color":{"value":"black"},"text_font_size":{"value":"12pt"}},"id":"9244b7b3-ca89-4aef-b76c-2d970df70bd6","type":"Title"},{"attributes":{"fill_color":{"value":"limegreen"},"size":{"units":"screen","value":15}},"id":"589cf488-e3ef-4b8d-8d60-3b17848ee98b","type":"Circle"},{"attributes":{"source":{"id":"2d5565ea-1e94-42ec-8d2a-8aaf327782d8","type":"ColumnDataSource"}},"id":"83ba8cf3-fb34-47f2-ab24-65b73f022b64","type":"CDSView"},{"attributes":{},"id":"2feff1ee-a820-4aa3-ba91-9db6273db02c","type":"LinearScale"},{"attributes":{"line_width":{"value":2}},"id":"c2cd503c-0e8d-4d80-aeec-88ecd8637c5d","type":"MultiLine"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_multi":null,"active_scroll":"auto","active_tap":"auto","tools":[{"id":"38cad7e7-6293-4a97-b924-56f1a22c5a14","type":"HoverTool"},{"id":"bd213a6d-bb32-405f-b33b-1cd5d3e8314e","type":"SaveTool"},{"id":"f9b5efc5-9202-42b5-9a37-5609069a0753","type":"PanTool"},{"id":"3f0d660f-fdb0-47ef-8dc1-9074404a3ae4","type":"WheelZoomTool"},{"id":"cea0e89a-7ef3-43da-9f34-7312ba3e5400","type":"BoxZoomTool"},{"id":"748d3463-bef1-4627-a046-3a45f6eedba6","type":"ResetTool"},{"id":"82053606-c1bf-46c4-a281-c643ef5e07c0","type":"TapTool"}]},"id":"74f04a1f-e7e1-4b9a-8025-89f34294f722","type":"Toolbar"},{"attributes":{"line_alpha":{"value":0.2},"line_width":{"value":2}},"id":"1dc9f85b-85e0-4181-8d06-2681250c3863","type":"MultiLine"},{"attributes":{"line_color":{"value":"limegreen"},"line_width":{"value":2}},"id":"ba3dbfae-22f0-4bf8-8ab3-d603128f07ef","type":"MultiLine"},{"attributes":{"grid_line_color":{"value":null},"plot":{"id":"e8a8e4f8-407b-4f24-87e8-1c8b983bfb11","subtype":"Figure","type":"Plot"},"ticker":{"id":"a2328d54-3bf8-4ccf-9d2d-234b8c1bb877","type":"BasicTicker"}},"id":"5408867e-6ec3-493c-941d-e466a6fd6a89","type":"Grid"},{"attributes":{"data_source":{"id":"bb9611e7-62e0-4abd-846e-813bd8e4365c","type":"ColumnDataSource"},"glyph":{"id":"c2cd503c-0e8d-4d80-aeec-88ecd8637c5d","type":"MultiLine"},"hover_glyph":{"id":"ba3dbfae-22f0-4bf8-8ab3-d603128f07ef","type":"MultiLine"},"muted_glyph":null,"nonselection_glyph":{"id":"1dc9f85b-85e0-4181-8d06-2681250c3863","type":"MultiLine"},"selection_glyph":null,"view":{"id":"76b37958-baf1-4985-807b-78508b9d0c8b","type":"CDSView"}},"id":"97cd9168-26ca-4816-9510-67ef0cafa777","type":"GlyphRenderer"},{"attributes":{},"id":"d611d6b4-16b3-430f-b9c5-4aa898577d70","type":"LinearScale"},{"attributes":{"source":{"id":"bb9611e7-62e0-4abd-846e-813bd8e4365c","type":"ColumnDataSource"}},"id":"76b37958-baf1-4985-807b-78508b9d0c8b","type":"CDSView"},{"attributes":{"axis_label":"x","bounds":"auto","formatter":{"id":"d9fa7575-5e28-431c-9209-bf3b73b45bf2","type":"BasicTickFormatter"},"major_label_orientation":"horizontal","plot":{"id":"e8a8e4f8-407b-4f24-87e8-1c8b983bfb11","subtype":"Figure","type":"Plot"},"ticker":{"id":"a2328d54-3bf8-4ccf-9d2d-234b8c1bb877","type":"BasicTicker"},"visible":false},"id":"b16ae29e-f218-4048-8b54-78e01db1461f","type":"LinearAxis"},{"attributes":{"edge_renderer":{"id":"97cd9168-26ca-4816-9510-67ef0cafa777","type":"GlyphRenderer"},"inspection_policy":{"id":"a5fa7378-cb7b-4504-9a36-d51580d83b54","type":"NodesAndLinkedEdges"},"layout_provider":{"id":"3680b3b8-ce46-4852-91a9-6fab0608ff5c","type":"StaticLayoutProvider"},"node_renderer":{"id":"0837016f-903e-4cad-beca-4ac01583092b","type":"GlyphRenderer"},"selection_policy":{"id":"940472b1-4bc6-49b2-9c64-c86bba6566e2","type":"NodesAndLinkedEdges"}},"id":"f1bf4bd2-b49d-48a6-8d3f-693ad5187947","type":"GraphRenderer"},{"attributes":{},"id":"a2328d54-3bf8-4ccf-9d2d-234b8c1bb877","type":"BasicTicker"},{"attributes":{"axis_label":"y","bounds":"auto","formatter":{"id":"c9b2f2d7-71df-489a-91f5-faa9e6338206","type":"BasicTickFormatter"},"major_label_orientation":"horizontal","plot":{"id":"e8a8e4f8-407b-4f24-87e8-1c8b983bfb11","subtype":"Figure","type":"Plot"},"ticker":{"id":"2f6a10a3-7766-4878-aaa4-845b38a135d9","type":"BasicTicker"},"visible":false},"id":"5da4694d-783e-445c-8a2e-ee1380d64e07","type":"LinearAxis"},{"attributes":{},"id":"2f6a10a3-7766-4878-aaa4-845b38a135d9","type":"BasicTicker"},{"attributes":{"dimension":1,"grid_line_color":{"value":null},"plot":{"id":"e8a8e4f8-407b-4f24-87e8-1c8b983bfb11","subtype":"Figure","type":"Plot"},"ticker":{"id":"2f6a10a3-7766-4878-aaa4-845b38a135d9","type":"BasicTicker"}},"id":"b2b2535a-8fea-4a4b-a1d1-e5829e71b2b7","type":"Grid"},{"attributes":{"graph_layout":{"0":[-0.032909830767392574,-0.003609274617159294],"1":[0.10378311368021448,0.06053770591676249],"10":[-0.27479341393228046,0.23344861301501152],"100":[0.3801689292557843,0.0027834001647620457],"101":[0.02636610696910369,-0.19020511966873074],"102":[-0.48089428568859455,0.3805576756941485],"103":[0.10162919287058733,-0.07324930770040582],"104":[0.1808208433500396,0.06857607452785248],"105":[0.12130930100698828,0.2188416476070102],"106":[0.3377725635277168,0.09354991847568234],"107":[0.13253032847821922,-0.454303243596558],"108":[-0.30210278636323457,0.29909002018893727],"109":[-0.04849471199024743,-0.14616354827674033],"11":[-0.1568233688725621,0.18514618302814095],"110":[0.5148049237514918,-0.10435039471599299],"111":[0.20234599889032048,0.2157088794086623],"112":[-0.20571213047174677,-0.052730557836255104],"113":[-0.20819638482918867,0.30404589529127485],"114":[-0.4575175466187491,-0.33369160372782],"115":[-0.38523787763708767,-0.21571169461898085],"116":[-0.470260137677758,-0.17295643153104445],"117":[-0.5480515926044406,-0.21501050095286905],"118":[0.17679883088669093,0.017428753008292396],"119":[0.08725457571586612,0.04420798654452663],"12":[-0.08989327765857505,0.3620968415237744],"120":[-0.08319074987024763,0.08803856462813643],"121":[-0.03942898578695594,0.1303322703876821],"122":[0.8647427701036963,-0.5832294355620792],"123":[-0.365840119072935,0.25252385187388876],"124":[0.0031458274337570922,-0.3055325678651095],"125":[-0.04616933615322116,0.16362802606897087],"126":[0.4584909737337257,0.30385456640126435],"127":[-0.09017693119873395,0.24838004537402397],"128":[-0.07819531663462982,-0.07638800486515729],"129":[-0.10746874228684146,0.11279752898495271],"13":[0.07946734345840482,-0.2274232671613135],"130":[-0.2154557968614663,0.13231255545493287],"131":[-0.19780461239586378,0.20440675610598652],"132":[-0.18650373242645837,0.2517265693545582],"133":[0.11634782045456553,-0.10236876473859793],"134":[0.07672199530376857,0.36507906877227614],"135":[-0.07063448863827201,-0.3587661618945242],"136":[-0.352712550210671,0.15988681045973357],"137":[0.09174973478777071,-0.13734220490782093],"138":[-0.41389921207856756,0.005555171598147751],"139":[0.09979375964687463,0.2803610534354335],"14":[0.35911810676238987,0.34673100382629285],"140":[0.3710302122259691,-0.05201738786663405],"141":[0.06474123244703954,0.10627344912439156],"142":[0.49454394666038465,0.23524835380085565],"143":[-0.16300188428867288,-0.25425508275735],"144":[-0.025238679275244993,0.405230804979578],"145":[-0.12556895844829485,-0.09659642923557094],"146":[-0.11885036308252961,-0.012129089145132619],"147":[-0.024137759733658573,0.12496836240347524],"148":[-0.25042173443925175,-0.16871017513159786],"149":[-0.06898118860938621,-0.6705189378396779],"15":[0.15856302991201368,0.0995021636824256],"150":[0.3639160514827865,-0.28917641608804545],"151":[-0.2509250220077935,0.4042418026638116],"152":[0.19124770442365266,-0.18904137628288395],"153":[-0.4815493042799454,-0.408909406059042],"154":[0.1934412683862724,0.26850785927667975],"155":[0.3085807426177326,-0.015597031519750268],"156":[0.11443756934716237,0.15271747364658458],"157":[0.2980023189602908,0.15461307755027529],"158":[0.0012402901242499651,0.25321064906082486],"159":[0.04016914108194894,-0.27734059347468765],"16":[0.24438612658455114,0.26293501867372476],"160":[-0.010411493794639706,-0.10146031917279438],"161":[0.18011804449403812,0.36502757510889394],"162":[-0.3090081830717571,0.20071189770793194],"163":[-0.03816540640070004,-0.2954894324362415],"164":[-0.02169641267980002,0.04168794937748466],"165":[-0.0835905407264174,0.18439288850615582],"166":[-0.1615755982184565,0.16066141048926147],"167":[0.5152772985995334,-0.2565536939241812],"168":[-0.11464094073947892,-0.2947247087653891],"169":[-0.33322564249528674,-0.3069920635116748],"17":[-0.469488645483376,0.3048898616131411],"170":[-0.182684070532976,-0.21327719373305162],"171":[0.1711813394732399,0.3368320551682105],"172":[0.21568514779297593,0.3257463733984467],"173":[0.13121072290911046,0.11781673343484618],"174":[0.042366004575084056,0.02912257947841585],"175":[-0.02695771634054538,0.21386836827562863],"176":[0.09726260654813158,0.20823081993738807],"177":[0.01330682248791669,-0.0181009218908007],"178":[0.39562969525426656,0.15097739769566612],"179":[0.5654760148400637,-0.407813820887341],"18":[0.9999999999999999,-0.027057885333751086],"180":[0.4872292021239318,0.1119517304265131],"181":[-0.36708157107632944,-0.058374366289542706],"182":[-0.081185868630574,-0.17943920060869128],"183":[-0.39058560322422314,-0.15035844068250948],"184":[0.41236185234178063,-0.23221468781059454],"185":[0.1620508821904602,-0.21663482934496878],"186":[-0.05541282555421137,0.3089182448474454],"187":[0.10785975122378685,-0.2949450745609121],"188":[-0.17142453117998224,-0.010354642544246279],"189":[-0.4108373127578409,-0.4311216325011127],"19":[0.2943057014456368,0.3889553554925195],"2":[0.15899803242219793,-0.07515204739729382],"20":[-0.04980465498744616,-0.06237509354417356],"21":[0.3016712210331732,-0.353416193485475],"22":[-0.13011508468373392,0.21801566981524845],"23":[-0.41054457060437316,-0.04362061498684487],"24":[0.5406763099491079,-0.024699086642269066],"25":[0.16931504842093542,-0.29838911914537797],"26":[-0.1802885731646273,0.1399086686418983],"27":[0.33542848070660297,-0.1952600448125736],"28":[-0.15710016774199523,0.239697533454667],"29":[-0.0990622257478505,0.34117584545677676],"3":[0.26040214040195475,-0.15404848426550888],"30":[0.27262603225597415,0.019621157164552233],"31":[-0.24742475413032386,0.10861625445337567],"32":[-0.013775595705785295,0.09677507851571354],"33":[-0.6046091362669591,-0.058477198465844205],"34":[-0.06329863157741297,0.227907274218452],"35":[0.12256240038536201,-0.2106954501226723],"36":[-0.5122269165460313,0.1996805770588807],"37":[0.22793349963213086,-0.3219057190712499],"38":[-0.1144977827907134,-0.20867863898877348],"39":[0.47927176730516136,-0.14766646450455723],"4":[0.3628524928435141,0.14754250976120478],"40":[-0.03450859454511665,0.06366591659670835],"41":[0.06464667061385584,-0.026078385587273906],"42":[0.09094710102329903,0.010585713287267281],"43":[0.6382290222644195,0.004269101891290509],"44":[0.45953902999799323,-0.06791103642107683],"45":[0.14486193081437512,0.24163881942228702],"46":[0.02218009006270979,0.3030558477212269],"47":[0.49956269959899946,-0.0725678836337276],"48":[-0.12038760977686404,0.2390401550265234],"49":[-0.2736089139699114,-0.06250647092237213],"5":[-0.035913763562300055,-0.26044561811204636],"50":[-0.2710310201584563,0.33209980762244995],"51":[-0.4613635248855968,0.45811930906906495],"52":[-0.4442092916585502,0.2644004145806194],"53":[-0.21740351635266736,0.15524711134139504],"54":[-0.26491456135701796,-0.023398087689877195],"55":[0.03043154665972996,-0.10954192854382568],"56":[-0.3169509417781293,-0.020265987940092815],"57":[-0.35159687947832635,0.08988214652761724],"58":[-0.10444234908261338,0.2912488373239556],"59":[-0.5419268297172206,-0.3750707462943897],"6":[-0.24696592210719354,-0.12072503412604392],"60":[-0.19330030343780438,0.014230214960824357],"61":[-0.280640984872209,-0.20829830299718272],"62":[-0.3054453370801683,-0.16518511500994612],"63":[-0.16962489970836012,0.04999802001256506],"64":[0.05848374634858067,0.3293004727974742],"65":[0.26024517645635853,0.18903360726962634],"66":[-0.25215843531146176,-0.22422820491811823],"67":[-0.1457780993437888,0.4069019467642836],"68":[-0.16948646020509628,0.5022301528071192],"69":[-0.3179067437514503,-0.47128390758773275],"7":[0.31258064906426225,0.25875545406409933],"70":[0.5095925737215027,-0.01247246971206016],"71":[0.18590083867553409,-0.06626540414599467],"72":[-0.16761337944565685,-0.09210833207367045],"73":[-0.22075162663966863,-0.346801483320926],"74":[-0.012993663974737684,-0.43627177236405357],"75":[-0.00027793366602913447,-0.04901414595400964],"76":[-0.07392678165390454,-0.2463736283705462],"77":[0.4157394761138868,-0.3348581453751449],"78":[0.14700277151569507,0.3080471916744436],"79":[0.447338543941704,-0.20683147436109117],"8":[0.081211449989964,0.43252919915139554],"80":[-0.3727361239984109,-0.7399983241221751],"81":[0.13101422643579047,-0.5254313652422827],"82":[-0.06580351752225924,-0.46639151719820926],"83":[-0.29602920068363614,-0.3787378141524184],"84":[-0.14005918411341794,-0.36120911735679423],"85":[-0.07898863653205773,0.15993099575280134],"86":[-0.10842025464598178,0.2013901414890026],"87":[-0.3174007190992299,0.49192191987021866],"88":[-0.17563264594710412,0.08609419495959345],"89":[-0.4348077144445546,0.11940177228551346],"9":[0.18131780540597806,0.4936103513895977],"90":[-0.2427214563155149,-0.574787060836962],"91":[-0.09539024091541888,0.05791575135139463],"92":[0.0336601606315735,0.21485521192288531],"93":[0.31084004699674617,0.08614717773003353],"94":[-0.1071734216500541,-0.532575765527331],"95":[0.7458884148264896,-0.03552560502218009],"96":[0.5710809317655376,-0.046016573171068845],"97":[-0.2616701095707265,-0.33033358257914464],"98":[-0.09151968177086547,-0.14279334009125189],"99":[0.28642845557179314,-0.07443650831676461]}},"id":"3680b3b8-ce46-4852-91a9-6fab0608ff5c","type":"StaticLayoutProvider"},{"attributes":{"bottom_units":"screen","fill_alpha":{"value":0.5},"fill_color":{"value":"lightgrey"},"left_units":"screen","level":"overlay","line_alpha":{"value":1.0},"line_color":{"value":"black"},"line_dash":[4,4],"line_width":{"value":2},"plot":null,"render_mode":"css","right_units":"screen","top_units":"screen"},"id":"3e3a7f75-5627-4983-8c2a-4c84fc8c68fc","type":"BoxAnnotation"},{"attributes":{},"id":"bd213a6d-bb32-405f-b33b-1cd5d3e8314e","type":"SaveTool"},{"attributes":{},"id":"f70ee9b2-a51c-4a54-a5de-4219220eb89b","type":"UnionRenderers"},{"attributes":{},"id":"f9b5efc5-9202-42b5-9a37-5609069a0753","type":"PanTool"},{"attributes":{},"id":"c9b2f2d7-71df-489a-91f5-faa9e6338206","type":"BasicTickFormatter"},{"attributes":{},"id":"3f0d660f-fdb0-47ef-8dc1-9074404a3ae4","type":"WheelZoomTool"},{"attributes":{"overlay":{"id":"3e3a7f75-5627-4983-8c2a-4c84fc8c68fc","type":"BoxAnnotation"}},"id":"cea0e89a-7ef3-43da-9f34-7312ba3e5400","type":"BoxZoomTool"},{"attributes":{},"id":"16f9b4c3-1a2d-439c-a7c3-b16a1504be33","type":"Selection"},{"attributes":{},"id":"748d3463-bef1-4627-a046-3a45f6eedba6","type":"ResetTool"},{"attributes":{"callback":null},"id":"82053606-c1bf-46c4-a281-c643ef5e07c0","type":"TapTool"},{"attributes":{},"id":"a5fa7378-cb7b-4504-9a36-d51580d83b54","type":"NodesAndLinkedEdges"},{"attributes":{},"id":"d9fa7575-5e28-431c-9209-bf3b73b45bf2","type":"BasicTickFormatter"},{"attributes":{},"id":"5933d65e-1b31-4604-b156-6cfc06bd631a","type":"UnionRenderers"},{"attributes":{"callback":null,"end":1.05,"reset_end":1.05,"reset_start":-0.05,"start":-0.05},"id":"e0cc8b56-52a2-4001-8d6d-9b610ceb97e7","type":"Range1d"},{"attributes":{},"id":"940472b1-4bc6-49b2-9c64-c86bba6566e2","type":"NodesAndLinkedEdges"},{"attributes":{},"id":"200c7553-f797-4c76-996b-90c3ce343002","type":"Selection"},{"attributes":{"callback":null,"data":{"end":{"__ndarray__":"dwAAAIUAAAB9AAAAgQAAAAEAAAAqAAAAKAAAAKQAAACcAAAAeAAAADUAAAAyAAAAOgAAABYAAAAwAAAAVgAAAH8AAAClAAAACgAAAIAAAAAgAAAASwAAAFsAAABnAAAAkgAAAB0AAAA2AAAASAAAAHkAAAAIAAAAPwAAAJEAAAATAAAAsAAAAGQAAACUAAAAugAAADwAAACLAAAAEAAAAC4AAAAtAAAAJgAAALEAAAArAAAAGAAAAG0AAACvAAAADAAAAJsAAAC7AAAAAgAAAIkAAACtAAAAqwAAAHwAAAAOAAAAHAAAADcAAAB2AAAAnwAAAH4AAABCAAAAAwAAACUAAAAaAAAAggAAALYAAABuAAAAHgAAABUAAACWAAAAogAAAI8AAACHAAAAuAAAAIUAAAAPAAAAGQAAACMAAAApAAAAYwAAAKMAAABpAAAAHwAAAIMAAACyAAAAQQAAAKEAAACOAAAAJwAAALkAAACuAAAAvAAAADgAAAA+AAAALAAAAIQAAAAHAAAAnQAAAEAAAAAvAAAACQAAABQAAACTAAAAhgAAAAAAAACsAAAAXQAAAE8AAACeAAAATAAAAH0AAACBAAAAqgAAADkAAAAFAAAAIAAAACMAAAApAAAAPQAAAEsAAABaAAAAeAAAAKAAAACAAAAAJgAAAGsAAAC7AAAAfAAAAJUAAAAGAAAAtQAAAI8AAACFAAAAGQAAAF4AAAAUAAAAIAAAACgAAABVAAAAeAAAALAAAACxAAAAFgAAAFYAAAB/AAAApQAAAAsAAABDAAAAIgAAAIUAAABYAAAArgAAAKYAAACEAAAAhgAAAJ4AAAABAAAAAgAAACgAAABVAAAAoAAAAKQAAAA6AAAAFgAAAH8AAAClAAAAgAAAADYAAABoAAAACwAAAC4AAACvAAAAQwAAACIAAACJAAAArQAAABwAAAAGAAAAtQAAABoAAACCAAAAhQAAAA8AAAAfAAAAgwAAAFgAAABmAAAAbAAAAHEAAACmAAAAhAAAABQAAAB7AAAAngAAAAUAAAA9AAAAeAAAAKkAAABUAAAAqAAAAGEAAAC3AAAAtgAAAI8AAACFAAAAowAAAD4AAAAUAAAAKgAAACgAAACgAAAApAAAAKUAAACAAAAAeQAAAHYAAACFAAAAsgAAACgAAABVAAAAkQAAAKAAAACkAAAAnAAAAHgAAABqAAAAhQAAAJgAAACTAAAAigAAAJEAAACkAAAAsQAAAJwAAAB4AAAAVgAAAIAAAABHAAAASwAAAGcAAACSAAAAcAAAADwAAAAtAAAAbwAAABcAAAB2AAAAZQAAAIIAAAApAAAAkAAAAJMAAACaAAAAeAAAAIAAAAANAAAAZwAAAHkAAAA/AAAAcAAAAEoAAAC2AAAAhQAAAJgAAACTAAAAPQAAAJwAAAB4AAAANQAAADoAAAAWAAAAVgAAAH8AAAClAAAADQAAACAAAABHAAAASwAAAFsAAABnAAAAkgAAAB0AAAB5AAAAPwAAAJEAAABoAAAAcAAAALoAAABiAAAACwAAAIsAAAAQAAAALQAAACYAAACxAAAAbQAAAGEAAACvAAAAmwAAAAIAAACtAAAABgAAAHMAAAADAAAAZQAAABoAAACCAAAAtgAAAIUAAAAjAAAAKQAAAKMAAAAfAAAAgwAAAFgAAAChAAAAuQAAAIQAAACdAAAAkAAAAJMAAACaAAAAeAAAAI0AAABVAAAAWQAAAIgAAACRAAAAsQAAADUAAAAWAAAAMAAAAFYAAAClAAAAgAAAALAAAABoAAAACwAAAIsAAAAuAAAAqAAAAK8AAAAiAAAArQAAAFwAAAB2AAAAtwAAAFcAAACFAAAADwAAAFgAAABBAAAAbAAAADkAAACuAAAASQAAAHEAAACEAAAAQAAAAHsAAACTAAAAAAAAAKwAAACeAAAAVgAAAKUAAACAAAAALQAAAAQAAACvAAAAIgAAAGoAAABvAAAAXAAAAIUAAAAPAAAAYwAAAFgAAAC8AAAApgAAABQAAACTAAAAAAAAAJ4AAAA1AAAAMgAAABYAAAAgAAAAMAAAADIAAAA9AAAAPwAAAEgAAABWAAAAVQAAAH8AAAA6AAAApQAAADYAAAC6AAAACwAAAK8AAACXAAAANAAAABwAAACCAAAAgwAAAFgAAABsAAAAvAAAAHEAAAA4AAAAhAAAAHsAAACTAAAAVQAAADQAAAAWAAAAMAAAAFYAAAB/AAAApQAAAAsAAAAgAAAAVgAAAFUAAAB/AAAApQAAALoAAACvAAAAlwAAABwAAACCAAAAgwAAAFgAAABxAAAAhAAAAJMAAAAgAAAAVQAAAH8AAAClAAAAVgAAALoAAAALAAAArwAAAJcAAAAcAAAAggAAAIMAAABxAAAAhAAAABQAAACTAAAAngAAAAsAAAAKAAAAIAAAAFUAAAB/AAAApQAAALAAAACvAAAAHAAAAIIAAACDAAAAWAAAAGwAAABxAAAAhAAAAJMAAACeAAAACwAAAKUAAACXAAAAGgAAAK4AAACTAAAACwAAAEsAAABVAAAAWwAAAB0AAAAgAAAArwAAAEMAAAAiAAAAHAAAABoAAACCAAAAaQAAAB8AAACDAAAAWAAAAHEAAACmAAAAhAAAABQAAACTAAAARAAAAJ4AAABZAAAACwAAAIIAAACDAAAAcAAAAA0AAAAgAAAARwAAAEsAAABTAAAAVQAAAFsAAABnAAAAdAAAAJIAAACFAAAAhQAAAJgAAABbAAAACwAAAK8AAAAiAAAAbwAAAK0AAABcAAAAHAAAAB4AAACFAAAAWAAAADkAAAC8AAAAQAAAABQAAACTAAAAAAAAAF0AAACeAAAAjAAAAIkAAACFAAAAVQAAAFIAAAAiAAAAuwAAAK0AAABcAAAAhQAAABQAAACTAAAAPQAAAFQAAACSAAAAugAAAAsAAAA8AAAALgAAAC0AAACxAAAAbQAAAKsAAAA3AAAAKQAAAE4AAABpAAAAJAAAAHEAAACEAAAARAAAABwAAAAaAAAAhQAAAIMAAACTAAAAhQAAAD0AAACKAAAAdQAAAJEAAAA9AAAAqAAAAI8AAACFAAAAuQAAAK4AAAA2AAAASAAAAD8AAAB1AAAAJgAAADsAAABUAAAAbQAAAKgAAABhAAAAqQAAAHwAAAByAAAAtQAAAEIAAABzAAAAtwAAALYAAACZAAAAjwAAAIcAAACFAAAAvAAAAL0AAAA4AAAAPgAAAF8AAACMAAAAhQAAAIwAAACtAAAAhQAAABQAAACzAAAAhQAAAEgAAACFAAAACAAAAD8AAACIAAAAkQAAAIUAAACGAAAACQAAAAwAAAAiAAAANAAAAIUAAAA8AAAAcAAAADwAAAAXAAAANwAAAEUAAACFAAAAsAAAAC0AAACFAAAArgAAAIYAAACeAAAAYQAAAGQAAACFAAAARgAAAIUAAABwAAAAigAAALEAAAA8AAAAZQAAACEAAACFAAAArgAAAGIAAACFAAAAWAAAAKYAAABcAAAAHAAAAIIAAACDAAAAWAAAALwAAACEAAAAUQAAAFAAAACFAAAAhQAAAIoAAAA8AAAAFwAAAIIAAAAhAAAAWAAAACQAAACFAAAAWAAAABAAAAAuAAAALQAAAC0AAAAtAAAADgAAAIUAAACYAAAAhQAAABIAAAAYAAAAAwAAAIUAAABPAAAAbQAAAKgAAACFAAAAiQAAALYAAACFAAAAhQAAAF4AAACpAAAAcwAAAJkAAACPAAAAvQAAAD4AAAAUAAAApgAAAIUAAAAiAAAApgAAAIUAAACEAAAAtAAAAIUAAACFAAAAAwAAAIUAAACrAAAArAAAAIUAAABJAAAAhQAAAK4AAABJAAAAEQAAAEIAAACEAAAAhQAAACUAAACFAAAAgwAAAIUAAAAvAAAAhQAAAIUAAAAfAAAApgAAABQAAAAPAAAAGQAAACMAAAApAAAATgAAAGMAAACYAAAAQQAAAGkAAABeAAAAQQAAAAcAAAC9AAAAPgAAAIQAAAA=","dtype":"int32","shape":[761]},"start":{"__ndarray__":"GwAAABsAAAB3AAAAdwAAAHcAAAB3AAAAdwAAAHcAAAB3AAAAdwAAAHcAAAB3AAAAdwAAAHcAAAB3AAAAdwAAAHcAAAB3AAAAdwAAAHcAAAB3AAAAdwAAAHcAAAB3AAAAdwAAAHcAAAB3AAAAdwAAAHcAAAB3AAAAdwAAAHcAAAB3AAAAdwAAAHcAAAB3AAAAdwAAAHcAAAB3AAAAdwAAAHcAAAB3AAAAdwAAAHcAAAB3AAAAdwAAAHcAAAB3AAAAdwAAAHcAAAB3AAAAdwAAAHcAAAB3AAAAdwAAAHcAAAB3AAAAdwAAAHcAAAB3AAAAdwAAAHcAAAB3AAAAdwAAAHcAAAB3AAAAdwAAAHcAAAB3AAAAdwAAAHcAAAB3AAAAdwAAAHcAAAB3AAAAdwAAAHcAAAB3AAAAdwAAAHcAAAB3AAAAdwAAAHcAAAB3AAAAdwAAAHcAAAB3AAAAdwAAAHcAAAB3AAAAdwAAAHcAAAB3AAAAdwAAAHcAAAB3AAAAdwAAAHcAAAB3AAAAdwAAAHcAAAB3AAAAdwAAAHcAAAB3AAAAdwAAAHcAAAB3AAAAdwAAAHcAAAB3AAAAMQAAADEAAAAxAAAAMQAAADEAAABMAAAATAAAAEwAAABMAAAATAAAAEwAAABMAAAATAAAAEwAAABMAAAATAAAAEwAAABMAAAATAAAAEwAAABMAAAATAAAAEwAAABMAAAATAAAAEwAAABMAAAAfQAAAH0AAAB9AAAAfQAAAH0AAAB9AAAAfQAAAH0AAAB9AAAAfQAAAH0AAAB9AAAAfQAAAH0AAAB9AAAAfQAAAH0AAAB9AAAAfQAAAH0AAACBAAAAgQAAAIEAAACBAAAAgQAAAIEAAACBAAAAgQAAAIEAAACBAAAAgQAAAIEAAACBAAAAgQAAAIEAAACBAAAAgQAAAIEAAACBAAAAgQAAAIEAAACBAAAAgQAAAIEAAACBAAAAgQAAAIEAAACBAAAAgQAAAIEAAACBAAAAgQAAAIEAAACBAAAAgQAAAIEAAACBAAAAgQAAAKoAAACqAAAAqgAAAKoAAACqAAAAqgAAAKoAAACqAAAAqgAAAKoAAACqAAAAqgAAAKoAAACqAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAACoAAAAqAAAAKgAAACoAAAAqAAAAKgAAACoAAAAqAAAAKgAAACoAAAAqAAAAKAAAACgAAAAoAAAAKAAAACgAAAAoAAAAKAAAACgAAAAoAAAAKAAAACgAAAAoAAAAKAAAACgAAAAoAAAAKAAAACgAAAAoAAAAKAAAACgAAAAoAAAAKAAAACgAAAAoAAAAoAAAAKAAAACgAAAAoAAAAKAAAACgAAAAoAAAAKAAAACgAAAAoAAAAKAAAACgAAAApAAAAKQAAACkAAAApAAAAKQAAACkAAAApAAAAKQAAACkAAAApAAAAKQAAACkAAAApAAAAKQAAACkAAAApAAAAKQAAACkAAAApAAAAKQAAACkAAAApAAAAKQAAACkAAAApAAAAKQAAACkAAAApAAAAKQAAACkAAAApAAAAKQAAACkAAAApAAAAKQAAACkAAAApAAAAKQAAACkAAAApAAAAKQAAACkAAAApAAAAKQAAACkAAAApAAAAKQAAACkAAAApAAAAKQAAACkAAAApAAAAKQAAACkAAAApAAAAKQAAACkAAAAnAAAAJwAAAB4AAAAeAAAAHgAAAB4AAAAeAAAAHgAAAB4AAAAeAAAAHgAAAB4AAAAeAAAAHgAAAB4AAAAeAAAAHgAAAB4AAAAeAAAAHgAAAB4AAAAeAAAAHgAAAB4AAAAeAAAAHgAAAB4AAAAeAAAAHgAAAB4AAAAeAAAAHgAAAB4AAAAeAAAAHgAAAB4AAAAeAAAAHgAAAB4AAAAeAAAAHgAAAB4AAAAjQAAAI0AAACNAAAAjQAAAI0AAACNAAAAjQAAAI0AAACNAAAAjQAAAI0AAACNAAAAjQAAAI0AAACNAAAAjQAAAI0AAACNAAAAjQAAAI0AAAAzAAAAMwAAADUAAAA1AAAANQAAADUAAAA1AAAANQAAADUAAAA1AAAANQAAADUAAAA1AAAANQAAADUAAAA1AAAANQAAADUAAAA1AAAANQAAADUAAAA1AAAANQAAADUAAAA1AAAANQAAADUAAAA1AAAANQAAADUAAAA1AAAAMgAAADIAAAA6AAAAOgAAADoAAAA6AAAAOgAAABYAAAAWAAAAFgAAABYAAAAWAAAAFgAAABYAAAAWAAAAFgAAABYAAAAWAAAAFgAAABYAAAAWAAAAFgAAABYAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAAFYAAABWAAAAVgAAAFYAAABWAAAAVgAAAFYAAABWAAAAVgAAAFYAAABWAAAAVgAAAFYAAABWAAAAVgAAAFYAAABWAAAAfwAAAH8AAAB/AAAAfwAAAH8AAAB/AAAApQAAAKUAAAClAAAApQAAAKUAAAClAAAApQAAAKUAAAClAAAApQAAAKUAAAClAAAApQAAAKUAAAClAAAApQAAAKUAAAClAAAApQAAAKUAAAClAAAApQAAAKUAAAAKAAAACgAAAAoAAAAKAAAAWQAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAADQAAAA0AAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAARwAAAEcAAABHAAAASwAAAEsAAABLAAAASwAAAEsAAABLAAAASwAAAEsAAABLAAAAUwAAAFMAAABVAAAAVQAAAFUAAABVAAAAVQAAAFUAAABVAAAAVQAAAFUAAABVAAAAVQAAAFUAAABVAAAAVQAAAFUAAABVAAAAVQAAAFsAAABbAAAAWwAAAFsAAABbAAAAZwAAAHQAAAB0AAAAdAAAAJIAAAAFAAAABQAAAAUAAAAFAAAABQAAAAUAAAA9AAAAPQAAAD0AAAA9AAAAPQAAAD0AAAA9AAAAPQAAAD0AAAA9AAAAPQAAAD0AAAA9AAAAPQAAAD0AAAA9AAAAPQAAAD0AAAA9AAAAPQAAAD0AAAA9AAAAPQAAAD0AAAA9AAAAPQAAAGAAAABgAAAAYAAAAF8AAACMAAAAjAAAAIwAAAB6AAAAswAAADYAAABIAAAAeQAAAHkAAAB5AAAAeQAAAHkAAAB5AAAACAAAAD8AAAA/AAAAPwAAAD8AAACIAAAAkQAAAJEAAACRAAAAkQAAAJEAAACRAAAAEwAAALAAAACwAAAAsAAAALAAAACwAAAAWgAAAGgAAABoAAAAZAAAAGQAAACUAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAEoAAABiAAAAYgAAAGIAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAAUgAAAFIAAABSAAAAUQAAAHUAAACKAAAAigAAAIoAAACKAAAAigAAAIoAAAA8AAAAPAAAAIsAAACLAAAAiwAAABAAAAAuAAAALQAAALEAAACxAAAABAAAACsAAAArAAAATQAAAE0AAABNAAAAVAAAAFQAAABUAAAAbQAAAG0AAABtAAAAqAAAAKgAAABhAAAAqQAAAKkAAACpAAAAqQAAAKkAAACpAAAADAAAAGsAAABDAAAAIgAAAEYAAACXAAAAagAAAGoAAAC0AAAAAgAAAIkAAACtAAAAqwAAAHwAAABFAAAAdgAAAJ8AAACfAAAAtQAAALUAAAARAAAAAwAAAGUAAABlAAAAggAAAKcAAACnAAAAtgAAAB4AAACiAAAAogAAAI8AAACFAAAAhQAAAIUAAACFAAAAhQAAAIUAAACFAAAADwAAACkAAACjAAAAsgAAAK4AAABJAAAAOAAAAKYAAAA=","dtype":"int32","shape":[761]}},"selected":{"id":"200c7553-f797-4c76-996b-90c3ce343002","type":"Selection"},"selection_policy":{"id":"5933d65e-1b31-4604-b156-6cfc06bd631a","type":"UnionRenderers"}},"id":"bb9611e7-62e0-4abd-846e-813bd8e4365c","type":"ColumnDataSource"},{"attributes":{"fill_alpha":{"value":0.2},"fill_color":{"value":"#30a2da"},"line_alpha":{"value":0.2},"size":{"units":"screen","value":15}},"id":"dca5a5bb-d4c8-476d-914d-38faf6c67e8a","type":"Circle"},{"attributes":{"fill_color":{"value":"#30a2da"},"size":{"units":"screen","value":15}},"id":"bc5a6d95-a118-4c90-b959-1335cc5fa9a3","type":"Circle"},{"attributes":{"below":[{"id":"b16ae29e-f218-4048-8b54-78e01db1461f","type":"LinearAxis"}],"left":[{"id":"5da4694d-783e-445c-8a2e-ee1380d64e07","type":"LinearAxis"}],"min_border_bottom":10,"min_border_left":10,"min_border_right":10,"min_border_top":10,"plot_height":1200,"plot_width":1200,"renderers":[{"id":"b16ae29e-f218-4048-8b54-78e01db1461f","type":"LinearAxis"},{"id":"5408867e-6ec3-493c-941d-e466a6fd6a89","type":"Grid"},{"id":"5da4694d-783e-445c-8a2e-ee1380d64e07","type":"LinearAxis"},{"id":"b2b2535a-8fea-4a4b-a1d1-e5829e71b2b7","type":"Grid"},{"id":"3e3a7f75-5627-4983-8c2a-4c84fc8c68fc","type":"BoxAnnotation"},{"id":"f1bf4bd2-b49d-48a6-8d3f-693ad5187947","type":"GraphRenderer"}],"title":{"id":"9244b7b3-ca89-4aef-b76c-2d970df70bd6","type":"Title"},"toolbar":{"id":"74f04a1f-e7e1-4b9a-8025-89f34294f722","type":"Toolbar"},"x_range":{"id":"e0cc8b56-52a2-4001-8d6d-9b610ceb97e7","type":"Range1d"},"x_scale":{"id":"2feff1ee-a820-4aa3-ba91-9db6273db02c","type":"LinearScale"},"y_range":{"id":"a8bf8a39-bd76-4fa9-b907-5c5e893ffff5","type":"Range1d"},"y_scale":{"id":"d611d6b4-16b3-430f-b9c5-4aa898577d70","type":"LinearScale"}},"id":"e8a8e4f8-407b-4f24-87e8-1c8b983bfb11","subtype":"Figure","type":"Plot"},{"attributes":{"callback":null,"end":1.05,"reset_end":1.05,"reset_start":-0.05,"start":-0.05},"id":"a8bf8a39-bd76-4fa9-b907-5c5e893ffff5","type":"Range1d"},{"attributes":{"callback":null,"renderers":[{"id":"f1bf4bd2-b49d-48a6-8d3f-693ad5187947","type":"GraphRenderer"}],"tooltips":[["index","@{index_hover}"],["MK-ID","@{MK_hyphen_minus_ID}"],["count","@{count}"],["inCore","@{inCore}"],["info","@{info}"]]},"id":"38cad7e7-6293-4a97-b924-56f1a22c5a14","type":"HoverTool"}],"root_ids":["e8a8e4f8-407b-4f24-87e8-1c8b983bfb11"]},"title":"Bokeh Application","version":"0.13.0"}};
+  var render_items = [{"docid":"83a98820-aa4f-4a0f-98b0-35b13dbbcd16","roots":{"e8a8e4f8-407b-4f24-87e8-1c8b983bfb11":"eecc8c5b-4eb1-484b-b3c5-fb4c7ac79ec5"}}];
+  root.Bokeh.embed.embed_items_notebook(docs_json, render_items);
+
+  }
+  if (root.Bokeh !== undefined) {
+    embed_document(root);
+  } else {
+    var attempts = 0;
+    var timer = setInterval(function(root) {
+      if (root.Bokeh !== undefined) {
+        embed_document(root);
+        clearInterval(timer);
+      }
+      attempts++;
+      if (attempts > 100) {
+        console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing")
+        clearInterval(timer);
+      }
+    }, 10, root)
+  }
+})(window);
+</script>
+</div>
